@@ -1,0 +1,23 @@
+---
+output: pdf_document
+ 
+---
+```{r echo=FALSE, message=FALSE, warning=FALSE, as.is = TRUE} 
+library(kableExtra) 
+```
+
+# Survival table
+```{r echo=FALSE, message=FALSE, warning=FALSE }
+ 
+print(dim(survivialtempout()))
+
+kable(survivialtempout())
+```
+
+# Response table
+```{r echo=FALSE, message=FALSE, warning=FALSE }
+ 
+print(dim(responsetempout()))
+kable(responsetempout())
+```
+ 
