@@ -76,7 +76,7 @@ This is the home page (data tab), on the left upload the data. There are multipl
 data sets and the toxicity data is constructed from merging the uploaded data. 
 
 
-![Home page data upload.](front_page_AE.jpg){width=80%}
+![Home page data upload.](vignettes/front_page_AE.jpg){width=80%}
 
 On the data page there are 5 sub-tabs:
 
