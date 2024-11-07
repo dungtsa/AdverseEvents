@@ -88,7 +88,7 @@ On the data page there are 5 sub-tabs:
 
 Screen shot of the demographic data:
 
-![Demographics.](demographic_data.jpg){width=80%}
+![Demographics.](vignettes/demographic_data.jpg){width=80%}
 
 ## AE Plots and Measures
 
@@ -109,7 +109,7 @@ On the data page there are 4 sub-tabs:
 
 
 
- ![RECIST plot](RECISTplot.PNG){width=75%}
+ ![RECIST plot](vignettes/RECISTplot.PNG){width=75%}
   
 
 ### AE measures 
@@ -144,7 +144,7 @@ Entering a number in the "Early AE Time Point" box will use that time as a cutof
 only AEs in the first 30 days will be used. 
 
 
- ![AE measures data](AEmeasures.PNG){width=75%}
+ ![AE measures data](vignettes/AEmeasures.PNG){width=75%}
  
 ## Survival Analysis 
 
@@ -156,7 +156,7 @@ This tab panel allows for survival analysis in the form of Cox PH models for all
 The Coxph measures sub-tab displays the results of Cox PH models for all AE metrics: original continuous measure (labelled .y) and dicotomized as an indicator (ie. > 0, labelled .bin). Both for OS and PFS. Please click the 'Run Coxph models' button
 
 
-![Survival analysis KM plot and results](survivalanalysis.PNG){width=75%}
+![Survival analysis KM plot and results](vignettes/survivalanalysis.PNG){width=75%}
                                          
 The forest plot sub-tab displays forest plots for OS and PFS for all the AE metrics. The analysis builds on the Coxph measures tab analysis but it includes 6 more AE metrics for the unique number of AEs. It also can run the models on particular types of adverse events, specified in the drop down box under "Select plot to view". This sub-tab also includes a table of the results. 
 
@@ -172,12 +172,12 @@ This panel has two sub-panels.
 
 The response tests tab runs t-tests comparing the AE metrics between the disease control group (complete response + partial response + stable disease) vs progressive disease groups (DC vs PD), partial response vs progressive disease groups (PR vs PD), and stable disease vs progressive disease groups (SD vs PD). Bar plots of p values are displayed along with a table of results (p value and difference) by AE type. Similar to the forest plot panel there is a drop box for AE category. 
 
-![Response tests](responsetests.PNG){width=75%}
+![Response tests](vignettes/responsetests.PNG){width=75%}
 
 The correlation tab displays a bar plot of the Pearson's correlation coefficient for each AE metric with treatment time. There are also two tables. A text table with the AE category, AE type, and a summary of which type of metric has a negative or positive correlation with treatment time. A second table of numeric results is also displayed and both tables are downloadable. 
 
 
-![Correlations](correlations.PNG){width=75%}
+![Correlations](vignettes/correlations.PNG){width=75%}
 
 
 ## Tables and reports 
@@ -192,7 +192,7 @@ The survival analysis and response tests must be run before these tables will be
 
 
 
-![Survival summary table](survsummary.PNG){width=75%}
+![Survival summary table](vignettes/survsummary.PNG){width=75%}
 
 
-![Response summary table](responsesummary.PNG){width=75%}
+![Response summary table](vignettes/responsesummary.PNG){width=75%}
