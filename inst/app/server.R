@@ -2857,7 +2857,8 @@ shiny::shinyServer(function(input, output, session) {
   # Display survival::coxph output for AE measures ####
   output$kmcophinfo <- DT::renderDataTable({
     todisplay <-  kmandcoxphinfofromtoxdata()$coef.data   %>%
-      dplyr::mutate(dplyr::across(dplyr::where(is.numeric), round, 4)) %>%
+     # dplyr::mutate(dplyr::across(dplyr::where(is.numeric), round, 4)) %>%
+      dplyr::mutate(dplyr::across(dplyr::where(is.numeric),\(x) round(x, 4))) %>%
       dplyr::filter(is.na(coef)==FALSE)
     DT::datatable(todisplay, rownames = FALSE, options = list(pageLength = 72))
 
@@ -2867,7 +2868,8 @@ shiny::shinyServer(function(input, output, session) {
 
   kmandcoxphinfofromtoxdatadisplay<- shiny::reactive({
     kmandcoxphinfofromtoxdata()$coef.data   %>%
-      dplyr::mutate(dplyr::across(dplyr::where(is.numeric), round, 4)) %>%
+      #dplyr::mutate(dplyr::across(dplyr::where(is.numeric), round, 4)) %>%
+      dplyr::mutate(dplyr::across(dplyr::where(is.numeric),\(x) round(x, 4))) %>%
       dplyr::filter(is.na(coef)==FALSE)
   })
 
@@ -3230,14 +3232,18 @@ shiny::shinyServer(function(input, output, session) {
   })
 
   output$forestplotcophinfo <- DT::renderDataTable({
-    todisplay <-  responsePvaluelistforestplots()$coef.long %>% dplyr::mutate(dplyr::across(dplyr::where(is.numeric), round, 4))
+    todisplay <-  responsePvaluelistforestplots()$coef.long %>% 
+     # dplyr::mutate(dplyr::across(dplyr::where(is.numeric), round, 4))
+          dplyr::mutate(dplyr::across(dplyr::where(is.numeric),\(x) round(x, 4)))  
     #todisplay
     DT::datatable(todisplay, rownames = FALSE, options = list(pageLength = 100))
   })
 
 
   forestplotcophinfodatadisplay <- shiny::reactive({
-    todisplay <-  responsePvaluelistforestplots()$coef.long %>% dplyr::mutate(dplyr::across(dplyr::where(is.numeric), round, 4))
+    todisplay <-  responsePvaluelistforestplots()$coef.long %>% 
+      # dplyr::mutate(dplyr::across(dplyr::where(is.numeric), round, 4))
+      dplyr::mutate(dplyr::across(dplyr::where(is.numeric),\(x) round(x, 4)))  
     todisplay
   })
 
