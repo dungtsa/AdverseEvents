@@ -1,5 +1,4 @@
 
-
 ### Getting Started
 You can install packages directly from Github  with a couple R lines of code.
 
