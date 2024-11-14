@@ -17,6 +17,7 @@ Description: An application for analysis of Adverse Events, as described in Chen
              for the association of adverse event biomarkers and overall survival and progression free survival.
              The adverse event biomarkers include occurrence of grade 3, low grade (1-2), and treatment related adverse events.
              Plots and tables of results are downloadable.
+URL: https://github.com/dungtsa/AdverseEvents
 License: GPL-3
 Encoding: UTF-8
 VignetteBuilder: knitr
