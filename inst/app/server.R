@@ -1170,28 +1170,7 @@ shiny::shinyServer(function(input, output, session) {
             index.grade12 <- (as.numeric(as.vector(x[, name.grade])) < 3)
             index.grade3 <- (as.numeric(as.vector(x[, name.grade])) >= 3)
             index.tretament.related <- apply(x[, name.treatment.related], 1, function(x) any(x != "Not  Applicable"))
-            # all.grade.fre <- sum(index.all, na.rm = T)
-            # all.grade.occurrence <- as.numeric(all.grade.fre > 0)
-            # all.grade.duration <- sum(duration.fun(x, index.tmp = index.all, AE.time.cutoff.tmp = AE.time.cutoff), na.rm = T)
-            # grade12.fre <- sum(index.all * index.grade12, na.rm = T)
-            # grade12.occurrence <- as.numeric(grade12.fre > 0)
-            # grade12.duration <- sum(duration.fun(x, index.tmp = index.all & index.grade12, AE.time.cutoff.tmp = AE.time.cutoff), na.rm = T)
-            # grade3.fre <- sum(index.all * index.grade3, na.rm = T)
-            # grade3.occurrence <- as.numeric(grade3.fre > 0)
-            # grade3.duration <- sum(duration.fun(x, index.tmp = index.all & index.grade3, AE.time.cutoff.tmp = AE.time.cutoff), na.rm = T)
-            #
-            # all.grade.treatment.related.fre <- sum(index.all * index.tretament.related, na.rm = T)
-            # all.grade.treatment.related.occurrence <- as.numeric(all.grade.treatment.related.fre > 0)
-            # all.grade.treatment.related.duration <- sum(duration.fun(x, index.tmp = index.all & index.tretament.related, AE.time.cutoff.tmp = AE.time.cutoff), na.rm = T)
-            #
-            # grade12.treatment.related.fre <- sum(index.all * index.grade12 * index.tretament.related, na.rm = T)
-            # grade12.treatment.related.occurrence <- as.numeric(grade12.treatment.related.fre > 0)
-            # grade12.treatment.related.duration <- sum(duration.fun(x, index.tmp = index.all & index.grade12 & index.tretament.related, AE.time.cutoff.tmp = AE.time.cutoff), na.rm = T)
-            #
-            # grade3.treatment.related.fre <- sum(index.all * index.grade3 * index.tretament.related, na.rm = T)
-            # grade3.treatment.related.occurrence <- as.numeric(grade3.treatment.related.fre > 0)
-            # grade3.treatment.related.duration <- sum(duration.fun(x, index.tmp = index.all & index.grade3 & index.tretament.related, AE.time.cutoff.tmp = AE.time.cutoff), na.rm = T)
-            #
+
             all.grade.fre <- round(sum(index.all, na.rm = T),0)
             all.grade.occurrence <- round(as.numeric(all.grade.fre > 0),0)
             all.grade.duration <- round(sum(duration.fun(x, index.tmp = index.all, AE.time.cutoff.tmp = AE.time.cutoff), na.rm = T),0)
@@ -1310,7 +1289,7 @@ shiny::shinyServer(function(input, output, session) {
       )
     } # end toxicity.out.fun
 
-
+    
     #alldataoutput <- toxicity.out.fun(toxicity.data = toxicity_data(), AE.time.cutoff = NULL)
     alldataoutput <- toxicity.out.fun(toxicity.data = toxicity_data_input, AE.time.cutoff = EarlyAE_CutP)
     alldataoutput
@@ -3184,7 +3163,8 @@ shiny::shinyServer(function(input, output, session) {
           AE.survival.p.forestplot.list[[k]]<- ggplot2::ggplot(e4, ggplot2::aes(y = index, x = HR, col = p<0.05)) + #
             scale_colour_manual(values=c("red","cyan"),breaks=c(T,F),labels=c('<0.05', '>0.05')) +
             facet_wrap(vars(survival)) +
-            ggplot2::geom_point(shape = 18, size = 3) +
+            #ggplot2::geom_point(shape = 18, size = 3) +
+            ggplot2::geom_point(shape = 18, linewidth = 3) +
             geom_errorbarh(ggplot2::aes(xmin = LCL, xmax = UCL), height = 0.25) +
             ggplot2::geom_vline(xintercept = 1, color = "black", linetype = "dashed", cex = .8, alpha = 0.5) +
             ggplot2::scale_y_continuous(name = "", breaks=e4$index, labels = e4$AE.type)+#, trans = "reverse") +
@@ -4166,7 +4146,9 @@ shiny::shinyServer(function(input, output, session) {
         dim.index<-dim(e2[!is.na(e2[,2]),])[1] #--ensure not all NA--
         if(dim.index>0)
         {
-          e2<-e2%>%dplyr::add_rownames(var='data.type')%>%
+          e2<-e2%>%
+            #dplyr::add_rownames(var='data.type')%>%
+            tibble::rownames_to_column(var='data.type')%>%
             dplyr::mutate(survival=surv.name[i],
                    AE.type=rep(names(my.data.list),each=2),
                    data.type=sub('y.*','Continuous',sub('AE.*','Occurrence',data.type)))%>%
