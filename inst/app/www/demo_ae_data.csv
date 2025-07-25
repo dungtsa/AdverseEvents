@@ -1,544 +1,544 @@
-"sequence_no","cycle","visit_date","start_date_of_course","onset_date","resolved_date","cdus_ctcae_toxicity_type_code","toxicity_category","grade","attribution_possible","attribution_probable","attribution_definite"
-2,1,1970-01-01,1970-01-01,1970-01-07,1970-01-22,"Pain","General disorders and administration site conditions","2","Not  Applicable","Not  Applicable","Not  Applicable"
-2,1,1970-01-01,1970-01-01,1970-01-19,1970-01-22,"Dry mouth","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-2,1,1970-01-01,1970-01-01,1970-01-19,1970-03-26,"Productive cough","Respiratory, thoracic and mediastinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-2,2,1970-01-22,1970-01-22,1970-01-22,1970-03-01,"Pain","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-2,3,1970-02-12,1970-02-12,1970-02-12,1970-02-12,"Vomiting","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-2,4,1970-03-01,1970-03-01,1970-03-01,1970-03-18,"Hypotension","Vascular disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-2,4,1970-03-01,1970-03-01,1970-03-01,1970-09-21,"Chest wall pain","Musculoskeletal and connective tissue disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-2,4,1970-03-01,1970-03-01,1970-03-01,1970-04-23,"Lung infection","Infections and infestations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-2,4,1970-03-01,1970-03-01,1970-03-01,1970-03-18,"Alkaline phosphatase increased","Investigations","3","Not  Applicable","Not  Applicable","Not  Applicable"
-2,4,1970-03-01,1970-03-01,1970-03-16,1970-03-17,"Anemia","Blood and lymphatic system disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-2,4,1970-03-01,1970-03-01,1970-03-16,1970-03-19,"Hyperkalemia","Metabolism and nutrition disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-2,4,1970-03-01,1970-03-01,1970-03-17,1970-03-26,"Thromboembolic event","Vascular disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-2,4,1970-03-01,1970-03-01,1970-03-21,1970-03-26,"Edema limbs","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-2,NA,1970-03-26,NA,NA,NA,NA,NA,NA,NA,NA,NA
-19,1,1970-01-01,NA,NA,NA,NA,NA,NA,NA,NA,NA
-19,2,1970-01-22,NA,NA,NA,NA,NA,NA,NA,NA,NA
-19,3,1970-02-11,1970-02-11,1970-02-25,1970-03-25,"Abdominal pain","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-19,3,1970-02-11,1970-02-11,1970-03-04,1970-06-03,"Weight loss","Investigations","1","MK-3475; Vorinostat","Not  Applicable","Not  Applicable"
-19,3,1970-02-11,1970-02-11,1970-02-11,1970-08-17,"Anorexia","Metabolism and nutrition disorders","2","Pembrolizumab","Not  Applicable","Vorinostat"
-19,3,1970-02-11,1970-02-11,1970-02-24,1970-02-24,"Vomiting","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-19,3,1970-02-11,1970-02-11,1970-02-24,1970-02-24,"Nausea","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-19,3,1970-02-11,1970-02-11,1970-02-11,1970-04-15,"Dysgeusia","Nervous system disorders","1","Not  Applicable","Not  Applicable","Vorinostat"
-19,4,1970-03-04,NA,NA,NA,NA,NA,NA,NA,NA,NA
-19,5,1970-03-25,NA,NA,NA,NA,NA,NA,NA,NA,NA
-19,6,1970-04-16,NA,NA,NA,NA,NA,NA,NA,NA,NA
-19,NA,1970-05-06,NA,NA,NA,NA,NA,NA,NA,NA,NA
-19,NA,1970-06-03,1970-06-03,1970-06-03,1970-08-17,"Weight loss","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-05,1970-04-04,"Tremor","Nervous system disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-05,1970-04-04,"Gait disturbance","General disorders and administration site conditions","2","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-14,1970-01-16,"Constipation","Gastrointestinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-17,1970-01-26,"Constipation","Gastrointestinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-17,1970-01-26,"Pain","General disorders and administration site conditions","3","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-17,1970-04-04,"Weight loss","Investigations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-17,1970-04-04,"Anorexia","Metabolism and nutrition disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-19,1970-01-20,"Dyspnea","Respiratory, thoracic and mediastinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-19,1970-01-28,"Cough","Respiratory, thoracic and mediastinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-19,1970-01-19,"Hypotension","Vascular disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-26,1970-04-04,"Dysphagia","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-28,1970-01-29,"Nausea","Gastrointestinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-28,1970-01-29,"Vomiting","Gastrointestinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-27,1970-01-28,"Constipation","Gastrointestinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-28,1970-02-01,"Arthralgia","Musculoskeletal and connective tissue disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-28,1970-02-01,"Myalgia","Musculoskeletal and connective tissue disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-29,1970-02-02,"Nausea","Gastrointestinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-29,1970-02-02,"Vomiting","Gastrointestinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-29,1970-02-02,"Pain","General disorders and administration site conditions","3","Not  Applicable","Not  Applicable","Not  Applicable"
-10,1,1970-01-01,1970-01-01,1970-01-17,1970-01-17,"Vomiting","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-10,NA,1970-02-12,1970-01-01,1970-01-28,1970-02-01,"Arthralgia","Musculoskeletal and connective tissue disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-10,NA,1970-02-12,1970-01-01,1970-01-28,1970-02-01,"Myalgia","Musculoskeletal and connective tissue disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-10,NA,1970-02-12,1970-01-01,1970-01-29,1970-02-02,"Nausea","Gastrointestinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-10,NA,1970-02-12,1970-01-01,1970-01-29,1970-02-02,"Vomiting","Gastrointestinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-10,NA,1970-02-12,1970-01-01,1970-01-29,1970-02-02,"Pain","General disorders and administration site conditions","3","Not  Applicable","Not  Applicable","Not  Applicable"
-10,NA,1970-02-26,NA,NA,NA,NA,NA,NA,NA,NA,NA
-18,1,1970-01-01,1970-01-01,1970-01-22,1970-04-24,"Anorexia","Metabolism and nutrition disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-18,2,1970-01-22,NA,NA,NA,NA,NA,NA,NA,NA,NA
-18,NA,1970-02-12,NA,NA,NA,NA,NA,NA,NA,NA,NA
-18,NA,1970-02-12,NA,NA,NA,NA,NA,NA,NA,NA,NA
-14,1,1970-01-01,NA,NA,NA,NA,NA,NA,NA,NA,NA
-14,2,1970-01-21,1970-01-01,1970-01-21,1970-03-10,"Creatinine increased","Investigations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-14,3,1970-02-10,NA,NA,NA,NA,NA,NA,NA,NA,NA
-14,4,1970-03-03,1970-02-10,1970-03-03,1970-04-07,"Anemia","Blood and lymphatic system disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-14,4,1970-03-03,1970-02-10,1970-03-03,1970-03-10,"Blood bilirubin increased","Investigations","1","Not  Applicable","Vorinostat","Not  Applicable"
-14,4,1970-03-03,1970-02-10,1970-03-03,1970-03-10,"Hypermagnesemia","Metabolism and nutrition disorders","1","Not  Applicable","Pembrolizumab; Vorinostat","Not  Applicable"
-14,4,1970-03-03,1970-02-10,1970-03-03,1970-03-10,"Hyponatremia","Metabolism and nutrition disorders","1","Not  Applicable","Pembrolizumab; Vorinostat","Not  Applicable"
-14,4,1970-03-03,1970-02-10,1970-03-03,1970-08-12,"Fatigue","General disorders and administration site conditions","1","Not  Applicable","Pembrolizumab; Vorinostat","Not  Applicable"
-14,NA,1970-04-07,1970-04-07,1970-04-07,1970-08-12,"Dysgeusia","Nervous system disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-26,1,1970-01-01,1970-01-01,1970-01-01,1970-02-26,"Fatigue","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-26,2,1970-01-21,1970-01-21,1970-01-27,1970-01-30,"Diarrhea","Gastrointestinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-26,3,1970-02-13,1970-02-13,1970-02-13,1970-08-13,"Creatinine increased","Investigations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-26,3,1970-02-13,1970-02-13,1970-03-02,1970-08-13,"Dyspnea","Respiratory, thoracic and mediastinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-26,3,1970-02-13,1970-02-13,1970-02-26,1970-08-13,"Fatigue","General disorders and administration site conditions","2","Vorinostat; Pembrolizumab","Not  Applicable","Not  Applicable"
-13,1,1970-01-01,1970-01-01,1970-01-03,1970-01-06,"Fever","General disorders and administration site conditions","3","Not  Applicable","Not  Applicable","Not  Applicable"
-13,1,1970-01-01,1970-01-01,1970-01-22,1970-03-24,"Fracture","Injury, poisoning and procedural complications","2","Not  Applicable","Not  Applicable","Not  Applicable"
-13,1,1970-01-01,1970-01-01,1970-01-26,1970-01-27,"Fever","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-13,1,1970-01-01,1970-01-01,1970-01-27,1970-03-03,"Confusion","Psychiatric disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-13,1,1970-01-01,1970-01-01,1970-01-27,1970-01-31,"Hypernatremia","Metabolism and nutrition disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-13,1,1970-01-01,1970-01-01,1970-01-28,1970-01-30,"Hypoxia","Respiratory, thoracic and mediastinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-13,1,1970-01-01,1970-01-01,1970-01-28,1970-01-30,"Tremor","Nervous system disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-13,1,1970-01-01,1970-01-01,1970-01-28,1970-02-07,"Bronchial infection","Infections and infestations","3","Not  Applicable","Not  Applicable","Not  Applicable"
-13,1,1970-01-01,1970-01-01,1970-01-28,1970-01-30,"Encephalopathy","Nervous system disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-13,1,1970-01-01,1970-01-01,1970-01-30,1970-02-01,"Urinary retention","Renal and urinary disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-13,1,1970-01-01,1970-01-01,1970-01-27,1970-03-03,"Back pain","Musculoskeletal and connective tissue disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-13,1,1970-01-01,1970-01-01,1970-01-03,1970-01-06,"Hypotension","Vascular disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-13,2,1970-02-10,NA,NA,NA,NA,NA,NA,NA,NA,NA
-13,NA,1970-03-03,NA,NA,NA,NA,NA,NA,NA,NA,NA
-17,1,1970-01-01,1970-01-01,1970-01-12,1970-11-01,"Hypokalemia","Metabolism and nutrition disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-17,1,1970-01-01,1970-01-01,1970-01-12,1970-01-22,"Bronchial infection","Infections and infestations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-17,1,1970-01-01,1970-01-27,1970-01-27,1970-11-01,"Dyspnea","Respiratory, thoracic and mediastinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-17,1,1970-01-01,1970-01-01,1970-01-12,1970-11-01,"Anemia","Blood and lymphatic system disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-17,2,1970-01-27,1970-01-27,1970-02-16,1970-02-21,"Bronchial infection","Infections and infestations","3","Not  Applicable","Not  Applicable","Not  Applicable"
-17,2,1970-01-27,1970-01-27,1970-02-16,1970-02-21,"Fever","General disorders and administration site conditions","2","Not  Applicable","Not  Applicable","Not  Applicable"
-17,2,1970-01-27,1970-01-27,1970-02-17,1970-02-20,"Anemia","Blood and lymphatic system disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-17,2,1970-01-27,1970-01-27,1970-02-17,1970-02-24,"Creatinine increased","Investigations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-17,2,1970-01-27,1970-01-27,1970-02-17,1970-04-02,"Platelet count decreased","Investigations","2","Not  Applicable","Not  Applicable","Vorinostat"
-17,2,1970-01-27,1970-01-27,1970-02-24,1970-02-28,"Thromboembolic event","Vascular disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-17,2,1970-01-27,1970-01-27,1970-02-04,1970-11-01,"Respiratory, thoracic and mediastinal disorders - Other, specify","Respiratory, thoracic and mediastinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-17,NA,1970-02-24,1970-02-20,1970-02-26,1970-11-01,"Anemia","Blood and lymphatic system disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-17,NA,1970-04-02,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1,1,1970-01-01,1970-01-01,1970-01-12,1970-03-20,"Fatigue","General disorders and administration site conditions","1","Not  Applicable","Vorinostat; Pembrolizumab","Not  Applicable"
-1,2,1970-01-28,1970-01-28,1970-02-21,1971-01-08,"Hypothyroidism","Endocrine disorders","2","Not  Applicable","Pembrolizumab","Not  Applicable"
-1,3,1970-02-21,1970-02-21,1970-03-20,1970-05-09,"Cough","Respiratory, thoracic and mediastinal disorders","1","Pembrolizumab","Not  Applicable","Not  Applicable"
-1,3,1970-02-21,1970-02-21,1970-03-20,1970-05-09,"Anorexia","Metabolism and nutrition disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-1,3,1970-02-21,1970-02-21,1970-03-20,1970-05-09,"Anemia","Blood and lymphatic system disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-1,3,1970-02-21,1970-02-21,1970-03-20,1970-05-09,"Fatigue","General disorders and administration site conditions","2","Not  Applicable","Not  Applicable","Not  Applicable"
-1,4,1970-03-20,1970-03-20,1970-05-09,1971-01-08,"Anemia","Blood and lymphatic system disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-1,4,1970-03-20,1970-03-20,1970-03-31,1970-03-31,"Dehydration","Metabolism and nutrition disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-1,5,1970-05-09,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1,6,1970-05-30,1970-05-30,1970-06-23,1970-07-16,"Dysgeusia","Nervous system disorders","2","Not  Applicable","Vorinostat","Not  Applicable"
-1,7,1970-06-23,1970-06-23,1970-07-16,1971-01-08,"Pain in extremity","Musculoskeletal and connective tissue disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-1,8,1970-07-16,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1,NA,1970-08-08,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1,NA,1970-09-05,NA,NA,NA,NA,NA,NA,NA,NA,NA
-21,1,1970-01-01,1970-01-01,1970-01-02,1971-01-22,"Diarrhea","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-21,1,1970-01-01,1970-01-01,1970-01-02,1971-01-03,"Fatigue","General disorders and administration site conditions","1","Not  Applicable","Pembrolizumab; Vorinostat","Not  Applicable"
-21,2,1970-01-22,1970-01-22,1970-02-16,1970-03-13,"Pelvic pain","Reproductive system and breast disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-21,2,1970-01-22,1970-01-22,1970-02-16,1970-04-05,"Back pain","Musculoskeletal and connective tissue disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-21,3,1970-02-16,1970-02-12,1970-02-16,1970-11-13,"Thromboembolic event","Vascular disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-21,4,1970-03-13,1970-03-13,1970-03-13,1970-04-05,"Pain in extremity","Musculoskeletal and connective tissue disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-21,5,1970-04-05,1970-04-03,1970-04-05,1970-05-03,"Creatinine increased","Investigations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-21,6,1970-05-03,NA,NA,NA,NA,NA,NA,NA,NA,NA
-21,7,1970-05-25,1970-05-24,1970-05-25,1970-07-09,"Peripheral sensory neuropathy","Nervous system disorders","1","Not  Applicable","Vorinostat","Not  Applicable"
-21,7,1970-05-25,1970-05-24,1970-05-25,1970-07-30,"Creatinine increased","Investigations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-21,8,1970-06-18,NA,NA,NA,NA,NA,NA,NA,NA,NA
-21,9,1970-07-09,1970-07-09,1970-07-09,1970-07-30,"Peripheral sensory neuropathy","Nervous system disorders","2","Not  Applicable","Vorinostat","Not  Applicable"
-21,10,1970-07-30,1970-07-30,1970-07-30,1970-08-23,"Peripheral sensory neuropathy","Nervous system disorders","1","Not  Applicable","Vorinostat","Not  Applicable"
-21,NA,1970-08-23,NA,NA,NA,NA,NA,NA,NA,NA,NA
-21,NA,1970-09-26,NA,NA,NA,NA,NA,NA,NA,NA,NA
-16,1,1970-01-01,NA,NA,NA,NA,NA,NA,NA,NA,NA
-16,2,1970-01-27,1972-01-01,1970-01-27,1971-08-10,"Hypothyroidism","Endocrine disorders","2","Pembrolizumab","Not  Applicable","Not  Applicable"
-16,3,1970-02-21,1970-01-27,1970-02-21,1970-05-14,"Creatinine increased","Investigations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-16,4,1970-03-19,1970-02-21,1970-03-19,1970-07-23,"Constipation","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-16,5,1970-04-14,1970-04-14,1970-04-21,1970-06-10,"Myalgia","Musculoskeletal and connective tissue disorders","3","Not  Applicable","Pembrolizumab","Not  Applicable"
-16,5,1970-04-14,1970-04-14,1970-06-10,1970-07-07,"Myalgia","Musculoskeletal and connective tissue disorders","1","Not  Applicable","Pembrolizumab","Not  Applicable"
-16,6,1970-06-10,1970-06-10,1970-07-07,1970-07-11,"Myalgia","Musculoskeletal and connective tissue disorders","3","Not  Applicable","Pembrolizumab","Not  Applicable"
-16,6,1970-06-10,1970-06-10,1970-06-30,1971-08-10,"Pain","General disorders and administration site conditions","2","Not  Applicable","Not  Applicable","Not  Applicable"
-16,NA,1970-07-07,1970-07-11,1970-07-23,1970-09-02,"Fatigue","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-16,NA,1970-07-07,1970-07-11,1970-07-23,1970-08-07,"Weight loss","Investigations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-16,NA,1970-08-07,NA,NA,NA,NA,NA,NA,NA,NA,NA
-4,1,1970-01-01,1970-01-01,1970-01-28,1970-02-24,"Creatinine increased","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-4,1,1970-01-01,1970-01-01,1970-01-28,1970-02-24,"Fatigue","General disorders and administration site conditions","1","Not  Applicable","Vorinostat","Not  Applicable"
-4,2,1970-01-28,NA,NA,NA,NA,NA,NA,NA,NA,NA
-4,3,1970-02-24,1970-02-24,1970-03-17,1970-03-24,"Creatinine increased","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-4,3,1970-02-24,1970-02-24,1970-03-24,1970-04-21,"Hyponatremia","Metabolism and nutrition disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-4,4,1970-03-24,1970-03-24,1970-04-21,1970-04-28,"Creatinine increased","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-4,4,1970-03-24,1970-03-24,1970-04-21,1970-08-04,"Fatigue","General disorders and administration site conditions","1","Not  Applicable","Vorinostat","Not  Applicable"
-4,4,1970-03-24,1970-03-24,1970-04-21,1970-04-29,"Diarrhea","Gastrointestinal disorders","1","Not  Applicable","Vorinostat","Not  Applicable"
-4,5,1970-04-28,1970-04-28,1970-04-29,1970-05-01,"Diarrhea","Gastrointestinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-4,5,1970-04-28,1970-04-28,1970-04-29,1970-05-01,"Flatulence","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-4,5,1970-04-28,1970-04-28,1970-04-29,1970-05-01,"Vomiting","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-4,5,1970-04-28,1970-04-28,1970-05-19,1970-05-29,"Creatinine increased","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-4,6,1970-05-29,1970-05-29,1970-06-23,1970-07-14,"Creatinine increased","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-4,7,1970-07-14,1970-07-14,1970-08-04,1970-08-25,"Creatinine increased","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-4,7,1970-07-14,1970-07-14,1970-08-25,1970-10-05,"Creatinine increased","Investigations","1","Vorinostat","Not  Applicable","Not  Applicable"
-4,7,1970-07-14,1970-07-14,1970-08-25,1970-10-06,"Fatigue","General disorders and administration site conditions","1","Not  Applicable","Pembrolizumab; Vorinostat","Not  Applicable"
-4,8,1970-08-25,NA,NA,NA,NA,NA,NA,NA,NA,NA
-4,9,1970-09-15,1970-09-15,1970-09-22,1970-10-06,"Upper respiratory infection","Infections and infestations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-4,9,1970-09-15,1970-09-15,1970-10-05,1970-11-12,"Creatinine increased","Investigations","2","Vorinostat; Pembrolizumab","Not  Applicable","Not  Applicable"
-4,10,1970-11-12,1970-11-12,1970-12-01,1970-12-15,"Creatinine increased","Investigations","2","Vorinostat","Not  Applicable","Not  Applicable"
-4,11,1970-12-15,NA,NA,NA,NA,NA,NA,NA,NA,NA
-4,12,1971-01-07,1971-01-07,1971-02-02,1971-02-23,"Creatinine increased","Investigations","2","Vorinostat","Not  Applicable","Not  Applicable"
-4,13,1971-02-23,1971-02-23,1971-03-16,1971-04-06,"Creatinine increased","Investigations","2","Vorinostat","Not  Applicable","Not  Applicable"
-4,13,1971-02-23,1971-02-23,1971-04-06,1971-05-04,"Hyponatremia","Metabolism and nutrition disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-4,13,1971-02-23,1971-02-23,1971-04-06,1971-06-01,"Abdominal pain","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-4,14,1971-04-06,1971-04-06,1971-05-04,1971-06-01,"Creatinine increased","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-4,15,1971-06-01,NA,NA,NA,NA,NA,NA,NA,NA,NA
-4,16,1971-06-22,1971-06-22,1971-07-13,1971-10-05,"Hyponatremia","Metabolism and nutrition disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-4,16,1971-06-22,1971-06-22,1971-07-01,1971-09-07,"Skin infection","Infections and infestations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-4,17,1971-07-13,NA,NA,NA,NA,NA,NA,NA,NA,NA
-4,18,1971-08-10,1971-08-10,1971-09-07,1971-10-05,"Creatinine increased","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-4,19,1971-10-05,1971-10-05,1971-09-07,1971-10-05,"Creatinine increased","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-4,20,1971-10-26,1971-10-26,1971-11-16,1971-12-14,"Hyponatremia","Metabolism and nutrition disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-4,21,1971-11-16,1971-11-16,1972-01-04,1972-01-25,"Hyponatremia","Metabolism and nutrition disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-4,22,1972-01-04,1972-01-04,1972-01-25,1972-02-22,"Creatinine increased","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-4,23,1972-02-22,1972-02-22,1972-03-21,1972-04-11,"Creatinine increased","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-4,23,1972-02-22,1972-02-22,1972-04-11,1972-04-29,"Hyponatremia","Metabolism and nutrition disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-4,24,1972-04-11,1972-04-11,1972-05-02,1972-10-10,"Creatinine increased","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-4,1,1972-10-20,1972-10-20,1972-11-10,1972-12-05,"Creatinine increased","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-4,1,1972-10-20,1972-10-20,1972-11-10,1972-12-05,"Hypokalemia","Metabolism and nutrition disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-4,NA,1972-10-20,1972-10-20,1972-11-10,1972-12-05,"Creatinine increased","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-4,NA,1972-10-20,1972-10-20,1972-11-10,1972-12-05,"Hypokalemia","Metabolism and nutrition disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-4,2,1972-12-05,1972-12-05,1972-12-26,1973-09-26,"Creatinine increased","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-4,2,1972-12-05,1972-12-05,1972-12-26,1973-01-16,"Hypokalemia","Metabolism and nutrition disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-4,3,1972-12-26,1972-12-26,1973-01-16,1973-09-26,"Hyperglycemia","Metabolism and nutrition disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-4,4,1973-01-16,1973-01-16,1973-02-04,1973-09-26,"General disorders and administration site conditions - Other, specify","General disorders and administration site conditions","1","Vorinostat","Not  Applicable","Not  Applicable"
-4,5,1973-02-06,NA,NA,NA,NA,NA,NA,NA,NA,NA
-4,6,1973-03-06,1973-03-06,1973-03-17,1973-03-21,"Thromboembolic event","Vascular disorders","4","Not  Applicable","Not  Applicable","Not  Applicable"
-4,6,1973-03-06,1976-03-05,1973-03-21,1973-09-26,"Nervous system disorders - Other, specify","Nervous system disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-4,6,1973-03-06,1973-03-06,1973-04-25,1973-05-04,"Nervous system disorders - Other, specify","Nervous system disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-32,1,1970-01-01,1970-01-01,1970-01-05,1970-01-25,"Anemia","Blood and lymphatic system disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-32,1,1970-01-01,1970-01-01,1970-01-25,1970-02-27,"Anorexia","Metabolism and nutrition disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-32,1,1970-01-01,1970-01-01,1970-01-25,1970-02-27,"Fatigue","General disorders and administration site conditions","2","Not  Applicable","Vorinostat","Not  Applicable"
-32,2,1970-01-25,1970-01-25,1970-02-18,1970-02-27,"Pain","General disorders and administration site conditions","3","Not  Applicable","Not  Applicable","Not  Applicable"
-32,2,1970-01-25,1970-01-25,1970-02-18,1970-02-27,"Anemia","Blood and lymphatic system disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-32,2,1970-01-25,1970-01-25,1970-02-27,1970-02-27,"General disorders and administration site conditions - Other, specify","General disorders and administration site conditions","5","Not  Applicable","Not  Applicable","Not  Applicable"
-32,2,1970-01-25,1970-01-25,1970-02-18,1970-02-27,"Atrial fibrillation","Cardiac disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-28,1,1970-01-01,1970-01-01,1970-01-06,1970-01-11,"Flu like symptoms","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-28,1,1970-01-01,1970-01-01,1970-01-13,1970-02-20,"Neuralgia","Nervous system disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-28,2,1970-01-23,1970-01-23,1970-02-20,1970-06-11,"Neuralgia","Nervous system disorders","2","Vorinostat","Not  Applicable","Not  Applicable"
-28,3,1970-02-20,1970-02-20,1970-03-13,1970-06-10,"Pain","General disorders and administration site conditions","2","Not  Applicable","Not  Applicable","Not  Applicable"
-28,4,1970-03-13,1970-03-13,1970-03-24,1970-06-11,"Vomiting","Gastrointestinal disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-28,4,1970-03-13,1970-03-13,1970-03-25,1970-06-11,"Gastroesophageal reflux disease","Gastrointestinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-28,5,1970-04-03,1970-04-03,1970-04-11,1970-04-15,"Confusion","Psychiatric disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-28,5,1970-04-03,1970-04-03,1970-04-24,1970-05-13,"Anemia","Blood and lymphatic system disorders","3","Vorinostat","Not  Applicable","Not  Applicable"
-28,5,1970-04-03,1970-04-03,1970-05-12,1970-06-11,"Confusion","Psychiatric disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-28,5,1970-04-03,1970-04-03,1970-05-14,1970-05-19,"Hypoxia","Respiratory, thoracic and mediastinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-28,5,1970-04-03,1970-04-03,1970-05-14,1970-05-19,"Infections and infestations - Other, specify","Infections and infestations","3","Not  Applicable","Not  Applicable","Not  Applicable"
-28,5,1970-04-03,1970-04-03,1970-05-19,1970-06-11,"Hypoxia","Respiratory, thoracic and mediastinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-28,5,1970-04-03,1970-04-03,1970-05-19,1970-06-11,"Infections and infestations - Other, specify","Infections and infestations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-28,5,1970-04-03,1970-04-03,1970-05-19,1970-05-19,"Respiratory, thoracic and mediastinal disorders - Other, specify","Respiratory, thoracic and mediastinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-28,NA,1970-05-20,1970-06-10,1970-06-10,1970-06-11,"Edema limbs","General disorders and administration site conditions","2","Not  Applicable","Not  Applicable","Not  Applicable"
-7,1,1970-01-01,1970-01-01,1970-01-25,1971-02-07,"Hypothyroidism","Endocrine disorders","2","Not  Applicable","Pembrolizumab","Not  Applicable"
-7,1,1970-01-01,1970-01-01,1970-01-02,1970-01-06,"Pain","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-7,2,1970-01-25,1970-01-25,1970-02-22,1970-05-03,"Creatinine increased","Investigations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-7,2,1970-01-25,1970-01-25,1970-02-08,1970-04-12,"Dry skin","Skin and subcutaneous tissue disorders","1","Pembrolizumab","Not  Applicable","Not  Applicable"
-7,3,1970-02-22,1970-02-22,1970-02-23,1970-05-24,"Fatigue","General disorders and administration site conditions","2","Not  Applicable","Not  Applicable","Not  Applicable"
-7,3,1970-02-22,1970-02-22,1970-02-23,1970-04-12,"Nausea","Gastrointestinal disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-7,3,1970-02-22,1970-02-22,1970-02-23,1970-02-24,"Fever","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-7,4,1970-03-19,1970-03-19,1970-04-12,1970-05-03,"Dry skin","Skin and subcutaneous tissue disorders","2","Pembrolizumab; Vorinostat","Not  Applicable","Not  Applicable"
-7,5,1970-04-12,1970-04-12,1970-05-03,1970-06-19,"Dry skin","Skin and subcutaneous tissue disorders","1","Pembrolizumab; Vorinostat","Not  Applicable","Not  Applicable"
-7,6,1970-05-03,NA,NA,NA,NA,NA,NA,NA,NA,NA
-7,7,1970-05-24,1970-05-24,1970-05-24,1971-02-07,"Diarrhea","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-7,8,1970-06-19,NA,NA,NA,NA,NA,NA,NA,NA,NA
-7,9,1970-07-12,NA,NA,NA,NA,NA,NA,NA,NA,NA
-7,10,1970-08-02,1970-08-02,1970-08-20,1970-08-22,"Lung infection","Infections and infestations","3","Not  Applicable","Not  Applicable","Not  Applicable"
-7,10,1970-08-02,1970-08-02,1970-08-20,1970-08-22,"Atrial fibrillation","Cardiac disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-7,11,1970-08-27,1970-08-27,1970-08-27,1970-09-17,"Non-cardiac chest pain","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-7,12,1970-09-17,NA,NA,NA,NA,NA,NA,NA,NA,NA
-7,13,1970-10-11,NA,NA,NA,NA,NA,NA,NA,NA,NA
-7,14,1970-11-05,NA,NA,NA,NA,NA,NA,NA,NA,NA
-7,15,1970-11-26,1970-11-26,1970-12-10,1971-01-30,"Fatigue","General disorders and administration site conditions","2","Vorinostat","Not  Applicable","Not  Applicable"
-7,16,1970-12-17,1970-12-17,1971-01-04,1971-02-07,"Paroxysmal atrial tachycardia","Cardiac disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-7,17,1971-01-07,NA,NA,NA,NA,NA,NA,NA,NA,NA
-7,18,1971-01-30,1971-01-30,1971-02-06,1971-02-07,"Sepsis","Infections and infestations","5","Not  Applicable","Not  Applicable","Not  Applicable"
-8,1,1970-01-01,1970-01-01,1970-01-01,1970-02-03,"Fatigue","General disorders and administration site conditions","1","Pembrolizumab; Vorinostat","Not  Applicable","Not  Applicable"
-8,1,1970-01-01,1970-01-01,1970-01-05,1970-03-10,"Pain","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-8,1,1970-01-01,1970-01-01,1970-01-05,1970-03-10,"Anorexia","Metabolism and nutrition disorders","1","Vorinostat; Pembrolizumab","Not  Applicable","Not  Applicable"
-8,1,1970-01-01,1970-01-01,1970-01-29,1970-03-10,"Platelet count decreased","Investigations","1","Vorinostat","Not  Applicable","Not  Applicable"
-8,2,1970-01-29,1970-01-29,1970-02-03,1970-02-05,"Dyspnea","Respiratory, thoracic and mediastinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-8,2,1970-01-29,1970-01-29,1970-02-03,1970-02-05,"Pleural effusion","Respiratory, thoracic and mediastinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-8,2,1970-01-29,1970-01-29,1970-02-03,1970-03-10,"Fatigue","General disorders and administration site conditions","3","Not  Applicable","Not  Applicable","Not  Applicable"
-8,2,1970-01-29,1970-01-29,1970-02-19,1970-03-10,"Anemia","Blood and lymphatic system disorders","2","Vorinostat; Pembrolizumab","Not  Applicable","Not  Applicable"
-8,2,1970-01-29,1970-01-29,1970-02-05,1970-03-10,"Fatigue","General disorders and administration site conditions","2","Not  Applicable","Not  Applicable","Not  Applicable"
-8,3,1970-02-19,NA,NA,NA,NA,NA,NA,NA,NA,NA
-3,1,1970-01-01,1970-01-01,1970-01-12,1970-01-16,"Thromboembolic event","Vascular disorders","4","Not  Applicable","Not  Applicable","Not  Applicable"
-3,1,1970-01-01,1970-01-01,1970-01-12,1970-02-03,"Dyspnea","Respiratory, thoracic and mediastinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-3,NA,1970-01-26,1970-01-26,1970-02-03,1970-02-04,"Cough","Respiratory, thoracic and mediastinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-3,NA,1970-01-26,1970-01-26,1970-02-03,1970-02-04,"Dyspnea","Respiratory, thoracic and mediastinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-3,NA,1970-01-26,1970-01-26,1970-02-04,1970-03-13,"Cough","Respiratory, thoracic and mediastinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-3,NA,1970-01-26,1970-01-26,1970-02-04,1970-03-13,"Dyspnea","Respiratory, thoracic and mediastinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-22,1,1970-01-01,1970-01-01,1970-01-03,1973-04-16,"Dry mouth","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-22,1,1970-01-01,1970-01-01,1970-01-03,1973-04-16,"Eye disorders - Other, specify","Eye disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-22,1,1970-01-01,1970-01-01,1970-01-03,1970-05-18,"Nausea","Gastrointestinal disorders","1","Not  Applicable","Vorinostat","Not  Applicable"
-22,1,1970-01-01,1970-01-01,1970-01-27,1973-04-16,"Hypothyroidism","Endocrine disorders","1","Not  Applicable","Pembrolizumab","Not  Applicable"
-22,1,1970-01-01,1970-01-01,1970-01-27,1970-04-21,"Platelet count decreased","Investigations","1","Not  Applicable","Vorinostat","Not  Applicable"
-22,1,1970-01-01,1970-01-01,1970-01-05,1970-05-18,"Fatigue","General disorders and administration site conditions","1","Pembrolizumab","Not  Applicable","Not  Applicable"
-22,1,1970-01-01,1970-01-01,1970-01-05,1970-03-17,"Headache","Nervous system disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-22,2,1970-01-27,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22,3,1970-02-17,1970-02-17,1970-03-07,1970-03-19,"Infections and infestations - Other, specify","Infections and infestations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-22,3,1970-02-17,1970-02-17,1970-03-10,1970-04-27,"Creatinine increased","Investigations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-22,4,1970-03-10,1970-03-10,1970-03-17,1970-03-31,"Diarrhea","Gastrointestinal disorders","1","Pembrolizumab; Vorinostat","Not  Applicable","Not  Applicable"
-22,5,1970-03-31,1970-03-31,1970-04-14,1970-04-27,"Vomiting","Gastrointestinal disorders","1","Not  Applicable","Vorinostat","Not  Applicable"
-22,5,1970-03-31,1970-03-31,1970-04-21,1970-04-24,"Platelet count decreased","Investigations","2","Not  Applicable","Vorinostat","Not  Applicable"
-22,5,1970-03-31,1970-03-31,1970-04-21,1970-08-10,"Dysgeusia","Nervous system disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-22,5,1970-03-31,1970-03-31,1970-04-21,1970-04-24,"White blood cell decreased","Investigations","1","Vorinostat","Not  Applicable","Not  Applicable"
-22,6,1970-04-27,1970-04-27,1970-04-27,1971-05-24,"Alopecia","Skin and subcutaneous tissue disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-22,7,1970-05-18,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22,8,1970-06-09,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22,9,1970-06-30,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22,10,1970-07-20,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22,11,1970-08-10,1970-08-10,1970-08-12,1970-12-01,"Diarrhea","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-22,12,1970-09-01,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22,13,1970-09-22,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22,14,1970-10-13,1970-10-13,1970-11-07,1973-04-16,"Hypertension","Vascular disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-22,15,1970-11-09,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22,16,1970-12-01,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22,17,1970-12-22,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22,18,1971-01-12,1971-01-12,1971-01-31,1971-03-04,"Diarrhea","Gastrointestinal disorders","2","Vorinostat; Pembrolizumab","Not  Applicable","Not  Applicable"
-22,18,1971-01-12,1971-01-12,1971-03-01,1971-03-04,"Colitis","Gastrointestinal disorders","3","Not  Applicable","Pembrolizumab","Not  Applicable"
-22,19,1971-04-02,1971-04-02,1971-04-08,1971-04-21,"Diarrhea","Gastrointestinal disorders","2","Vorinostat; Pembrolizumab","Not  Applicable","Not  Applicable"
-22,19,1971-04-02,1971-04-02,1971-04-20,1971-04-21,"Chest pain - cardiac","Cardiac disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-22,19,1971-04-02,1971-04-02,1971-04-24,1971-04-25,"Arthralgia","Musculoskeletal and connective tissue disorders","2","Not  Applicable","Pembrolizumab","Not  Applicable"
-22,NA,1971-04-29,NA,NA,NA,NA,NA,NA,NA,NA,NA
-22,NA,1971-05-24,NA,NA,NA,NA,NA,NA,NA,NA,NA
-24,1,1970-01-01,1970-01-01,1970-01-04,1970-01-12,"Vomiting","Gastrointestinal disorders","2","Vorinostat","Not  Applicable","Not  Applicable"
-11,1,1970-01-01,1970-01-01,1970-01-11,1970-01-22,"Constipation","Gastrointestinal disorders","2","Vorinostat","Not  Applicable","Not  Applicable"
-11,1,1970-01-01,1970-01-01,1970-01-11,1970-01-22,"Dysgeusia","Nervous system disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-11,1,1970-01-01,1970-01-01,1970-01-11,1970-08-08,"Cough","Respiratory, thoracic and mediastinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-11,1,1970-01-01,1970-01-01,1970-01-11,1970-01-22,"Nausea","Gastrointestinal disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-11,1,1970-01-01,1970-01-01,1970-01-22,1970-08-08,"Dyspnea","Respiratory, thoracic and mediastinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-11,1,1970-01-01,1970-01-01,1970-01-11,1970-04-19,"Anorexia","Metabolism and nutrition disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-11,1,1970-01-01,1970-01-01,1970-01-11,1970-08-08,"Fatigue","General disorders and administration site conditions",NA,"Vorinostat","Not  Applicable","Not  Applicable"
-11,NA,1970-01-22,1970-01-22,1970-01-11,1970-08-08,"Edema limbs","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-11,NA,1970-02-16,NA,NA,NA,NA,NA,NA,NA,NA,NA
-27,1,1970-01-01,1970-01-01,1970-01-01,1970-01-22,"Confusion","Psychiatric disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-27,1,1970-01-01,1970-01-01,1970-01-26,1970-02-16,"Alanine aminotransferase increased","Investigations","1","Vorinostat; Pembrolizumab","Not  Applicable","Not  Applicable"
-27,2,1970-01-26,1970-01-26,1970-01-28,1970-02-25,"Vomiting","Gastrointestinal disorders","3","Vorinostat","Not  Applicable","Not  Applicable"
-27,2,1970-01-26,1970-01-26,1970-01-28,1970-02-25,"Diarrhea","Gastrointestinal disorders","3","Vorinostat","Not  Applicable","Not  Applicable"
-27,2,1970-01-26,1970-01-26,1970-01-29,1970-02-02,"Aspiration","Respiratory, thoracic and mediastinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-27,NA,1970-02-16,1970-02-16,1970-02-16,1970-02-26,"Anemia","Blood and lymphatic system disorders","2","Vorinostat","Not  Applicable","Not  Applicable"
-5,1,1970-01-01,1970-01-01,1970-01-18,1970-09-17,"Creatinine increased","Investigations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-5,2,1970-01-18,1970-01-18,1970-01-19,1971-06-10,"Dizziness","Nervous system disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-5,3,1970-02-14,NA,NA,NA,NA,NA,NA,NA,NA,NA
-5,4,1970-03-12,1970-03-12,1970-04-05,1970-04-16,"Creatinine increased","Investigations","2","Vorinostat","Not  Applicable","Not  Applicable"
-5,4,1970-03-12,1970-03-12,1970-04-16,1971-06-10,"Dysphagia","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-5,5,1970-04-16,1970-04-16,1970-05-07,1971-06-10,"Dysgeusia","Nervous system disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-5,6,1970-05-07,NA,NA,NA,NA,NA,NA,NA,NA,NA
-5,7,1970-05-28,NA,NA,NA,NA,NA,NA,NA,NA,NA
-5,8,1970-06-18,NA,NA,NA,NA,NA,NA,NA,NA,NA
-5,9,1970-07-09,1970-07-09,1970-07-30,1970-08-06,"Creatinine increased","Investigations","1","Vorinostat","Not  Applicable","Not  Applicable"
-5,9,1970-07-09,1970-07-09,1970-07-30,1970-08-06,"Hyponatremia","Metabolism and nutrition disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-5,10,1970-08-06,1970-08-06,1970-08-27,1971-06-10,"Constipation","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-5,11,1970-08-27,1970-08-27,1970-09-13,1971-06-10,"Neoplasms benign, malignant and unspecified (incl cysts and polyps) - Other, specify","Neoplasms benign, malignant and unspecified (incl cysts and polyps)","1","Not  Applicable","Not  Applicable","Not  Applicable"
-5,11,1970-08-27,1970-08-27,1970-09-17,1970-10-23,"Hyponatremia","Metabolism and nutrition disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-5,11,1970-08-27,1970-08-27,1970-09-17,1970-11-13,"Aspartate aminotransferase increased","Investigations","1","Vorinostat; Pembrolizumab","Not  Applicable","Not  Applicable"
-5,11,1970-08-27,1970-08-27,1970-09-17,1970-11-13,"Alanine aminotransferase increased","Investigations","1","Vorinostat; Pembrolizumab","Not  Applicable","Not  Applicable"
-5,11,1970-08-27,1970-08-27,1970-09-17,1970-10-10,"Alkaline phosphatase increased","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-5,11,1970-08-27,1970-08-27,1970-09-17,1970-10-10,"Blood bilirubin increased","Investigations","1","Vorinostat; Pembrolizumab","Not  Applicable","Not  Applicable"
-5,12,1970-09-17,1970-09-17,1970-10-10,1970-10-23,"Blood bilirubin increased","Investigations","3","Not  Applicable","Not  Applicable","Not  Applicable"
-5,12,1970-09-17,1970-09-17,1970-10-10,1971-02-05,"Alkaline phosphatase increased","Investigations","3","Not  Applicable","Not  Applicable","Not  Applicable"
-5,12,1970-09-17,1970-09-17,1970-10-10,1971-06-10,"Weight loss","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-5,12,1970-09-17,1970-09-17,1970-10-18,1970-10-29,"Lung infection","Infections and infestations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-5,12,1970-09-17,1970-09-17,1970-10-20,1970-10-23,"Fever","General disorders and administration site conditions","2","Not  Applicable","Not  Applicable","Not  Applicable"
-5,12,1970-09-17,1970-09-17,1970-10-23,1970-10-28,"Blood bilirubin increased","Investigations","4","Not  Applicable","Not  Applicable","Not  Applicable"
-5,12,1970-09-17,1970-09-17,1970-10-23,1970-10-24,"Hyponatremia","Metabolism and nutrition disorders","4","Not  Applicable","Not  Applicable","Not  Applicable"
-5,12,1970-09-17,1970-09-17,1970-10-23,1970-11-07,"Anemia","Blood and lymphatic system disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-5,12,1970-09-17,1970-09-17,1970-10-24,1970-10-29,"Hyponatremia","Metabolism and nutrition disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-5,12,1970-09-17,1970-09-17,1970-10-28,1970-12-09,"Blood bilirubin increased","Investigations","3","Not  Applicable","Not  Applicable","Not  Applicable"
-5,13,1970-10-10,NA,NA,NA,NA,NA,NA,NA,NA,NA
-5,NA,1970-12-09,1970-12-09,1970-12-09,1971-01-06,"Thromboembolic event","Vascular disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-5,NA,1970-12-09,1970-12-09,1970-12-09,1970-12-23,"Lung infection","Infections and infestations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-5,NA,1970-12-09,1970-12-09,1970-12-09,1971-06-10,"Anemia","Blood and lymphatic system disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-5,NA,1970-12-09,1970-12-09,1970-12-30,1971-01-02,"Dysphagia","Gastrointestinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-5,NA,1970-12-09,1970-12-09,1970-12-30,1971-01-02,"Fever","General disorders and administration site conditions","2","Not  Applicable","Not  Applicable","Not  Applicable"
-25,1,1970-01-01,1970-01-01,1970-01-22,1970-01-28,"Fatigue","General disorders and administration site conditions","2","Not  Applicable","Vorinostat","Not  Applicable"
-25,1,1970-01-01,1970-01-01,1970-01-28,1970-03-22,"Confusion","Psychiatric disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-25,1,1970-01-01,1970-01-01,1970-01-28,1970-03-22,"Pruritus","Skin and subcutaneous tissue disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-25,2,1970-01-28,1970-01-28,1970-02-14,1970-03-22,"Constipation","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-33,1,1970-01-01,1970-01-01,1970-01-25,1970-08-13,"Dysgeusia","Nervous system disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-33,1,1970-01-01,1970-01-01,1970-01-04,1970-02-18,"Anorexia","Metabolism and nutrition disorders","2","Vorinostat; Pembrolizumab","Not  Applicable","Not  Applicable"
-33,1,1970-01-01,1970-01-01,1970-01-09,1970-01-25,"Dry eye","Eye disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-33,1,1970-01-01,1970-01-01,1970-01-09,1970-08-13,"Dry mouth","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-33,2,1970-01-25,1970-01-25,1970-02-18,1970-06-10,"Chills","General disorders and administration site conditions","1","Not  Applicable","Pembrolizumab","Not  Applicable"
-33,2,1970-01-25,1970-01-25,1970-02-18,1970-06-10,"Fever","General disorders and administration site conditions","1","Not  Applicable","Pembrolizumab","Not  Applicable"
-33,3,1970-02-18,1970-02-18,1970-03-18,1970-12-02,"Hypothyroidism","Endocrine disorders","2","Not  Applicable","Pembrolizumab","Not  Applicable"
-33,4,1970-03-18,NA,NA,NA,NA,NA,NA,NA,NA,NA
-33,5,1970-04-08,1970-04-08,1970-04-22,1970-05-17,"Anorexia","Metabolism and nutrition disorders","2","Vorinostat","Not  Applicable","Not  Applicable"
-33,5,1970-04-08,1970-04-08,1970-04-29,1970-05-17,"Infections and infestations - Other, specify","Infections and infestations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-33,5,1970-04-08,1970-04-08,1970-04-29,1970-07-01,"Creatinine increased","Investigations","1","Vorinostat","Not  Applicable","Not  Applicable"
-33,6,1970-04-29,NA,NA,NA,NA,NA,NA,NA,NA,NA
-33,7,1970-05-17,1970-05-17,1970-05-27,1970-07-01,"Dyspnea","Respiratory, thoracic and mediastinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-33,7,1970-05-17,1970-05-17,1970-06-01,1970-07-01,"Fatigue","General disorders and administration site conditions","2","Vorinostat","Not  Applicable","Not  Applicable"
-33,7,1970-05-17,1970-05-17,1970-06-10,1970-07-01,"Hyperkalemia","Metabolism and nutrition disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-33,7,1970-05-17,1970-05-17,1970-06-10,1970-07-01,"Hyponatremia","Metabolism and nutrition disorders","1","Pembrolizumab; Vorinostat","Not  Applicable","Not  Applicable"
-33,8,1970-06-10,1970-06-10,1970-06-22,1970-08-13,"Diarrhea","Gastrointestinal disorders","2","Vorinostat","Not  Applicable","Not  Applicable"
-33,8,1970-06-10,1970-06-10,1970-07-01,1970-07-22,"Hyponatremia","Metabolism and nutrition disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-33,9,1970-07-01,1970-07-01,1970-07-22,1970-09-07,"Anemia","Blood and lymphatic system disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-33,10,1970-07-22,NA,NA,NA,NA,NA,NA,NA,NA,NA
-33,11,1970-08-13,NA,NA,NA,NA,NA,NA,NA,NA,NA
-33,12,1970-09-07,1970-09-07,1970-09-30,1970-12-02,"Back pain","Musculoskeletal and connective tissue disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-33,13,1970-09-30,NA,NA,NA,NA,NA,NA,NA,NA,NA
-33,14,1970-10-21,NA,NA,NA,NA,NA,NA,NA,NA,NA
-33,NA,1970-11-15,1970-11-15,1970-11-20,1970-11-21,"Alanine aminotransferase increased","Investigations","4","Pembrolizumab","Not  Applicable","Not  Applicable"
-33,NA,1970-11-15,1970-11-15,1970-11-20,1970-11-21,"Aspartate aminotransferase increased","Investigations","4","Pembrolizumab","Not  Applicable","Not  Applicable"
-33,NA,1970-11-15,1970-11-15,1970-11-20,1970-11-22,"Creatinine increased","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-33,NA,1970-11-15,1970-11-15,1970-11-22,1970-11-26,"Creatinine increased","Investigations","3","Not  Applicable","Not  Applicable","Not  Applicable"
-33,NA,1970-11-15,1970-11-15,1970-11-21,1970-11-27,"Alanine aminotransferase increased","Investigations","3","Pembrolizumab","Not  Applicable","Not  Applicable"
-33,NA,1970-11-15,1970-11-15,1970-11-21,1970-11-22,"Aspartate aminotransferase increased","Investigations","3","Pembrolizumab","Not  Applicable","Not  Applicable"
-33,NA,1970-11-15,1970-11-15,1970-11-22,1970-11-26,"Aspartate aminotransferase increased","Investigations","1","Pembrolizumab","Not  Applicable","Not  Applicable"
-33,NA,1970-11-15,1970-11-15,1970-11-27,1970-12-02,"Alanine aminotransferase increased","Investigations","1","Pembrolizumab","Not  Applicable","Not  Applicable"
-33,NA,1970-11-15,1970-11-15,1970-11-24,1970-11-30,"Colitis","Gastrointestinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-33,NA,1970-11-15,1970-11-15,1970-11-24,1970-11-30,"Pericardial effusion","Cardiac disorders","4","Not  Applicable","Not  Applicable","Not  Applicable"
-33,NA,1970-11-15,1970-11-15,1970-11-24,1970-11-30,"Pericardial tamponade","Cardiac disorders","4","Not  Applicable","Not  Applicable","Not  Applicable"
-33,NA,1970-11-15,1970-11-15,1970-12-02,1970-12-02,"Death NOS","General disorders and administration site conditions","5","Not  Applicable","Not  Applicable","Not  Applicable"
-29,1,1970-01-01,1970-01-01,1970-01-11,1970-07-07,"Dyspepsia","Gastrointestinal disorders","2","Not  Applicable","Vorinostat","Not  Applicable"
-29,1,1970-01-01,1970-01-01,1970-01-29,1970-02-08,"Creatinine increased","Investigations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-29,2,1970-01-29,1970-01-29,1970-02-09,1970-02-28,"Superior vena cava syndrome","Vascular disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-31,1,1970-01-01,1970-01-01,1970-01-08,1970-04-25,"Anorexia","Metabolism and nutrition disorders","1","Not  Applicable","Vorinostat","Not  Applicable"
-31,1,1970-01-01,1970-01-01,1970-01-09,1970-05-19,"Nausea","Gastrointestinal disorders","2","Not  Applicable","Vorinostat","Not  Applicable"
-31,1,1970-01-01,1970-01-01,1970-01-13,1970-02-14,"Vomiting","Gastrointestinal disorders","1","Not  Applicable","Vorinostat","Not  Applicable"
-31,1,1970-01-01,1970-01-01,1970-01-18,1970-01-19,"Diarrhea","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-31,1,1970-01-01,1970-01-01,1970-01-19,1970-03-14,"Constipation","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-31,1,1970-01-01,1970-01-01,1970-01-21,1970-03-06,"Anemia","Blood and lymphatic system disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-31,1,1970-01-01,1970-01-01,1970-01-21,1970-02-14,"Platelet count decreased","Investigations","1","Vorinostat","Not  Applicable","Not  Applicable"
-31,1,1970-01-01,1970-01-01,1970-01-21,1970-02-14,"Hyponatremia","Metabolism and nutrition disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-31,1,1970-01-01,1970-01-01,1970-01-21,1970-04-04,"Hyperglycemia","Metabolism and nutrition disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-31,2,1970-01-21,NA,NA,NA,NA,NA,NA,NA,NA,NA
-31,3,1970-02-14,1970-02-14,1970-03-06,1970-03-14,"Anemia","Blood and lymphatic system disorders","3","Vorinostat","Not  Applicable","Not  Applicable"
-31,4,1970-03-14,NA,NA,NA,NA,NA,NA,NA,NA,NA
-31,5,1970-04-04,1970-04-04,1970-04-18,1971-02-23,"Stomach pain","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-31,5,1970-04-04,1970-04-04,1970-04-25,1971-02-23,"Anorexia","Metabolism and nutrition disorders","2","Pembrolizumab; Vorinostat","Not  Applicable","Not  Applicable"
-31,6,1970-04-25,1970-04-25,1970-05-19,1971-02-23,"Epistaxis","Respiratory, thoracic and mediastinal disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-31,7,1970-05-19,1970-05-19,1970-06-06,1971-02-23,"Nail loss","Skin and subcutaneous tissue disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-31,8,1970-06-06,1970-06-06,1970-06-17,1971-02-23,"Non-cardiac chest pain","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-31,8,1970-06-06,1970-06-06,1970-06-17,1971-02-23,"Respiratory, thoracic and mediastinal disorders - Other, specify","Respiratory, thoracic and mediastinal disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-31,9,1970-06-27,1970-06-27,1970-07-18,1970-07-25,"Infections and infestations - Other, specify","Infections and infestations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-31,9,1970-06-27,1970-07-25,1970-08-15,1971-02-23,"Respiratory, thoracic and mediastinal disorders - Other, specify","Respiratory, thoracic and mediastinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-31,10,1970-07-25,NA,NA,NA,NA,NA,NA,NA,NA,NA
-31,NA,1970-08-15,NA,NA,NA,NA,NA,NA,NA,NA,NA
-12,1,1970-01-01,1970-01-01,1970-01-22,1972-02-04,"Fatigue","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-12,1,1970-01-01,1970-01-01,1970-01-14,1972-02-04,"Vomiting","Gastrointestinal disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-12,1,1970-01-01,1970-01-01,1970-01-14,1972-02-04,"Anorexia","Metabolism and nutrition disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-12,1,1970-01-01,1970-01-01,1970-01-14,1972-02-04,"Dry skin","Skin and subcutaneous tissue disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-12,2,1970-01-23,1970-01-23,1970-01-29,1970-01-31,"Dizziness","Nervous system disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-12,2,1970-01-23,1970-01-23,1970-02-10,1972-02-04,"Dry mouth","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-12,2,1970-01-23,1970-01-23,1970-02-14,1970-03-28,"Platelet count decreased","Investigations","1","Not  Applicable","Not  Applicable","Vorinostat"
-12,2,1970-01-23,1970-01-23,1970-02-14,1970-05-02,"Anemia","Blood and lymphatic system disorders","1","Not  Applicable","Not  Applicable","Vorinostat"
-12,3,1970-02-14,1970-02-14,1970-02-20,1972-02-04,"Anxiety","Psychiatric disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-12,4,1970-03-07,1970-03-07,1970-03-26,1971-08-08,"Dysgeusia","Nervous system disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-12,5,1970-03-28,1970-03-28,1970-03-28,1970-05-02,"Bronchopulmonary hemorrhage","Respiratory, thoracic and mediastinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-12,5,1970-03-28,1970-03-28,1970-03-28,1970-05-02,"Nausea","Gastrointestinal disorders","2","Not  Applicable","Not  Applicable","Vorinostat"
-12,5,1970-03-28,1970-03-28,1970-04-24,1970-04-25,"Edema limbs","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-12,5,1970-03-28,1970-03-28,1970-05-02,1970-12-30,"Alopecia","Skin and subcutaneous tissue disorders","1","Not  Applicable","Vorinostat","Not  Applicable"
-12,6,1970-05-02,1970-05-02,1970-05-23,1972-02-04,"Neuralgia","Nervous system disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-12,7,1970-05-23,1970-05-23,1970-06-11,1970-07-04,"Flu like symptoms","General disorders and administration site conditions","2","Not  Applicable","Not  Applicable","Not  Applicable"
-12,7,1970-05-23,1970-05-23,1970-06-13,1970-07-04,"Anemia","Blood and lymphatic system disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-12,7,1970-05-23,1970-05-23,1970-06-13,1970-07-04,"Alkaline phosphatase increased","Investigations","2","Vorinostat","Not  Applicable","Not  Applicable"
-12,7,1970-05-23,1970-05-23,1970-06-13,1970-07-04,"Alanine aminotransferase increased","Investigations","1","Vorinostat","Not  Applicable","Not  Applicable"
-12,7,1970-05-23,1970-05-23,1970-06-13,1970-07-04,"Aspartate aminotransferase increased","Investigations","1","Vorinostat","Not  Applicable","Not  Applicable"
-12,8,1970-06-13,1970-06-13,1970-07-04,1970-08-15,"Anemia","Blood and lymphatic system disorders","2","Vorinostat","Not  Applicable","Not  Applicable"
-12,9,1970-07-04,1970-07-04,1970-07-25,1972-02-04,"Weight loss","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-12,10,1970-07-25,1970-07-25,1970-08-15,1970-09-09,"Anemia","Blood and lymphatic system disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-12,11,1970-08-15,1970-08-15,1970-09-09,1972-02-04,"Pain","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-12,12,1970-09-09,NA,NA,NA,NA,NA,NA,NA,NA,NA
-12,13,1970-10-03,1970-10-03,1970-10-06,1970-10-11,"Diarrhea","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-12,14,1970-10-24,1970-10-24,1970-11-04,1970-11-11,"Flu like symptoms","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-12,15,1970-11-18,NA,NA,NA,NA,NA,NA,NA,NA,NA
-12,16,1970-12-09,NA,NA,NA,NA,NA,NA,NA,NA,NA
-12,17,1970-12-30,1970-12-30,1971-01-16,1971-01-17,"Dizziness","Nervous system disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-12,17,1970-12-30,1970-12-30,1971-01-16,1971-01-17,"Presyncope","Nervous system disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-12,18,1971-01-20,NA,NA,NA,NA,NA,NA,NA,NA,NA
-12,19,1971-02-10,NA,NA,NA,NA,NA,NA,NA,NA,NA
-12,20,1971-03-03,NA,NA,NA,NA,NA,NA,NA,NA,NA
-12,21,1971-03-24,NA,NA,NA,NA,NA,NA,NA,NA,NA
-12,22,1971-04-16,NA,NA,NA,NA,NA,NA,NA,NA,NA
-12,23,1971-05-12,NA,NA,NA,NA,NA,NA,NA,NA,NA
-12,24,1971-06-02,NA,NA,NA,NA,NA,NA,NA,NA,NA
-12,25,1971-06-23,1971-06-23,1971-07-07,1971-07-26,"Productive cough","Respiratory, thoracic and mediastinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-12,25,1971-06-23,1971-06-23,1971-07-07,1972-02-04,"Dyspnea","Respiratory, thoracic and mediastinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-12,26,1971-07-14,1971-07-14,1971-07-27,1971-07-29,"Diarrhea","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-12,26,1971-07-14,1971-07-14,1971-07-28,1971-08-04,"Lung infection","Infections and infestations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-12,26,1971-07-14,1971-07-14,1971-07-30,1971-07-30,"Fever","General disorders and administration site conditions","2","Not  Applicable","Not  Applicable","Not  Applicable"
-12,26,1971-07-14,1971-07-14,1971-08-04,1971-08-04,"Fever","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-12,26,1971-07-14,1971-07-14,1971-08-08,1972-02-04,"Dysgeusia","Nervous system disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-12,26,1971-07-14,1971-07-14,1971-08-04,1971-08-11,"Lung infection","Infections and infestations","3","Not  Applicable","Not  Applicable","Not  Applicable"
-12,26,1971-07-14,1971-07-14,1971-08-08,1971-08-25,"Alanine aminotransferase increased","Investigations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-12,26,1971-07-14,1971-07-14,1971-08-08,1971-08-25,"Aspartate aminotransferase increased","Investigations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-12,26,1971-07-14,1971-07-14,1971-08-13,1971-08-25,"Wheezing","Respiratory, thoracic and mediastinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-12,26,1971-07-14,1971-07-14,1971-08-13,1971-08-25,"Productive cough","Respiratory, thoracic and mediastinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-12,26,1971-07-14,1971-07-14,1971-08-25,1972-02-04,"Esophageal pain","Gastrointestinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-12,27,1971-08-25,NA,NA,NA,NA,NA,NA,NA,NA,NA
-12,28,1971-09-30,1971-09-30,1971-10-16,1971-10-26,"Lung infection","Infections and infestations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-12,28,1971-09-30,1971-09-30,1971-10-16,1971-10-26,"Dyspnea","Respiratory, thoracic and mediastinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-12,29,1971-11-11,NA,NA,NA,NA,NA,NA,NA,NA,NA
-12,30,1971-12-02,1971-12-02,1971-12-07,1971-12-10,"Lung infection","Infections and infestations","3","Not  Applicable","Not  Applicable","Not  Applicable"
-12,30,1971-12-02,1971-12-02,1971-12-07,1971-12-10,"General disorders and administration site conditions - Other, specify","General disorders and administration site conditions","2","Not  Applicable","Not  Applicable","Not  Applicable"
-9,1,1970-01-01,1970-01-01,1970-01-03,1970-01-22,"Diarrhea","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-9,1,1970-01-01,1970-01-01,1970-01-09,1970-04-18,"Alopecia","Skin and subcutaneous tissue disorders","1","Not  Applicable","Vorinostat","Not  Applicable"
-9,1,1970-01-01,1970-01-01,1970-01-09,1970-03-14,"Anorexia","Metabolism and nutrition disorders","1","Not  Applicable","Not  Applicable","Vorinostat"
-9,1,1970-01-01,1970-01-01,1970-01-22,1970-01-23,"Fever","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-9,1,1970-01-01,1970-01-01,1970-01-24,1970-03-14,"Infections and infestations - Other, specify","Infections and infestations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-9,1,1970-01-01,1970-01-01,1970-01-27,1970-02-03,"Creatinine increased","Investigations","2","Not  Applicable","Not  Applicable","Not  Applicable"
-9,1,1970-01-01,1970-01-01,1970-01-27,1970-02-03,"Anemia","Blood and lymphatic system disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-9,1,1970-01-01,1970-01-01,1970-01-27,1970-02-03,"Platelet count decreased","Investigations","1","Not  Applicable","Vorinostat","Not  Applicable"
-9,1,1970-01-01,1970-01-01,1970-01-27,1970-02-24,"Hypermagnesemia","Metabolism and nutrition disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-9,1,1970-01-01,1970-01-01,1970-01-05,1971-09-14,"Pain","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-9,1,1970-01-01,1970-01-01,1970-01-05,1971-09-14,"Dry eye","Eye disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-9,1,1970-01-01,1970-01-01,1970-01-22,1970-01-27,"Respiratory, thoracic and mediastinal disorders - Other, specify","Respiratory, thoracic and mediastinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-9,2,1970-01-27,1970-02-03,1970-02-06,1970-02-11,"Cough","Respiratory, thoracic and mediastinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-9,2,1970-01-27,1970-02-03,1970-02-06,1971-09-14,"Pain","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-9,2,1970-01-27,1970-02-03,1970-02-24,1970-03-11,"Creatinine increased","Investigations","2","Vorinostat","Not  Applicable","Not  Applicable"
-9,2,1970-01-27,1970-02-03,1970-02-03,1970-02-05,"Diarrhea","Gastrointestinal disorders","1","Pembrolizumab","Not  Applicable","Not  Applicable"
-9,3,1970-03-14,1970-03-14,1970-04-04,1970-04-18,"Creatinine increased","Investigations","2","Vorinostat","Not  Applicable","Not  Applicable"
-9,3,1970-03-14,1970-03-14,1970-04-18,1971-09-14,"Alopecia","Skin and subcutaneous tissue disorders","2","Not  Applicable","Not  Applicable","Vorinostat"
-9,4,1970-04-18,1970-04-18,1970-05-12,1970-05-19,"Sinusitis","Infections and infestations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-9,4,1970-04-18,1970-04-18,1970-05-29,1970-10-06,"Anemia","Blood and lymphatic system disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-9,5,1970-05-30,1970-05-29,1970-06-20,1971-09-14,"Nausea","Gastrointestinal disorders","1","Not  Applicable","Vorinostat","Not  Applicable"
-9,6,1970-06-20,1970-06-20,1970-06-20,1971-09-14,"Dry mouth","Gastrointestinal disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-9,6,1970-06-20,1970-06-20,1970-07-11,1970-08-04,"Hyponatremia","Metabolism and nutrition disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-9,7,1970-07-14,1970-07-14,1970-08-04,1970-08-25,"Hyponatremia","Metabolism and nutrition disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-9,8,1970-08-04,1970-08-04,1970-08-25,1971-09-14,"Pain","General disorders and administration site conditions","2","Not  Applicable","Not  Applicable","Not  Applicable"
-9,9,1970-08-25,NA,NA,NA,NA,NA,NA,NA,NA,NA
-9,10,1970-09-15,1970-09-15,1970-09-22,1971-09-14,"Gastroesophageal reflux disease","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-9,10,1970-09-15,1970-09-15,1970-09-24,1971-09-14,"Skin and subcutaneous tissue disorders - Other, specify","Skin and subcutaneous tissue disorders","1","Not  Applicable","Vorinostat","Not  Applicable"
-9,11,1970-10-06,NA,NA,NA,NA,NA,NA,NA,NA,NA
-9,12,1970-10-27,1970-10-27,1970-11-17,1971-09-14,"Thromboembolic event","Vascular disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-9,13,1970-11-17,1970-11-17,1970-12-02,1970-12-11,"Pleural effusion","Respiratory, thoracic and mediastinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-9,13,1970-11-17,1970-11-17,1970-12-02,1970-12-11,"Atrial fibrillation","Cardiac disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-23,1,1970-01-01,1970-01-01,1970-02-06,1970-03-13,"Vomiting","Gastrointestinal disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-23,1,1970-01-01,1970-01-01,1970-01-01,1970-05-26,"Anorexia","Metabolism and nutrition disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-23,1,1970-01-01,1970-01-01,1970-01-22,1970-05-26,"Weight loss","Investigations","2","Vorinostat","Not  Applicable","Not  Applicable"
-23,1,1970-01-01,1970-01-01,1970-01-24,1970-01-27,"Platelet count decreased","Investigations","2","Not  Applicable","Not  Applicable","Vorinostat"
-23,1,1970-01-01,1970-01-01,1970-01-24,1970-04-11,"Creatinine increased","Investigations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-23,2,1970-01-24,1970-01-30,1970-02-19,1970-02-19,"Pain in extremity","Musculoskeletal and connective tissue disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-23,2,1970-01-24,1970-01-30,1970-02-20,1970-05-26,"Thromboembolic event","Vascular disorders","3","Vorinostat","Not  Applicable","Not  Applicable"
-23,3,1970-02-20,NA,NA,NA,NA,NA,NA,NA,NA,NA
-23,4,1970-03-13,NA,NA,NA,NA,NA,NA,NA,NA,NA
-23,NA,1970-04-07,1970-04-07,1970-04-11,1970-05-26,"Pain","General disorders and administration site conditions","2","Not  Applicable","Not  Applicable","Not  Applicable"
-30,1,1970-01-01,1970-01-01,1970-01-06,1970-03-11,"Nausea","Gastrointestinal disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-30,1,1970-01-01,1970-01-01,1970-01-09,1970-11-15,"Constipation","Gastrointestinal disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-30,2,1970-01-28,NA,NA,NA,NA,NA,NA,NA,NA,NA
-30,3,1970-02-18,1970-02-18,1970-02-21,1970-04-01,"Vomiting","Gastrointestinal disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-30,3,1970-02-18,1970-02-18,1970-03-11,1970-04-01,"Nausea","Gastrointestinal disorders","2","Vorinostat","Not  Applicable","Not  Applicable"
-30,3,1970-02-18,1970-02-18,1970-03-11,1970-06-04,"Fatigue","General disorders and administration site conditions","2","Vorinostat; Pembrolizumab","Not  Applicable","Not  Applicable"
-30,3,1970-02-18,1970-02-18,1970-03-11,1970-04-22,"Weight loss","Investigations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-30,4,1970-03-11,NA,NA,NA,NA,NA,NA,NA,NA,NA
-30,5,1970-04-01,1970-04-01,1970-04-22,1970-05-20,"Weight loss","Investigations","2","Pembrolizumab; Vorinostat","Not  Applicable","Not  Applicable"
-30,5,1970-04-01,1970-04-01,1970-04-22,1970-06-04,"Aspartate aminotransferase increased","Investigations","1","Pembrolizumab","Not  Applicable","Not  Applicable"
-30,5,1970-04-01,1970-04-01,1970-04-22,1970-06-04,"Alanine aminotransferase increased","Investigations","1","Pembrolizumab","Not  Applicable","Not  Applicable"
-30,6,1970-04-22,1970-04-22,1970-05-19,1970-06-04,"Non-cardiac chest pain","General disorders and administration site conditions","2","Not  Applicable","Not  Applicable","Not  Applicable"
-30,6,1970-04-22,1970-04-22,1970-05-20,1970-06-04,"Dysgeusia","Nervous system disorders","1","Not  Applicable","Vorinostat","Not  Applicable"
-30,NA,1970-05-20,1970-05-20,1970-05-20,1970-06-04,"Weight loss","Investigations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-15,1,1970-01-01,1970-01-01,1970-01-03,1970-03-01,"Fatigue","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-15,1,1970-01-01,1970-01-01,1970-01-03,1970-07-22,"Dyspnea","Respiratory, thoracic and mediastinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-15,1,1970-01-01,1970-01-01,1970-01-03,1970-02-05,"Edema limbs","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-15,1,1970-01-01,1970-01-01,1970-01-03,1970-07-22,"Dysphagia","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-15,1,1970-01-01,1970-01-01,1970-01-03,1970-03-01,"Nausea","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Vorinostat"
-15,1,1970-01-01,1970-01-01,1970-01-03,1970-07-22,"Hearing impaired","Ear and labyrinth disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-15,1,1970-01-01,1970-01-01,1970-01-03,1970-07-22,"Constipation","Gastrointestinal disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-15,1,1970-01-01,1970-01-01,1970-01-03,1970-07-22,"Pain","General disorders and administration site conditions","1","Not  Applicable","Not  Applicable","Not  Applicable"
-15,1,1970-01-01,1970-01-01,1970-02-05,1970-07-22,"Anorexia","Metabolism and nutrition disorders","1","Vorinostat","Not  Applicable","Not  Applicable"
-15,2,1970-02-05,1970-02-05,1970-02-27,1970-07-22,"Vomiting","Gastrointestinal disorders","2","Not  Applicable","Not  Applicable","Vorinostat"
-15,2,1970-02-05,1970-02-05,1970-03-01,1970-07-22,"Nausea","Gastrointestinal disorders","2","Not  Applicable","Not  Applicable","Vorinostat"
-15,2,1970-02-05,1970-02-05,1970-03-01,1970-07-22,"Fatigue","General disorders and administration site conditions","2","Pembrolizumab; Vorinostat","Not  Applicable","Not  Applicable"
-15,2,1970-02-05,1970-02-05,1970-03-01,1970-07-22,"Weight loss","Investigations","1","Not  Applicable","Not  Applicable","Not  Applicable"
-15,2,1970-02-05,1970-02-05,1970-03-08,1970-03-12,"Dehydration","Metabolism and nutrition disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-15,2,1970-02-05,1970-02-05,1970-03-08,1970-03-12,"Dyspnea","Respiratory, thoracic and mediastinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-15,2,1970-02-05,1970-02-05,1970-03-21,1970-03-27,"Bronchopulmonary hemorrhage","Respiratory, thoracic and mediastinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-15,2,1970-02-05,1970-02-05,1970-03-21,1970-03-28,"Hyponatremia","Metabolism and nutrition disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-15,2,1970-02-05,1970-02-05,1970-02-18,1970-03-29,"Generalized muscle weakness","Musculoskeletal and connective tissue disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-15,3,1970-03-01,1970-03-01,1970-03-08,1970-03-12,"Dehydration","Metabolism and nutrition disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-15,3,1970-03-01,1970-03-01,1970-03-08,1970-03-12,"Dyspnea","Respiratory, thoracic and mediastinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-15,3,1970-03-01,1970-03-01,1970-03-21,1970-03-27,"Bronchopulmonary hemorrhage","Respiratory, thoracic and mediastinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-15,3,1970-03-01,1970-03-01,1970-03-21,1970-03-27,"Hyponatremia","Metabolism and nutrition disorders","1","Not  Applicable","Not  Applicable","Not  Applicable"
-15,3,1970-03-01,1970-03-01,1970-03-21,1970-03-27,"Generalized muscle weakness","Musculoskeletal and connective tissue disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-20,1,1970-01-01,1970-01-01,1970-01-13,1970-01-28,"Lung infection","Infections and infestations","3","Not  Applicable","Not  Applicable","Not  Applicable"
-20,1,1970-01-01,1970-01-01,1970-01-13,1970-02-10,"Back pain","Musculoskeletal and connective tissue disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-20,1,1970-01-01,1970-01-01,1970-01-13,1970-02-10,"Pleural effusion","Respiratory, thoracic and mediastinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-20,1,1970-01-01,1970-01-01,1970-01-21,1970-02-10,"Pneumothorax","Respiratory, thoracic and mediastinal disorders","2","Not  Applicable","Not  Applicable","Not  Applicable"
-20,1,1970-01-01,1970-01-01,1970-01-13,1970-02-10,"Atelectasis","Respiratory, thoracic and mediastinal disorders","3","Not  Applicable","Not  Applicable","Not  Applicable"
-20,1,1970-01-01,1970-01-01,1970-01-31,1970-02-10,"Death NOS","General disorders and administration site conditions","5","Not  Applicable","Not  Applicable","Not  Applicable"
-6,1,1970-01-01,1970-01-01,1970-01-11,1970-01-13,"Pain","General disorders and administration site conditions","2","Not  Applicable","Not  Applicable","Not  Applicable"
-6,2,1970-01-22,1970-01-22,1970-01-23,1970-01-26,"Localized edema","General disorders and administration site conditions","3","Not  Applicable","Not  Applicable","Not  Applicable"
-6,NA,1970-01-25,NA,NA,NA,NA,NA,NA,NA,NA,NA
+sequence_no,cycle,visit_date,start_date_of_course,onset_date,resolved_date,cdus_ctcae_toxicity_type_code,toxicity_category,grade,attribution_possible,attribution_probable,attribution_definite
+2,1,1/1/1970,1/1/1970,1/7/1970,1/22/1970,Pain,General disorders and administration site conditions,2,Not  Applicable,Not  Applicable,Not  Applicable
+2,1,1/1/1970,1/1/1970,1/19/1970,1/22/1970,Dry mouth,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+2,1,1/1/1970,1/1/1970,1/19/1970,3/26/1970,Productive cough,"Respiratory, thoracic and mediastinal disorders",1,Not  Applicable,Not  Applicable,Not  Applicable
+2,2,1/22/1970,1/22/1970,1/22/1970,3/1/1970,Pain,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+2,3,2/12/1970,2/12/1970,2/12/1970,2/12/1970,Vomiting,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+2,4,3/1/1970,3/1/1970,3/1/1970,3/18/1970,Hypotension,Vascular disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+2,4,3/1/1970,3/1/1970,3/1/1970,9/21/1970,Chest wall pain,Musculoskeletal and connective tissue disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+2,4,3/1/1970,3/1/1970,3/1/1970,4/23/1970,Lung infection,Infections and infestations,2,Not  Applicable,Not  Applicable,Not  Applicable
+2,4,3/1/1970,3/1/1970,3/1/1970,3/18/1970,Alkaline phosphatase increased,Investigations,3,Not  Applicable,Not  Applicable,Not  Applicable
+2,4,3/1/1970,3/1/1970,3/16/1970,3/17/1970,Anemia,Blood and lymphatic system disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+2,4,3/1/1970,3/1/1970,3/16/1970,3/19/1970,Hyperkalemia,Metabolism and nutrition disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+2,4,3/1/1970,3/1/1970,3/17/1970,3/26/1970,Thromboembolic event,Vascular disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+2,4,3/1/1970,3/1/1970,3/21/1970,3/26/1970,Edema limbs,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+2,NA,3/26/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+19,1,1/1/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+19,2,1/22/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+19,3,2/11/1970,2/11/1970,2/25/1970,3/25/1970,Abdominal pain,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+19,3,2/11/1970,2/11/1970,3/4/1970,6/3/1970,Weight loss,Investigations,1,Immunotherapy; Target therapy,Not  Applicable,Not  Applicable
+19,3,2/11/1970,2/11/1970,2/11/1970,8/17/1970,Anorexia,Metabolism and nutrition disorders,2,Immunotherapy,Not  Applicable,Target therapy
+19,3,2/11/1970,2/11/1970,2/24/1970,2/24/1970,Vomiting,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+19,3,2/11/1970,2/11/1970,2/24/1970,2/24/1970,Nausea,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+19,3,2/11/1970,2/11/1970,2/11/1970,4/15/1970,Dysgeusia,Nervous system disorders,1,Not  Applicable,Not  Applicable,Target therapy
+19,4,3/4/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+19,5,3/25/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+19,6,4/16/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+19,NA,5/6/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+19,NA,6/3/1970,6/3/1970,6/3/1970,8/17/1970,Weight loss,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/5/1970,4/4/1970,Tremor,Nervous system disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/5/1970,4/4/1970,Gait disturbance,General disorders and administration site conditions,2,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/14/1970,1/16/1970,Constipation,Gastrointestinal disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/17/1970,1/26/1970,Constipation,Gastrointestinal disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/17/1970,1/26/1970,Pain,General disorders and administration site conditions,3,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/17/1970,4/4/1970,Weight loss,Investigations,1,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/17/1970,4/4/1970,Anorexia,Metabolism and nutrition disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/19/1970,1/20/1970,Dyspnea,"Respiratory, thoracic and mediastinal disorders",1,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/19/1970,1/28/1970,Cough,"Respiratory, thoracic and mediastinal disorders",1,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/19/1970,1/19/1970,Hypotension,Vascular disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/26/1970,4/4/1970,Dysphagia,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/28/1970,1/29/1970,Nausea,Gastrointestinal disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/28/1970,1/29/1970,Vomiting,Gastrointestinal disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/27/1970,1/28/1970,Constipation,Gastrointestinal disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/28/1970,2/1/1970,Arthralgia,Musculoskeletal and connective tissue disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/28/1970,2/1/1970,Myalgia,Musculoskeletal and connective tissue disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/29/1970,2/2/1970,Nausea,Gastrointestinal disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/29/1970,2/2/1970,Vomiting,Gastrointestinal disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/29/1970,2/2/1970,Pain,General disorders and administration site conditions,3,Not  Applicable,Not  Applicable,Not  Applicable
+10,1,1/1/1970,1/1/1970,1/17/1970,1/17/1970,Vomiting,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+10,NA,2/12/1970,1/1/1970,1/28/1970,2/1/1970,Arthralgia,Musculoskeletal and connective tissue disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+10,NA,2/12/1970,1/1/1970,1/28/1970,2/1/1970,Myalgia,Musculoskeletal and connective tissue disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+10,NA,2/12/1970,1/1/1970,1/29/1970,2/2/1970,Nausea,Gastrointestinal disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+10,NA,2/12/1970,1/1/1970,1/29/1970,2/2/1970,Vomiting,Gastrointestinal disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+10,NA,2/12/1970,1/1/1970,1/29/1970,2/2/1970,Pain,General disorders and administration site conditions,3,Not  Applicable,Not  Applicable,Not  Applicable
+10,NA,2/26/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+18,1,1/1/1970,1/1/1970,1/22/1970,4/24/1970,Anorexia,Metabolism and nutrition disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+18,2,1/22/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+18,NA,2/12/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+18,NA,2/12/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+14,1,1/1/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+14,2,1/21/1970,1/1/1970,1/21/1970,3/10/1970,Creatinine increased,Investigations,1,Not  Applicable,Not  Applicable,Not  Applicable
+14,3,2/10/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+14,4,3/3/1970,2/10/1970,3/3/1970,4/7/1970,Anemia,Blood and lymphatic system disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+14,4,3/3/1970,2/10/1970,3/3/1970,3/10/1970,Blood bilirubin increased,Investigations,1,Not  Applicable,Target therapy,Not  Applicable
+14,4,3/3/1970,2/10/1970,3/3/1970,3/10/1970,Hypermagnesemia,Metabolism and nutrition disorders,1,Not  Applicable,Immunotherapy; Target therapy,Not  Applicable
+14,4,3/3/1970,2/10/1970,3/3/1970,3/10/1970,Hyponatremia,Metabolism and nutrition disorders,1,Not  Applicable,Immunotherapy; Target therapy,Not  Applicable
+14,4,3/3/1970,2/10/1970,3/3/1970,8/12/1970,Fatigue,General disorders and administration site conditions,1,Not  Applicable,Immunotherapy; Target therapy,Not  Applicable
+14,NA,4/7/1970,4/7/1970,4/7/1970,8/12/1970,Dysgeusia,Nervous system disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+26,1,1/1/1970,1/1/1970,1/1/1970,2/26/1970,Fatigue,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+26,2,1/21/1970,1/21/1970,1/27/1970,1/30/1970,Diarrhea,Gastrointestinal disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+26,3,2/13/1970,2/13/1970,2/13/1970,8/13/1970,Creatinine increased,Investigations,1,Not  Applicable,Not  Applicable,Not  Applicable
+26,3,2/13/1970,2/13/1970,3/2/1970,8/13/1970,Dyspnea,"Respiratory, thoracic and mediastinal disorders",2,Not  Applicable,Not  Applicable,Not  Applicable
+26,3,2/13/1970,2/13/1970,2/26/1970,8/13/1970,Fatigue,General disorders and administration site conditions,2,Target therapy; Immunotherapy,Not  Applicable,Not  Applicable
+13,1,1/1/1970,1/1/1970,1/3/1970,1/6/1970,Fever,General disorders and administration site conditions,3,Not  Applicable,Not  Applicable,Not  Applicable
+13,1,1/1/1970,1/1/1970,1/22/1970,3/24/1970,Fracture,"Injury, poisoning and procedural complications",2,Not  Applicable,Not  Applicable,Not  Applicable
+13,1,1/1/1970,1/1/1970,1/26/1970,1/27/1970,Fever,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+13,1,1/1/1970,1/1/1970,1/27/1970,3/3/1970,Confusion,Psychiatric disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+13,1,1/1/1970,1/1/1970,1/27/1970,1/31/1970,Hypernatremia,Metabolism and nutrition disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+13,1,1/1/1970,1/1/1970,1/28/1970,1/30/1970,Hypoxia,"Respiratory, thoracic and mediastinal disorders",3,Not  Applicable,Not  Applicable,Not  Applicable
+13,1,1/1/1970,1/1/1970,1/28/1970,1/30/1970,Tremor,Nervous system disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+13,1,1/1/1970,1/1/1970,1/28/1970,2/7/1970,Bronchial infection,Infections and infestations,3,Not  Applicable,Not  Applicable,Not  Applicable
+13,1,1/1/1970,1/1/1970,1/28/1970,1/30/1970,Encephalopathy,Nervous system disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+13,1,1/1/1970,1/1/1970,1/30/1970,2/1/1970,Urinary retention,Renal and urinary disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+13,1,1/1/1970,1/1/1970,1/27/1970,3/3/1970,Back pain,Musculoskeletal and connective tissue disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+13,1,1/1/1970,1/1/1970,1/3/1970,1/6/1970,Hypotension,Vascular disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+13,2,2/10/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+13,NA,3/3/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+17,1,1/1/1970,1/1/1970,1/12/1970,11/1/1970,Hypokalemia,Metabolism and nutrition disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+17,1,1/1/1970,1/1/1970,1/12/1970,1/22/1970,Bronchial infection,Infections and infestations,2,Not  Applicable,Not  Applicable,Not  Applicable
+17,1,1/1/1970,1/27/1970,1/27/1970,11/1/1970,Dyspnea,"Respiratory, thoracic and mediastinal disorders",1,Not  Applicable,Not  Applicable,Not  Applicable
+17,1,1/1/1970,1/1/1970,1/12/1970,11/1/1970,Anemia,Blood and lymphatic system disorders,1,Target therapy,Not  Applicable,Not  Applicable
+17,2,1/27/1970,1/27/1970,2/16/1970,2/21/1970,Bronchial infection,Infections and infestations,3,Not  Applicable,Not  Applicable,Not  Applicable
+17,2,1/27/1970,1/27/1970,2/16/1970,2/21/1970,Fever,General disorders and administration site conditions,2,Not  Applicable,Not  Applicable,Not  Applicable
+17,2,1/27/1970,1/27/1970,2/17/1970,2/20/1970,Anemia,Blood and lymphatic system disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+17,2,1/27/1970,1/27/1970,2/17/1970,2/24/1970,Creatinine increased,Investigations,1,Not  Applicable,Not  Applicable,Not  Applicable
+17,2,1/27/1970,1/27/1970,2/17/1970,4/2/1970,Platelet count decreased,Investigations,2,Not  Applicable,Not  Applicable,Target therapy
+17,2,1/27/1970,1/27/1970,2/24/1970,2/28/1970,Thromboembolic event,Vascular disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+17,2,1/27/1970,1/27/1970,2/4/1970,11/1/1970,"Respiratory, thoracic and mediastinal disorders - Other, specify","Respiratory, thoracic and mediastinal disorders",2,Not  Applicable,Not  Applicable,Not  Applicable
+17,NA,2/24/1970,2/20/1970,2/26/1970,11/1/1970,Anemia,Blood and lymphatic system disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+17,NA,4/2/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1,1,1/1/1970,1/1/1970,1/12/1970,3/20/1970,Fatigue,General disorders and administration site conditions,1,Not  Applicable,Target therapy; Immunotherapy,Not  Applicable
+1,2,1/28/1970,1/28/1970,2/21/1970,1/8/1971,Hypothyroidism,Endocrine disorders,2,Not  Applicable,Immunotherapy,Not  Applicable
+1,3,2/21/1970,2/21/1970,3/20/1970,5/9/1970,Cough,"Respiratory, thoracic and mediastinal disorders",1,Immunotherapy,Not  Applicable,Not  Applicable
+1,3,2/21/1970,2/21/1970,3/20/1970,5/9/1970,Anorexia,Metabolism and nutrition disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+1,3,2/21/1970,2/21/1970,3/20/1970,5/9/1970,Anemia,Blood and lymphatic system disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+1,3,2/21/1970,2/21/1970,3/20/1970,5/9/1970,Fatigue,General disorders and administration site conditions,2,Not  Applicable,Not  Applicable,Not  Applicable
+1,4,3/20/1970,3/20/1970,5/9/1970,1/8/1971,Anemia,Blood and lymphatic system disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+1,4,3/20/1970,3/20/1970,3/31/1970,3/31/1970,Dehydration,Metabolism and nutrition disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+1,5,5/9/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1,6,5/30/1970,5/30/1970,6/23/1970,7/16/1970,Dysgeusia,Nervous system disorders,2,Not  Applicable,Target therapy,Not  Applicable
+1,7,6/23/1970,6/23/1970,7/16/1970,1/8/1971,Pain in extremity,Musculoskeletal and connective tissue disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+1,8,7/16/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1,NA,8/8/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+1,NA,9/5/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21,1,1/1/1970,1/1/1970,1/2/1970,1/22/1971,Diarrhea,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+21,1,1/1/1970,1/1/1970,1/2/1970,1/3/1971,Fatigue,General disorders and administration site conditions,1,Not  Applicable,Immunotherapy; Target therapy,Not  Applicable
+21,2,1/22/1970,1/22/1970,2/16/1970,3/13/1970,Pelvic pain,Reproductive system and breast disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+21,2,1/22/1970,1/22/1970,2/16/1970,4/5/1970,Back pain,Musculoskeletal and connective tissue disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+21,3,2/16/1970,2/12/1970,2/16/1970,11/13/1970,Thromboembolic event,Vascular disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+21,4,3/13/1970,3/13/1970,3/13/1970,4/5/1970,Pain in extremity,Musculoskeletal and connective tissue disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+21,5,4/5/1970,4/3/1970,4/5/1970,5/3/1970,Creatinine increased,Investigations,1,Not  Applicable,Not  Applicable,Not  Applicable
+21,6,5/3/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21,7,5/25/1970,5/24/1970,5/25/1970,7/9/1970,Peripheral sensory neuropathy,Nervous system disorders,1,Not  Applicable,Target therapy,Not  Applicable
+21,7,5/25/1970,5/24/1970,5/25/1970,7/30/1970,Creatinine increased,Investigations,1,Not  Applicable,Not  Applicable,Not  Applicable
+21,8,6/18/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21,9,7/9/1970,7/9/1970,7/9/1970,7/30/1970,Peripheral sensory neuropathy,Nervous system disorders,2,Not  Applicable,Target therapy,Not  Applicable
+21,10,7/30/1970,7/30/1970,7/30/1970,8/23/1970,Peripheral sensory neuropathy,Nervous system disorders,1,Not  Applicable,Target therapy,Not  Applicable
+21,NA,8/23/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+21,NA,9/26/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+16,1,1/1/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+16,2,1/27/1970,1/1/1972,1/27/1970,8/10/1971,Hypothyroidism,Endocrine disorders,2,Immunotherapy,Not  Applicable,Not  Applicable
+16,3,2/21/1970,1/27/1970,2/21/1970,5/14/1970,Creatinine increased,Investigations,1,Not  Applicable,Not  Applicable,Not  Applicable
+16,4,3/19/1970,2/21/1970,3/19/1970,7/23/1970,Constipation,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+16,5,4/14/1970,4/14/1970,4/21/1970,6/10/1970,Myalgia,Musculoskeletal and connective tissue disorders,3,Not  Applicable,Immunotherapy,Not  Applicable
+16,5,4/14/1970,4/14/1970,6/10/1970,7/7/1970,Myalgia,Musculoskeletal and connective tissue disorders,1,Not  Applicable,Immunotherapy,Not  Applicable
+16,6,6/10/1970,6/10/1970,7/7/1970,7/11/1970,Myalgia,Musculoskeletal and connective tissue disorders,3,Not  Applicable,Immunotherapy,Not  Applicable
+16,6,6/10/1970,6/10/1970,6/30/1970,8/10/1971,Pain,General disorders and administration site conditions,2,Not  Applicable,Not  Applicable,Not  Applicable
+16,NA,7/7/1970,7/11/1970,7/23/1970,9/2/1970,Fatigue,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+16,NA,7/7/1970,7/11/1970,7/23/1970,8/7/1970,Weight loss,Investigations,1,Not  Applicable,Not  Applicable,Not  Applicable
+16,NA,8/7/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+4,1,1/1/1970,1/1/1970,1/28/1970,2/24/1970,Creatinine increased,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+4,1,1/1/1970,1/1/1970,1/28/1970,2/24/1970,Fatigue,General disorders and administration site conditions,1,Not  Applicable,Target therapy,Not  Applicable
+4,2,1/28/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+4,3,2/24/1970,2/24/1970,3/17/1970,3/24/1970,Creatinine increased,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+4,3,2/24/1970,2/24/1970,3/24/1970,4/21/1970,Hyponatremia,Metabolism and nutrition disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+4,4,3/24/1970,3/24/1970,4/21/1970,4/28/1970,Creatinine increased,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+4,4,3/24/1970,3/24/1970,4/21/1970,8/4/1970,Fatigue,General disorders and administration site conditions,1,Not  Applicable,Target therapy,Not  Applicable
+4,4,3/24/1970,3/24/1970,4/21/1970,4/29/1970,Diarrhea,Gastrointestinal disorders,1,Not  Applicable,Target therapy,Not  Applicable
+4,5,4/28/1970,4/28/1970,4/29/1970,5/1/1970,Diarrhea,Gastrointestinal disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+4,5,4/28/1970,4/28/1970,4/29/1970,5/1/1970,Flatulence,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+4,5,4/28/1970,4/28/1970,4/29/1970,5/1/1970,Vomiting,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+4,5,4/28/1970,4/28/1970,5/19/1970,5/29/1970,Creatinine increased,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+4,6,5/29/1970,5/29/1970,6/23/1970,7/14/1970,Creatinine increased,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+4,7,7/14/1970,7/14/1970,8/4/1970,8/25/1970,Creatinine increased,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+4,7,7/14/1970,7/14/1970,8/25/1970,10/5/1970,Creatinine increased,Investigations,1,Target therapy,Not  Applicable,Not  Applicable
+4,7,7/14/1970,7/14/1970,8/25/1970,10/6/1970,Fatigue,General disorders and administration site conditions,1,Not  Applicable,Immunotherapy; Target therapy,Not  Applicable
+4,8,8/25/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+4,9,9/15/1970,9/15/1970,9/22/1970,10/6/1970,Upper respiratory infection,Infections and infestations,2,Not  Applicable,Not  Applicable,Not  Applicable
+4,9,9/15/1970,9/15/1970,10/5/1970,11/12/1970,Creatinine increased,Investigations,2,Target therapy; Immunotherapy,Not  Applicable,Not  Applicable
+4,10,11/12/1970,11/12/1970,12/1/1970,12/15/1970,Creatinine increased,Investigations,2,Target therapy,Not  Applicable,Not  Applicable
+4,11,12/15/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+4,12,1/7/1971,1/7/1971,2/2/1971,2/23/1971,Creatinine increased,Investigations,2,Target therapy,Not  Applicable,Not  Applicable
+4,13,2/23/1971,2/23/1971,3/16/1971,4/6/1971,Creatinine increased,Investigations,2,Target therapy,Not  Applicable,Not  Applicable
+4,13,2/23/1971,2/23/1971,4/6/1971,5/4/1971,Hyponatremia,Metabolism and nutrition disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+4,13,2/23/1971,2/23/1971,4/6/1971,6/1/1971,Abdominal pain,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+4,14,4/6/1971,4/6/1971,5/4/1971,6/1/1971,Creatinine increased,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+4,15,6/1/1971,NA,NA,NA,NA,NA,NA,NA,NA,NA
+4,16,6/22/1971,6/22/1971,7/13/1971,10/5/1971,Hyponatremia,Metabolism and nutrition disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+4,16,6/22/1971,6/22/1971,7/1/1971,9/7/1971,Skin infection,Infections and infestations,2,Not  Applicable,Not  Applicable,Not  Applicable
+4,17,7/13/1971,NA,NA,NA,NA,NA,NA,NA,NA,NA
+4,18,8/10/1971,8/10/1971,9/7/1971,10/5/1971,Creatinine increased,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+4,19,10/5/1971,10/5/1971,9/7/1971,10/5/1971,Creatinine increased,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+4,20,10/26/1971,10/26/1971,11/16/1971,12/14/1971,Hyponatremia,Metabolism and nutrition disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+4,21,11/16/1971,11/16/1971,1/4/1972,1/25/1972,Hyponatremia,Metabolism and nutrition disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+4,22,1/4/1972,1/4/1972,1/25/1972,2/22/1972,Creatinine increased,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+4,23,2/22/1972,2/22/1972,3/21/1972,4/11/1972,Creatinine increased,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+4,23,2/22/1972,2/22/1972,4/11/1972,4/29/1972,Hyponatremia,Metabolism and nutrition disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+4,24,4/11/1972,4/11/1972,5/2/1972,10/10/1972,Creatinine increased,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+4,1,10/20/1972,10/20/1972,11/10/1972,12/5/1972,Creatinine increased,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+4,1,10/20/1972,10/20/1972,11/10/1972,12/5/1972,Hypokalemia,Metabolism and nutrition disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+4,NA,10/20/1972,10/20/1972,11/10/1972,12/5/1972,Creatinine increased,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+4,NA,10/20/1972,10/20/1972,11/10/1972,12/5/1972,Hypokalemia,Metabolism and nutrition disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+4,2,12/5/1972,12/5/1972,12/26/1972,9/26/1973,Creatinine increased,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+4,2,12/5/1972,12/5/1972,12/26/1972,1/16/1973,Hypokalemia,Metabolism and nutrition disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+4,3,12/26/1972,12/26/1972,1/16/1973,9/26/1973,Hyperglycemia,Metabolism and nutrition disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+4,4,1/16/1973,1/16/1973,2/4/1973,9/26/1973,"General disorders and administration site conditions - Other, specify",General disorders and administration site conditions,1,Target therapy,Not  Applicable,Not  Applicable
+4,5,2/6/1973,NA,NA,NA,NA,NA,NA,NA,NA,NA
+4,6,3/6/1973,3/6/1973,3/17/1973,3/21/1973,Thromboembolic event,Vascular disorders,4,Not  Applicable,Not  Applicable,Not  Applicable
+4,6,3/6/1973,3/5/1976,3/21/1973,9/26/1973,"Nervous system disorders - Other, specify",Nervous system disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+4,6,3/6/1973,3/6/1973,4/25/1973,5/4/1973,"Nervous system disorders - Other, specify",Nervous system disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+32,1,1/1/1970,1/1/1970,1/5/1970,1/25/1970,Anemia,Blood and lymphatic system disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+32,1,1/1/1970,1/1/1970,1/25/1970,2/27/1970,Anorexia,Metabolism and nutrition disorders,1,Target therapy,Not  Applicable,Not  Applicable
+32,1,1/1/1970,1/1/1970,1/25/1970,2/27/1970,Fatigue,General disorders and administration site conditions,2,Not  Applicable,Target therapy,Not  Applicable
+32,2,1/25/1970,1/25/1970,2/18/1970,2/27/1970,Pain,General disorders and administration site conditions,3,Not  Applicable,Not  Applicable,Not  Applicable
+32,2,1/25/1970,1/25/1970,2/18/1970,2/27/1970,Anemia,Blood and lymphatic system disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+32,2,1/25/1970,1/25/1970,2/27/1970,2/27/1970,"General disorders and administration site conditions - Other, specify",General disorders and administration site conditions,5,Not  Applicable,Not  Applicable,Not  Applicable
+32,2,1/25/1970,1/25/1970,2/18/1970,2/27/1970,Atrial fibrillation,Cardiac disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+28,1,1/1/1970,1/1/1970,1/6/1970,1/11/1970,Flu like symptoms,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+28,1,1/1/1970,1/1/1970,1/13/1970,2/20/1970,Neuralgia,Nervous system disorders,1,Target therapy,Not  Applicable,Not  Applicable
+28,2,1/23/1970,1/23/1970,2/20/1970,6/11/1970,Neuralgia,Nervous system disorders,2,Target therapy,Not  Applicable,Not  Applicable
+28,3,2/20/1970,2/20/1970,3/13/1970,6/10/1970,Pain,General disorders and administration site conditions,2,Not  Applicable,Not  Applicable,Not  Applicable
+28,4,3/13/1970,3/13/1970,3/24/1970,6/11/1970,Vomiting,Gastrointestinal disorders,1,Target therapy,Not  Applicable,Not  Applicable
+28,4,3/13/1970,3/13/1970,3/25/1970,6/11/1970,Gastroesophageal reflux disease,Gastrointestinal disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+28,5,4/3/1970,4/3/1970,4/11/1970,4/15/1970,Confusion,Psychiatric disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+28,5,4/3/1970,4/3/1970,4/24/1970,5/13/1970,Anemia,Blood and lymphatic system disorders,3,Target therapy,Not  Applicable,Not  Applicable
+28,5,4/3/1970,4/3/1970,5/12/1970,6/11/1970,Confusion,Psychiatric disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+28,5,4/3/1970,4/3/1970,5/14/1970,5/19/1970,Hypoxia,"Respiratory, thoracic and mediastinal disorders",3,Not  Applicable,Not  Applicable,Not  Applicable
+28,5,4/3/1970,4/3/1970,5/14/1970,5/19/1970,"Infections and infestations - Other, specify",Infections and infestations,3,Not  Applicable,Not  Applicable,Not  Applicable
+28,5,4/3/1970,4/3/1970,5/19/1970,6/11/1970,Hypoxia,"Respiratory, thoracic and mediastinal disorders",2,Not  Applicable,Not  Applicable,Not  Applicable
+28,5,4/3/1970,4/3/1970,5/19/1970,6/11/1970,"Infections and infestations - Other, specify",Infections and infestations,2,Not  Applicable,Not  Applicable,Not  Applicable
+28,5,4/3/1970,4/3/1970,5/19/1970,5/19/1970,"Respiratory, thoracic and mediastinal disorders - Other, specify","Respiratory, thoracic and mediastinal disorders",2,Not  Applicable,Not  Applicable,Not  Applicable
+28,NA,5/20/1970,6/10/1970,6/10/1970,6/11/1970,Edema limbs,General disorders and administration site conditions,2,Not  Applicable,Not  Applicable,Not  Applicable
+7,1,1/1/1970,1/1/1970,1/25/1970,2/7/1971,Hypothyroidism,Endocrine disorders,2,Not  Applicable,Immunotherapy,Not  Applicable
+7,1,1/1/1970,1/1/1970,1/2/1970,1/6/1970,Pain,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+7,2,1/25/1970,1/25/1970,2/22/1970,5/3/1970,Creatinine increased,Investigations,1,Not  Applicable,Not  Applicable,Not  Applicable
+7,2,1/25/1970,1/25/1970,2/8/1970,4/12/1970,Dry skin,Skin and subcutaneous tissue disorders,1,Immunotherapy,Not  Applicable,Not  Applicable
+7,3,2/22/1970,2/22/1970,2/23/1970,5/24/1970,Fatigue,General disorders and administration site conditions,2,Not  Applicable,Not  Applicable,Not  Applicable
+7,3,2/22/1970,2/22/1970,2/23/1970,4/12/1970,Nausea,Gastrointestinal disorders,1,Target therapy,Not  Applicable,Not  Applicable
+7,3,2/22/1970,2/22/1970,2/23/1970,2/24/1970,Fever,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+7,4,3/19/1970,3/19/1970,4/12/1970,5/3/1970,Dry skin,Skin and subcutaneous tissue disorders,2,Immunotherapy; Target therapy,Not  Applicable,Not  Applicable
+7,5,4/12/1970,4/12/1970,5/3/1970,6/19/1970,Dry skin,Skin and subcutaneous tissue disorders,1,Immunotherapy; Target therapy,Not  Applicable,Not  Applicable
+7,6,5/3/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+7,7,5/24/1970,5/24/1970,5/24/1970,2/7/1971,Diarrhea,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+7,8,6/19/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+7,9,7/12/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+7,10,8/2/1970,8/2/1970,8/20/1970,8/22/1970,Lung infection,Infections and infestations,3,Not  Applicable,Not  Applicable,Not  Applicable
+7,10,8/2/1970,8/2/1970,8/20/1970,8/22/1970,Atrial fibrillation,Cardiac disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+7,11,8/27/1970,8/27/1970,8/27/1970,9/17/1970,Non-cardiac chest pain,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+7,12,9/17/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+7,13,10/11/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+7,14,11/5/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+7,15,11/26/1970,11/26/1970,12/10/1970,1/30/1971,Fatigue,General disorders and administration site conditions,2,Target therapy,Not  Applicable,Not  Applicable
+7,16,12/17/1970,12/17/1970,1/4/1971,2/7/1971,Paroxysmal atrial tachycardia,Cardiac disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+7,17,1/7/1971,NA,NA,NA,NA,NA,NA,NA,NA,NA
+7,18,1/30/1971,1/30/1971,2/6/1971,2/7/1971,Sepsis,Infections and infestations,5,Not  Applicable,Not  Applicable,Not  Applicable
+8,1,1/1/1970,1/1/1970,1/1/1970,2/3/1970,Fatigue,General disorders and administration site conditions,1,Immunotherapy; Target therapy,Not  Applicable,Not  Applicable
+8,1,1/1/1970,1/1/1970,1/5/1970,3/10/1970,Pain,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+8,1,1/1/1970,1/1/1970,1/5/1970,3/10/1970,Anorexia,Metabolism and nutrition disorders,1,Target therapy; Immunotherapy,Not  Applicable,Not  Applicable
+8,1,1/1/1970,1/1/1970,1/29/1970,3/10/1970,Platelet count decreased,Investigations,1,Target therapy,Not  Applicable,Not  Applicable
+8,2,1/29/1970,1/29/1970,2/3/1970,2/5/1970,Dyspnea,"Respiratory, thoracic and mediastinal disorders",3,Not  Applicable,Not  Applicable,Not  Applicable
+8,2,1/29/1970,1/29/1970,2/3/1970,2/5/1970,Pleural effusion,"Respiratory, thoracic and mediastinal disorders",3,Not  Applicable,Not  Applicable,Not  Applicable
+8,2,1/29/1970,1/29/1970,2/3/1970,3/10/1970,Fatigue,General disorders and administration site conditions,3,Not  Applicable,Not  Applicable,Not  Applicable
+8,2,1/29/1970,1/29/1970,2/19/1970,3/10/1970,Anemia,Blood and lymphatic system disorders,2,Target therapy; Immunotherapy,Not  Applicable,Not  Applicable
+8,2,1/29/1970,1/29/1970,2/5/1970,3/10/1970,Fatigue,General disorders and administration site conditions,2,Not  Applicable,Not  Applicable,Not  Applicable
+8,3,2/19/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3,1,1/1/1970,1/1/1970,1/12/1970,1/16/1970,Thromboembolic event,Vascular disorders,4,Not  Applicable,Not  Applicable,Not  Applicable
+3,1,1/1/1970,1/1/1970,1/12/1970,2/3/1970,Dyspnea,"Respiratory, thoracic and mediastinal disorders",2,Not  Applicable,Not  Applicable,Not  Applicable
+3,NA,1/26/1970,1/26/1970,2/3/1970,2/4/1970,Cough,"Respiratory, thoracic and mediastinal disorders",3,Not  Applicable,Not  Applicable,Not  Applicable
+3,NA,1/26/1970,1/26/1970,2/3/1970,2/4/1970,Dyspnea,"Respiratory, thoracic and mediastinal disorders",3,Not  Applicable,Not  Applicable,Not  Applicable
+3,NA,1/26/1970,1/26/1970,2/4/1970,3/13/1970,Cough,"Respiratory, thoracic and mediastinal disorders",3,Not  Applicable,Not  Applicable,Not  Applicable
+3,NA,1/26/1970,1/26/1970,2/4/1970,3/13/1970,Dyspnea,"Respiratory, thoracic and mediastinal disorders",3,Not  Applicable,Not  Applicable,Not  Applicable
+22,1,1/1/1970,1/1/1970,1/3/1970,4/16/1973,Dry mouth,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+22,1,1/1/1970,1/1/1970,1/3/1970,4/16/1973,"Eye disorders - Other, specify",Eye disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+22,1,1/1/1970,1/1/1970,1/3/1970,5/18/1970,Nausea,Gastrointestinal disorders,1,Not  Applicable,Target therapy,Not  Applicable
+22,1,1/1/1970,1/1/1970,1/27/1970,4/16/1973,Hypothyroidism,Endocrine disorders,1,Not  Applicable,Immunotherapy,Not  Applicable
+22,1,1/1/1970,1/1/1970,1/27/1970,4/21/1970,Platelet count decreased,Investigations,1,Not  Applicable,Target therapy,Not  Applicable
+22,1,1/1/1970,1/1/1970,1/5/1970,5/18/1970,Fatigue,General disorders and administration site conditions,1,Immunotherapy,Not  Applicable,Not  Applicable
+22,1,1/1/1970,1/1/1970,1/5/1970,3/17/1970,Headache,Nervous system disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+22,2,1/27/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,3,2/17/1970,2/17/1970,3/7/1970,3/19/1970,"Infections and infestations - Other, specify",Infections and infestations,2,Not  Applicable,Not  Applicable,Not  Applicable
+22,3,2/17/1970,2/17/1970,3/10/1970,4/27/1970,Creatinine increased,Investigations,1,Not  Applicable,Not  Applicable,Not  Applicable
+22,4,3/10/1970,3/10/1970,3/17/1970,3/31/1970,Diarrhea,Gastrointestinal disorders,1,Immunotherapy; Target therapy,Not  Applicable,Not  Applicable
+22,5,3/31/1970,3/31/1970,4/14/1970,4/27/1970,Vomiting,Gastrointestinal disorders,1,Not  Applicable,Target therapy,Not  Applicable
+22,5,3/31/1970,3/31/1970,4/21/1970,4/24/1970,Platelet count decreased,Investigations,2,Not  Applicable,Target therapy,Not  Applicable
+22,5,3/31/1970,3/31/1970,4/21/1970,8/10/1970,Dysgeusia,Nervous system disorders,1,Target therapy,Not  Applicable,Not  Applicable
+22,5,3/31/1970,3/31/1970,4/21/1970,4/24/1970,White blood cell decreased,Investigations,1,Target therapy,Not  Applicable,Not  Applicable
+22,6,4/27/1970,4/27/1970,4/27/1970,5/24/1971,Alopecia,Skin and subcutaneous tissue disorders,1,Target therapy,Not  Applicable,Not  Applicable
+22,7,5/18/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,8,6/9/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,9,6/30/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,10,7/20/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,11,8/10/1970,8/10/1970,8/12/1970,12/1/1970,Diarrhea,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+22,12,9/1/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,13,9/22/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,14,10/13/1970,10/13/1970,11/7/1970,4/16/1973,Hypertension,Vascular disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+22,15,11/9/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,16,12/1/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,17,12/22/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,18,1/12/1971,1/12/1971,1/31/1971,3/4/1971,Diarrhea,Gastrointestinal disorders,2,Target therapy; Immunotherapy,Not  Applicable,Not  Applicable
+22,18,1/12/1971,1/12/1971,3/1/1971,3/4/1971,Colitis,Gastrointestinal disorders,3,Not  Applicable,Immunotherapy,Not  Applicable
+22,19,4/2/1971,4/2/1971,4/8/1971,4/21/1971,Diarrhea,Gastrointestinal disorders,2,Target therapy; Immunotherapy,Not  Applicable,Not  Applicable
+22,19,4/2/1971,4/2/1971,4/20/1971,4/21/1971,Chest pain - cardiac,Cardiac disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+22,19,4/2/1971,4/2/1971,4/24/1971,4/25/1971,Arthralgia,Musculoskeletal and connective tissue disorders,2,Not  Applicable,Immunotherapy,Not  Applicable
+22,NA,4/29/1971,NA,NA,NA,NA,NA,NA,NA,NA,NA
+22,NA,5/24/1971,NA,NA,NA,NA,NA,NA,NA,NA,NA
+24,1,1/1/1970,1/1/1970,1/4/1970,1/12/1970,Vomiting,Gastrointestinal disorders,2,Target therapy,Not  Applicable,Not  Applicable
+11,1,1/1/1970,1/1/1970,1/11/1970,1/22/1970,Constipation,Gastrointestinal disorders,2,Target therapy,Not  Applicable,Not  Applicable
+11,1,1/1/1970,1/1/1970,1/11/1970,1/22/1970,Dysgeusia,Nervous system disorders,1,Target therapy,Not  Applicable,Not  Applicable
+11,1,1/1/1970,1/1/1970,1/11/1970,8/8/1970,Cough,"Respiratory, thoracic and mediastinal disorders",2,Not  Applicable,Not  Applicable,Not  Applicable
+11,1,1/1/1970,1/1/1970,1/11/1970,1/22/1970,Nausea,Gastrointestinal disorders,1,Target therapy,Not  Applicable,Not  Applicable
+11,1,1/1/1970,1/1/1970,1/22/1970,8/8/1970,Dyspnea,"Respiratory, thoracic and mediastinal disorders",1,Not  Applicable,Not  Applicable,Not  Applicable
+11,1,1/1/1970,1/1/1970,1/11/1970,4/19/1970,Anorexia,Metabolism and nutrition disorders,1,Target therapy,Not  Applicable,Not  Applicable
+11,1,1/1/1970,1/1/1970,1/11/1970,8/8/1970,Fatigue,General disorders and administration site conditions,NA,Target therapy,Not  Applicable,Not  Applicable
+11,NA,1/22/1970,1/22/1970,1/11/1970,8/8/1970,Edema limbs,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+11,NA,2/16/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+27,1,1/1/1970,1/1/1970,1/1/1970,1/22/1970,Confusion,Psychiatric disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+27,1,1/1/1970,1/1/1970,1/26/1970,2/16/1970,Alanine aminotransferase increased,Investigations,1,Target therapy; Immunotherapy,Not  Applicable,Not  Applicable
+27,2,1/26/1970,1/26/1970,1/28/1970,2/25/1970,Vomiting,Gastrointestinal disorders,3,Target therapy,Not  Applicable,Not  Applicable
+27,2,1/26/1970,1/26/1970,1/28/1970,2/25/1970,Diarrhea,Gastrointestinal disorders,3,Target therapy,Not  Applicable,Not  Applicable
+27,2,1/26/1970,1/26/1970,1/29/1970,2/2/1970,Aspiration,"Respiratory, thoracic and mediastinal disorders",3,Not  Applicable,Not  Applicable,Not  Applicable
+27,NA,2/16/1970,2/16/1970,2/16/1970,2/26/1970,Anemia,Blood and lymphatic system disorders,2,Target therapy,Not  Applicable,Not  Applicable
+5,1,1/1/1970,1/1/1970,1/18/1970,9/17/1970,Creatinine increased,Investigations,1,Not  Applicable,Not  Applicable,Not  Applicable
+5,2,1/18/1970,1/18/1970,1/19/1970,6/10/1971,Dizziness,Nervous system disorders,1,Target therapy,Not  Applicable,Not  Applicable
+5,3,2/14/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5,4,3/12/1970,3/12/1970,4/5/1970,4/16/1970,Creatinine increased,Investigations,2,Target therapy,Not  Applicable,Not  Applicable
+5,4,3/12/1970,3/12/1970,4/16/1970,6/10/1971,Dysphagia,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+5,5,4/16/1970,4/16/1970,5/7/1970,6/10/1971,Dysgeusia,Nervous system disorders,1,Target therapy,Not  Applicable,Not  Applicable
+5,6,5/7/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5,7,5/28/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5,8,6/18/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5,9,7/9/1970,7/9/1970,7/30/1970,8/6/1970,Creatinine increased,Investigations,1,Target therapy,Not  Applicable,Not  Applicable
+5,9,7/9/1970,7/9/1970,7/30/1970,8/6/1970,Hyponatremia,Metabolism and nutrition disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+5,10,8/6/1970,8/6/1970,8/27/1970,6/10/1971,Constipation,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+5,11,8/27/1970,8/27/1970,9/13/1970,6/10/1971,"Neoplasms benign, malignant and unspecified (incl cysts and polyps) - Other, specify","Neoplasms benign, malignant and unspecified (incl cysts and polyps)",1,Not  Applicable,Not  Applicable,Not  Applicable
+5,11,8/27/1970,8/27/1970,9/17/1970,10/23/1970,Hyponatremia,Metabolism and nutrition disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+5,11,8/27/1970,8/27/1970,9/17/1970,11/13/1970,Aspartate aminotransferase increased,Investigations,1,Target therapy; Immunotherapy,Not  Applicable,Not  Applicable
+5,11,8/27/1970,8/27/1970,9/17/1970,11/13/1970,Alanine aminotransferase increased,Investigations,1,Target therapy; Immunotherapy,Not  Applicable,Not  Applicable
+5,11,8/27/1970,8/27/1970,9/17/1970,10/10/1970,Alkaline phosphatase increased,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+5,11,8/27/1970,8/27/1970,9/17/1970,10/10/1970,Blood bilirubin increased,Investigations,1,Target therapy; Immunotherapy,Not  Applicable,Not  Applicable
+5,12,9/17/1970,9/17/1970,10/10/1970,10/23/1970,Blood bilirubin increased,Investigations,3,Not  Applicable,Not  Applicable,Not  Applicable
+5,12,9/17/1970,9/17/1970,10/10/1970,2/5/1971,Alkaline phosphatase increased,Investigations,3,Not  Applicable,Not  Applicable,Not  Applicable
+5,12,9/17/1970,9/17/1970,10/10/1970,6/10/1971,Weight loss,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+5,12,9/17/1970,9/17/1970,10/18/1970,10/29/1970,Lung infection,Infections and infestations,2,Not  Applicable,Not  Applicable,Not  Applicable
+5,12,9/17/1970,9/17/1970,10/20/1970,10/23/1970,Fever,General disorders and administration site conditions,2,Not  Applicable,Not  Applicable,Not  Applicable
+5,12,9/17/1970,9/17/1970,10/23/1970,10/28/1970,Blood bilirubin increased,Investigations,4,Not  Applicable,Not  Applicable,Not  Applicable
+5,12,9/17/1970,9/17/1970,10/23/1970,10/24/1970,Hyponatremia,Metabolism and nutrition disorders,4,Not  Applicable,Not  Applicable,Not  Applicable
+5,12,9/17/1970,9/17/1970,10/23/1970,11/7/1970,Anemia,Blood and lymphatic system disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+5,12,9/17/1970,9/17/1970,10/24/1970,10/29/1970,Hyponatremia,Metabolism and nutrition disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+5,12,9/17/1970,9/17/1970,10/28/1970,12/9/1970,Blood bilirubin increased,Investigations,3,Not  Applicable,Not  Applicable,Not  Applicable
+5,13,10/10/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+5,NA,12/9/1970,12/9/1970,12/9/1970,1/6/1971,Thromboembolic event,Vascular disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+5,NA,12/9/1970,12/9/1970,12/9/1970,12/23/1970,Lung infection,Infections and infestations,2,Not  Applicable,Not  Applicable,Not  Applicable
+5,NA,12/9/1970,12/9/1970,12/9/1970,6/10/1971,Anemia,Blood and lymphatic system disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+5,NA,12/9/1970,12/9/1970,12/30/1970,1/2/1971,Dysphagia,Gastrointestinal disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+5,NA,12/9/1970,12/9/1970,12/30/1970,1/2/1971,Fever,General disorders and administration site conditions,2,Not  Applicable,Not  Applicable,Not  Applicable
+25,1,1/1/1970,1/1/1970,1/22/1970,1/28/1970,Fatigue,General disorders and administration site conditions,2,Not  Applicable,Target therapy,Not  Applicable
+25,1,1/1/1970,1/1/1970,1/28/1970,3/22/1970,Confusion,Psychiatric disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+25,1,1/1/1970,1/1/1970,1/28/1970,3/22/1970,Pruritus,Skin and subcutaneous tissue disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+25,2,1/28/1970,1/28/1970,2/14/1970,3/22/1970,Constipation,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+33,1,1/1/1970,1/1/1970,1/25/1970,8/13/1970,Dysgeusia,Nervous system disorders,1,Target therapy,Not  Applicable,Not  Applicable
+33,1,1/1/1970,1/1/1970,1/4/1970,2/18/1970,Anorexia,Metabolism and nutrition disorders,2,Target therapy; Immunotherapy,Not  Applicable,Not  Applicable
+33,1,1/1/1970,1/1/1970,1/9/1970,1/25/1970,Dry eye,Eye disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+33,1,1/1/1970,1/1/1970,1/9/1970,8/13/1970,Dry mouth,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+33,2,1/25/1970,1/25/1970,2/18/1970,6/10/1970,Chills,General disorders and administration site conditions,1,Not  Applicable,Immunotherapy,Not  Applicable
+33,2,1/25/1970,1/25/1970,2/18/1970,6/10/1970,Fever,General disorders and administration site conditions,1,Not  Applicable,Immunotherapy,Not  Applicable
+33,3,2/18/1970,2/18/1970,3/18/1970,12/2/1970,Hypothyroidism,Endocrine disorders,2,Not  Applicable,Immunotherapy,Not  Applicable
+33,4,3/18/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+33,5,4/8/1970,4/8/1970,4/22/1970,5/17/1970,Anorexia,Metabolism and nutrition disorders,2,Target therapy,Not  Applicable,Not  Applicable
+33,5,4/8/1970,4/8/1970,4/29/1970,5/17/1970,"Infections and infestations - Other, specify",Infections and infestations,2,Not  Applicable,Not  Applicable,Not  Applicable
+33,5,4/8/1970,4/8/1970,4/29/1970,7/1/1970,Creatinine increased,Investigations,1,Target therapy,Not  Applicable,Not  Applicable
+33,6,4/29/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+33,7,5/17/1970,5/17/1970,5/27/1970,7/1/1970,Dyspnea,"Respiratory, thoracic and mediastinal disorders",2,Not  Applicable,Not  Applicable,Not  Applicable
+33,7,5/17/1970,5/17/1970,6/1/1970,7/1/1970,Fatigue,General disorders and administration site conditions,2,Target therapy,Not  Applicable,Not  Applicable
+33,7,5/17/1970,5/17/1970,6/10/1970,7/1/1970,Hyperkalemia,Metabolism and nutrition disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+33,7,5/17/1970,5/17/1970,6/10/1970,7/1/1970,Hyponatremia,Metabolism and nutrition disorders,1,Immunotherapy; Target therapy,Not  Applicable,Not  Applicable
+33,8,6/10/1970,6/10/1970,6/22/1970,8/13/1970,Diarrhea,Gastrointestinal disorders,2,Target therapy,Not  Applicable,Not  Applicable
+33,8,6/10/1970,6/10/1970,7/1/1970,7/22/1970,Hyponatremia,Metabolism and nutrition disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+33,9,7/1/1970,7/1/1970,7/22/1970,9/7/1970,Anemia,Blood and lymphatic system disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+33,10,7/22/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+33,11,8/13/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+33,12,9/7/1970,9/7/1970,9/30/1970,12/2/1970,Back pain,Musculoskeletal and connective tissue disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+33,13,9/30/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+33,14,10/21/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+33,NA,11/15/1970,11/15/1970,11/20/1970,11/21/1970,Alanine aminotransferase increased,Investigations,4,Immunotherapy,Not  Applicable,Not  Applicable
+33,NA,11/15/1970,11/15/1970,11/20/1970,11/21/1970,Aspartate aminotransferase increased,Investigations,4,Immunotherapy,Not  Applicable,Not  Applicable
+33,NA,11/15/1970,11/15/1970,11/20/1970,11/22/1970,Creatinine increased,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+33,NA,11/15/1970,11/15/1970,11/22/1970,11/26/1970,Creatinine increased,Investigations,3,Not  Applicable,Not  Applicable,Not  Applicable
+33,NA,11/15/1970,11/15/1970,11/21/1970,11/27/1970,Alanine aminotransferase increased,Investigations,3,Immunotherapy,Not  Applicable,Not  Applicable
+33,NA,11/15/1970,11/15/1970,11/21/1970,11/22/1970,Aspartate aminotransferase increased,Investigations,3,Immunotherapy,Not  Applicable,Not  Applicable
+33,NA,11/15/1970,11/15/1970,11/22/1970,11/26/1970,Aspartate aminotransferase increased,Investigations,1,Immunotherapy,Not  Applicable,Not  Applicable
+33,NA,11/15/1970,11/15/1970,11/27/1970,12/2/1970,Alanine aminotransferase increased,Investigations,1,Immunotherapy,Not  Applicable,Not  Applicable
+33,NA,11/15/1970,11/15/1970,11/24/1970,11/30/1970,Colitis,Gastrointestinal disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+33,NA,11/15/1970,11/15/1970,11/24/1970,11/30/1970,Pericardial effusion,Cardiac disorders,4,Not  Applicable,Not  Applicable,Not  Applicable
+33,NA,11/15/1970,11/15/1970,11/24/1970,11/30/1970,Pericardial tamponade,Cardiac disorders,4,Not  Applicable,Not  Applicable,Not  Applicable
+33,NA,11/15/1970,11/15/1970,12/2/1970,12/2/1970,Death NOS,General disorders and administration site conditions,5,Not  Applicable,Not  Applicable,Not  Applicable
+29,1,1/1/1970,1/1/1970,1/11/1970,7/7/1970,Dyspepsia,Gastrointestinal disorders,2,Not  Applicable,Target therapy,Not  Applicable
+29,1,1/1/1970,1/1/1970,1/29/1970,2/8/1970,Creatinine increased,Investigations,1,Not  Applicable,Not  Applicable,Not  Applicable
+29,2,1/29/1970,1/29/1970,2/9/1970,2/28/1970,Superior vena cava syndrome,Vascular disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+31,1,1/1/1970,1/1/1970,1/8/1970,4/25/1970,Anorexia,Metabolism and nutrition disorders,1,Not  Applicable,Target therapy,Not  Applicable
+31,1,1/1/1970,1/1/1970,1/9/1970,5/19/1970,Nausea,Gastrointestinal disorders,2,Not  Applicable,Target therapy,Not  Applicable
+31,1,1/1/1970,1/1/1970,1/13/1970,2/14/1970,Vomiting,Gastrointestinal disorders,1,Not  Applicable,Target therapy,Not  Applicable
+31,1,1/1/1970,1/1/1970,1/18/1970,1/19/1970,Diarrhea,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+31,1,1/1/1970,1/1/1970,1/19/1970,3/14/1970,Constipation,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+31,1,1/1/1970,1/1/1970,1/21/1970,3/6/1970,Anemia,Blood and lymphatic system disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+31,1,1/1/1970,1/1/1970,1/21/1970,2/14/1970,Platelet count decreased,Investigations,1,Target therapy,Not  Applicable,Not  Applicable
+31,1,1/1/1970,1/1/1970,1/21/1970,2/14/1970,Hyponatremia,Metabolism and nutrition disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+31,1,1/1/1970,1/1/1970,1/21/1970,4/4/1970,Hyperglycemia,Metabolism and nutrition disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+31,2,1/21/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+31,3,2/14/1970,2/14/1970,3/6/1970,3/14/1970,Anemia,Blood and lymphatic system disorders,3,Target therapy,Not  Applicable,Not  Applicable
+31,4,3/14/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+31,5,4/4/1970,4/4/1970,4/18/1970,2/23/1971,Stomach pain,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+31,5,4/4/1970,4/4/1970,4/25/1970,2/23/1971,Anorexia,Metabolism and nutrition disorders,2,Immunotherapy; Target therapy,Not  Applicable,Not  Applicable
+31,6,4/25/1970,4/25/1970,5/19/1970,2/23/1971,Epistaxis,"Respiratory, thoracic and mediastinal disorders",1,Target therapy,Not  Applicable,Not  Applicable
+31,7,5/19/1970,5/19/1970,6/6/1970,2/23/1971,Nail loss,Skin and subcutaneous tissue disorders,1,Target therapy,Not  Applicable,Not  Applicable
+31,8,6/6/1970,6/6/1970,6/17/1970,2/23/1971,Non-cardiac chest pain,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+31,8,6/6/1970,6/6/1970,6/17/1970,2/23/1971,"Respiratory, thoracic and mediastinal disorders - Other, specify","Respiratory, thoracic and mediastinal disorders",1,Target therapy,Not  Applicable,Not  Applicable
+31,9,6/27/1970,6/27/1970,7/18/1970,7/25/1970,"Infections and infestations - Other, specify",Infections and infestations,2,Not  Applicable,Not  Applicable,Not  Applicable
+31,9,6/27/1970,7/25/1970,8/15/1970,2/23/1971,"Respiratory, thoracic and mediastinal disorders - Other, specify","Respiratory, thoracic and mediastinal disorders",1,Not  Applicable,Not  Applicable,Not  Applicable
+31,10,7/25/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+31,NA,8/15/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,1,1/1/1970,1/1/1970,1/22/1970,2/4/1972,Fatigue,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+12,1,1/1/1970,1/1/1970,1/14/1970,2/4/1972,Vomiting,Gastrointestinal disorders,1,Target therapy,Not  Applicable,Not  Applicable
+12,1,1/1/1970,1/1/1970,1/14/1970,2/4/1972,Anorexia,Metabolism and nutrition disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+12,1,1/1/1970,1/1/1970,1/14/1970,2/4/1972,Dry skin,Skin and subcutaneous tissue disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+12,2,1/23/1970,1/23/1970,1/29/1970,1/31/1970,Dizziness,Nervous system disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+12,2,1/23/1970,1/23/1970,2/10/1970,2/4/1972,Dry mouth,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+12,2,1/23/1970,1/23/1970,2/14/1970,3/28/1970,Platelet count decreased,Investigations,1,Not  Applicable,Not  Applicable,Target therapy
+12,2,1/23/1970,1/23/1970,2/14/1970,5/2/1970,Anemia,Blood and lymphatic system disorders,1,Not  Applicable,Not  Applicable,Target therapy
+12,3,2/14/1970,2/14/1970,2/20/1970,2/4/1972,Anxiety,Psychiatric disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+12,4,3/7/1970,3/7/1970,3/26/1970,8/8/1971,Dysgeusia,Nervous system disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+12,5,3/28/1970,3/28/1970,3/28/1970,5/2/1970,Bronchopulmonary hemorrhage,"Respiratory, thoracic and mediastinal disorders",2,Not  Applicable,Not  Applicable,Not  Applicable
+12,5,3/28/1970,3/28/1970,3/28/1970,5/2/1970,Nausea,Gastrointestinal disorders,2,Not  Applicable,Not  Applicable,Target therapy
+12,5,3/28/1970,3/28/1970,4/24/1970,4/25/1970,Edema limbs,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+12,5,3/28/1970,3/28/1970,5/2/1970,12/30/1970,Alopecia,Skin and subcutaneous tissue disorders,1,Not  Applicable,Target therapy,Not  Applicable
+12,6,5/2/1970,5/2/1970,5/23/1970,2/4/1972,Neuralgia,Nervous system disorders,1,Target therapy,Not  Applicable,Not  Applicable
+12,7,5/23/1970,5/23/1970,6/11/1970,7/4/1970,Flu like symptoms,General disorders and administration site conditions,2,Not  Applicable,Not  Applicable,Not  Applicable
+12,7,5/23/1970,5/23/1970,6/13/1970,7/4/1970,Anemia,Blood and lymphatic system disorders,1,Target therapy,Not  Applicable,Not  Applicable
+12,7,5/23/1970,5/23/1970,6/13/1970,7/4/1970,Alkaline phosphatase increased,Investigations,2,Target therapy,Not  Applicable,Not  Applicable
+12,7,5/23/1970,5/23/1970,6/13/1970,7/4/1970,Alanine aminotransferase increased,Investigations,1,Target therapy,Not  Applicable,Not  Applicable
+12,7,5/23/1970,5/23/1970,6/13/1970,7/4/1970,Aspartate aminotransferase increased,Investigations,1,Target therapy,Not  Applicable,Not  Applicable
+12,8,6/13/1970,6/13/1970,7/4/1970,8/15/1970,Anemia,Blood and lymphatic system disorders,2,Target therapy,Not  Applicable,Not  Applicable
+12,9,7/4/1970,7/4/1970,7/25/1970,2/4/1972,Weight loss,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+12,10,7/25/1970,7/25/1970,8/15/1970,9/9/1970,Anemia,Blood and lymphatic system disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+12,11,8/15/1970,8/15/1970,9/9/1970,2/4/1972,Pain,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+12,12,9/9/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,13,10/3/1970,10/3/1970,10/6/1970,10/11/1970,Diarrhea,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+12,14,10/24/1970,10/24/1970,11/4/1970,11/11/1970,Flu like symptoms,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+12,15,11/18/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,16,12/9/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,17,12/30/1970,12/30/1970,1/16/1971,1/17/1971,Dizziness,Nervous system disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+12,17,12/30/1970,12/30/1970,1/16/1971,1/17/1971,Presyncope,Nervous system disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+12,18,1/20/1971,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,19,2/10/1971,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,20,3/3/1971,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,21,3/24/1971,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,22,4/16/1971,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,23,5/12/1971,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,24,6/2/1971,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,25,6/23/1971,6/23/1971,7/7/1971,7/26/1971,Productive cough,"Respiratory, thoracic and mediastinal disorders",2,Not  Applicable,Not  Applicable,Not  Applicable
+12,25,6/23/1971,6/23/1971,7/7/1971,2/4/1972,Dyspnea,"Respiratory, thoracic and mediastinal disorders",1,Not  Applicable,Not  Applicable,Not  Applicable
+12,26,7/14/1971,7/14/1971,7/27/1971,7/29/1971,Diarrhea,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+12,26,7/14/1971,7/14/1971,7/28/1971,8/4/1971,Lung infection,Infections and infestations,2,Not  Applicable,Not  Applicable,Not  Applicable
+12,26,7/14/1971,7/14/1971,7/30/1971,7/30/1971,Fever,General disorders and administration site conditions,2,Not  Applicable,Not  Applicable,Not  Applicable
+12,26,7/14/1971,7/14/1971,8/4/1971,8/4/1971,Fever,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+12,26,7/14/1971,7/14/1971,8/8/1971,2/4/1972,Dysgeusia,Nervous system disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+12,26,7/14/1971,7/14/1971,8/4/1971,8/11/1971,Lung infection,Infections and infestations,3,Not  Applicable,Not  Applicable,Not  Applicable
+12,26,7/14/1971,7/14/1971,8/8/1971,8/25/1971,Alanine aminotransferase increased,Investigations,1,Not  Applicable,Not  Applicable,Not  Applicable
+12,26,7/14/1971,7/14/1971,8/8/1971,8/25/1971,Aspartate aminotransferase increased,Investigations,1,Not  Applicable,Not  Applicable,Not  Applicable
+12,26,7/14/1971,7/14/1971,8/13/1971,8/25/1971,Wheezing,"Respiratory, thoracic and mediastinal disorders",2,Not  Applicable,Not  Applicable,Not  Applicable
+12,26,7/14/1971,7/14/1971,8/13/1971,8/25/1971,Productive cough,"Respiratory, thoracic and mediastinal disorders",2,Not  Applicable,Not  Applicable,Not  Applicable
+12,26,7/14/1971,7/14/1971,8/25/1971,2/4/1972,Esophageal pain,Gastrointestinal disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+12,27,8/25/1971,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,28,9/30/1971,9/30/1971,10/16/1971,10/26/1971,Lung infection,Infections and infestations,2,Not  Applicable,Not  Applicable,Not  Applicable
+12,28,9/30/1971,9/30/1971,10/16/1971,10/26/1971,Dyspnea,"Respiratory, thoracic and mediastinal disorders",3,Not  Applicable,Not  Applicable,Not  Applicable
+12,29,11/11/1971,NA,NA,NA,NA,NA,NA,NA,NA,NA
+12,30,12/2/1971,12/2/1971,12/7/1971,12/10/1971,Lung infection,Infections and infestations,3,Not  Applicable,Not  Applicable,Not  Applicable
+12,30,12/2/1971,12/2/1971,12/7/1971,12/10/1971,"General disorders and administration site conditions - Other, specify",General disorders and administration site conditions,2,Not  Applicable,Not  Applicable,Not  Applicable
+9,1,1/1/1970,1/1/1970,1/3/1970,1/22/1970,Diarrhea,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+9,1,1/1/1970,1/1/1970,1/9/1970,4/18/1970,Alopecia,Skin and subcutaneous tissue disorders,1,Not  Applicable,Target therapy,Not  Applicable
+9,1,1/1/1970,1/1/1970,1/9/1970,3/14/1970,Anorexia,Metabolism and nutrition disorders,1,Not  Applicable,Not  Applicable,Target therapy
+9,1,1/1/1970,1/1/1970,1/22/1970,1/23/1970,Fever,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+9,1,1/1/1970,1/1/1970,1/24/1970,3/14/1970,"Infections and infestations - Other, specify",Infections and infestations,1,Not  Applicable,Not  Applicable,Not  Applicable
+9,1,1/1/1970,1/1/1970,1/27/1970,2/3/1970,Creatinine increased,Investigations,2,Not  Applicable,Not  Applicable,Not  Applicable
+9,1,1/1/1970,1/1/1970,1/27/1970,2/3/1970,Anemia,Blood and lymphatic system disorders,1,Target therapy,Not  Applicable,Not  Applicable
+9,1,1/1/1970,1/1/1970,1/27/1970,2/3/1970,Platelet count decreased,Investigations,1,Not  Applicable,Target therapy,Not  Applicable
+9,1,1/1/1970,1/1/1970,1/27/1970,2/24/1970,Hypermagnesemia,Metabolism and nutrition disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+9,1,1/1/1970,1/1/1970,1/5/1970,9/14/1971,Pain,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+9,1,1/1/1970,1/1/1970,1/5/1970,9/14/1971,Dry eye,Eye disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+9,1,1/1/1970,1/1/1970,1/22/1970,1/27/1970,"Respiratory, thoracic and mediastinal disorders - Other, specify","Respiratory, thoracic and mediastinal disorders",1,Not  Applicable,Not  Applicable,Not  Applicable
+9,2,1/27/1970,2/3/1970,2/6/1970,2/11/1970,Cough,"Respiratory, thoracic and mediastinal disorders",1,Not  Applicable,Not  Applicable,Not  Applicable
+9,2,1/27/1970,2/3/1970,2/6/1970,9/14/1971,Pain,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+9,2,1/27/1970,2/3/1970,2/24/1970,3/11/1970,Creatinine increased,Investigations,2,Target therapy,Not  Applicable,Not  Applicable
+9,2,1/27/1970,2/3/1970,2/3/1970,2/5/1970,Diarrhea,Gastrointestinal disorders,1,Immunotherapy,Not  Applicable,Not  Applicable
+9,3,3/14/1970,3/14/1970,4/4/1970,4/18/1970,Creatinine increased,Investigations,2,Target therapy,Not  Applicable,Not  Applicable
+9,3,3/14/1970,3/14/1970,4/18/1970,9/14/1971,Alopecia,Skin and subcutaneous tissue disorders,2,Not  Applicable,Not  Applicable,Target therapy
+9,4,4/18/1970,4/18/1970,5/12/1970,5/19/1970,Sinusitis,Infections and infestations,1,Not  Applicable,Not  Applicable,Not  Applicable
+9,4,4/18/1970,4/18/1970,5/29/1970,10/6/1970,Anemia,Blood and lymphatic system disorders,1,Target therapy,Not  Applicable,Not  Applicable
+9,5,5/30/1970,5/29/1970,6/20/1970,9/14/1971,Nausea,Gastrointestinal disorders,1,Not  Applicable,Target therapy,Not  Applicable
+9,6,6/20/1970,6/20/1970,6/20/1970,9/14/1971,Dry mouth,Gastrointestinal disorders,1,Target therapy,Not  Applicable,Not  Applicable
+9,6,6/20/1970,6/20/1970,7/11/1970,8/4/1970,Hyponatremia,Metabolism and nutrition disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+9,7,7/14/1970,7/14/1970,8/4/1970,8/25/1970,Hyponatremia,Metabolism and nutrition disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+9,8,8/4/1970,8/4/1970,8/25/1970,9/14/1971,Pain,General disorders and administration site conditions,2,Not  Applicable,Not  Applicable,Not  Applicable
+9,9,8/25/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+9,10,9/15/1970,9/15/1970,9/22/1970,9/14/1971,Gastroesophageal reflux disease,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+9,10,9/15/1970,9/15/1970,9/24/1970,9/14/1971,"Skin and subcutaneous tissue disorders - Other, specify",Skin and subcutaneous tissue disorders,1,Not  Applicable,Target therapy,Not  Applicable
+9,11,10/6/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+9,12,10/27/1970,10/27/1970,11/17/1970,9/14/1971,Thromboembolic event,Vascular disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+9,13,11/17/1970,11/17/1970,12/2/1970,12/11/1970,Pleural effusion,"Respiratory, thoracic and mediastinal disorders",3,Not  Applicable,Not  Applicable,Not  Applicable
+9,13,11/17/1970,11/17/1970,12/2/1970,12/11/1970,Atrial fibrillation,Cardiac disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+23,1,1/1/1970,1/1/1970,2/6/1970,3/13/1970,Vomiting,Gastrointestinal disorders,1,Target therapy,Not  Applicable,Not  Applicable
+23,1,1/1/1970,1/1/1970,1/1/1970,5/26/1970,Anorexia,Metabolism and nutrition disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+23,1,1/1/1970,1/1/1970,1/22/1970,5/26/1970,Weight loss,Investigations,2,Target therapy,Not  Applicable,Not  Applicable
+23,1,1/1/1970,1/1/1970,1/24/1970,1/27/1970,Platelet count decreased,Investigations,2,Not  Applicable,Not  Applicable,Target therapy
+23,1,1/1/1970,1/1/1970,1/24/1970,4/11/1970,Creatinine increased,Investigations,1,Not  Applicable,Not  Applicable,Not  Applicable
+23,2,1/24/1970,1/30/1970,2/19/1970,2/19/1970,Pain in extremity,Musculoskeletal and connective tissue disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+23,2,1/24/1970,1/30/1970,2/20/1970,5/26/1970,Thromboembolic event,Vascular disorders,3,Target therapy,Not  Applicable,Not  Applicable
+23,3,2/20/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+23,4,3/13/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+23,NA,4/7/1970,4/7/1970,4/11/1970,5/26/1970,Pain,General disorders and administration site conditions,2,Not  Applicable,Not  Applicable,Not  Applicable
+30,1,1/1/1970,1/1/1970,1/6/1970,3/11/1970,Nausea,Gastrointestinal disorders,1,Target therapy,Not  Applicable,Not  Applicable
+30,1,1/1/1970,1/1/1970,1/9/1970,11/15/1970,Constipation,Gastrointestinal disorders,1,Target therapy,Not  Applicable,Not  Applicable
+30,2,1/28/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+30,3,2/18/1970,2/18/1970,2/21/1970,4/1/1970,Vomiting,Gastrointestinal disorders,1,Target therapy,Not  Applicable,Not  Applicable
+30,3,2/18/1970,2/18/1970,3/11/1970,4/1/1970,Nausea,Gastrointestinal disorders,2,Target therapy,Not  Applicable,Not  Applicable
+30,3,2/18/1970,2/18/1970,3/11/1970,6/4/1970,Fatigue,General disorders and administration site conditions,2,Target therapy; Immunotherapy,Not  Applicable,Not  Applicable
+30,3,2/18/1970,2/18/1970,3/11/1970,4/22/1970,Weight loss,Investigations,1,Not  Applicable,Not  Applicable,Not  Applicable
+30,4,3/11/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA
+30,5,4/1/1970,4/1/1970,4/22/1970,5/20/1970,Weight loss,Investigations,2,Immunotherapy; Target therapy,Not  Applicable,Not  Applicable
+30,5,4/1/1970,4/1/1970,4/22/1970,6/4/1970,Aspartate aminotransferase increased,Investigations,1,Immunotherapy,Not  Applicable,Not  Applicable
+30,5,4/1/1970,4/1/1970,4/22/1970,6/4/1970,Alanine aminotransferase increased,Investigations,1,Immunotherapy,Not  Applicable,Not  Applicable
+30,6,4/22/1970,4/22/1970,5/19/1970,6/4/1970,Non-cardiac chest pain,General disorders and administration site conditions,2,Not  Applicable,Not  Applicable,Not  Applicable
+30,6,4/22/1970,4/22/1970,5/20/1970,6/4/1970,Dysgeusia,Nervous system disorders,1,Not  Applicable,Target therapy,Not  Applicable
+30,NA,5/20/1970,5/20/1970,5/20/1970,6/4/1970,Weight loss,Investigations,1,Not  Applicable,Not  Applicable,Not  Applicable
+15,1,1/1/1970,1/1/1970,1/3/1970,3/1/1970,Fatigue,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+15,1,1/1/1970,1/1/1970,1/3/1970,7/22/1970,Dyspnea,"Respiratory, thoracic and mediastinal disorders",1,Not  Applicable,Not  Applicable,Not  Applicable
+15,1,1/1/1970,1/1/1970,1/3/1970,2/5/1970,Edema limbs,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+15,1,1/1/1970,1/1/1970,1/3/1970,7/22/1970,Dysphagia,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+15,1,1/1/1970,1/1/1970,1/3/1970,3/1/1970,Nausea,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Target therapy
+15,1,1/1/1970,1/1/1970,1/3/1970,7/22/1970,Hearing impaired,Ear and labyrinth disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+15,1,1/1/1970,1/1/1970,1/3/1970,7/22/1970,Constipation,Gastrointestinal disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+15,1,1/1/1970,1/1/1970,1/3/1970,7/22/1970,Pain,General disorders and administration site conditions,1,Not  Applicable,Not  Applicable,Not  Applicable
+15,1,1/1/1970,1/1/1970,2/5/1970,7/22/1970,Anorexia,Metabolism and nutrition disorders,1,Target therapy,Not  Applicable,Not  Applicable
+15,2,2/5/1970,2/5/1970,2/27/1970,7/22/1970,Vomiting,Gastrointestinal disorders,2,Not  Applicable,Not  Applicable,Target therapy
+15,2,2/5/1970,2/5/1970,3/1/1970,7/22/1970,Nausea,Gastrointestinal disorders,2,Not  Applicable,Not  Applicable,Target therapy
+15,2,2/5/1970,2/5/1970,3/1/1970,7/22/1970,Fatigue,General disorders and administration site conditions,2,Immunotherapy; Target therapy,Not  Applicable,Not  Applicable
+15,2,2/5/1970,2/5/1970,3/1/1970,7/22/1970,Weight loss,Investigations,1,Not  Applicable,Not  Applicable,Not  Applicable
+15,2,2/5/1970,2/5/1970,3/8/1970,3/12/1970,Dehydration,Metabolism and nutrition disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+15,2,2/5/1970,2/5/1970,3/8/1970,3/12/1970,Dyspnea,"Respiratory, thoracic and mediastinal disorders",3,Not  Applicable,Not  Applicable,Not  Applicable
+15,2,2/5/1970,2/5/1970,3/21/1970,3/27/1970,Bronchopulmonary hemorrhage,"Respiratory, thoracic and mediastinal disorders",2,Not  Applicable,Not  Applicable,Not  Applicable
+15,2,2/5/1970,2/5/1970,3/21/1970,3/28/1970,Hyponatremia,Metabolism and nutrition disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+15,2,2/5/1970,2/5/1970,2/18/1970,3/29/1970,Generalized muscle weakness,Musculoskeletal and connective tissue disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+15,3,3/1/1970,3/1/1970,3/8/1970,3/12/1970,Dehydration,Metabolism and nutrition disorders,2,Not  Applicable,Not  Applicable,Not  Applicable
+15,3,3/1/1970,3/1/1970,3/8/1970,3/12/1970,Dyspnea,"Respiratory, thoracic and mediastinal disorders",3,Not  Applicable,Not  Applicable,Not  Applicable
+15,3,3/1/1970,3/1/1970,3/21/1970,3/27/1970,Bronchopulmonary hemorrhage,"Respiratory, thoracic and mediastinal disorders",2,Not  Applicable,Not  Applicable,Not  Applicable
+15,3,3/1/1970,3/1/1970,3/21/1970,3/27/1970,Hyponatremia,Metabolism and nutrition disorders,1,Not  Applicable,Not  Applicable,Not  Applicable
+15,3,3/1/1970,3/1/1970,3/21/1970,3/27/1970,Generalized muscle weakness,Musculoskeletal and connective tissue disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+20,1,1/1/1970,1/1/1970,1/13/1970,1/28/1970,Lung infection,Infections and infestations,3,Not  Applicable,Not  Applicable,Not  Applicable
+20,1,1/1/1970,1/1/1970,1/13/1970,2/10/1970,Back pain,Musculoskeletal and connective tissue disorders,3,Not  Applicable,Not  Applicable,Not  Applicable
+20,1,1/1/1970,1/1/1970,1/13/1970,2/10/1970,Pleural effusion,"Respiratory, thoracic and mediastinal disorders",2,Not  Applicable,Not  Applicable,Not  Applicable
+20,1,1/1/1970,1/1/1970,1/21/1970,2/10/1970,Pneumothorax,"Respiratory, thoracic and mediastinal disorders",2,Not  Applicable,Not  Applicable,Not  Applicable
+20,1,1/1/1970,1/1/1970,1/13/1970,2/10/1970,Atelectasis,"Respiratory, thoracic and mediastinal disorders",3,Not  Applicable,Not  Applicable,Not  Applicable
+20,1,1/1/1970,1/1/1970,1/31/1970,2/10/1970,Death NOS,General disorders and administration site conditions,5,Not  Applicable,Not  Applicable,Not  Applicable
+6,1,1/1/1970,1/1/1970,1/11/1970,1/13/1970,Pain,General disorders and administration site conditions,2,Not  Applicable,Not  Applicable,Not  Applicable
+6,2,1/22/1970,1/22/1970,1/23/1970,1/26/1970,Localized edema,General disorders and administration site conditions,3,Not  Applicable,Not  Applicable,Not  Applicable
+6,NA,1/25/1970,NA,NA,NA,NA,NA,NA,NA,NA,NA

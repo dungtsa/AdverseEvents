@@ -114,8 +114,9 @@ function(request){
                            # htmltools::br(),
                            # htmltools::br(),
                            htmltools::p("This sub-tab contains the AE data with the calculated metrics used in all other tabs for analysis.
-               Leave 'Early AE time point box' blank for all the data. Category can also be chosen, but may lead to sparse data and
-               the inability to do any analysis. Please click the 'Compute AE measures' button.")
+               Leave 'Early AE time point box' blank for all the data. Category and type can also be chosen, but may lead to sparse data and
+               the inability to do any analysis. Please click the 'Compute AE measures' button. If subsetting on AE category or type please 
+               click 'Computer AE measures' again.")
                ,
                shiny::fluidRow(
                  shiny::column(3,
@@ -349,7 +350,7 @@ function(request){
                 htmltools::div(shiny::icon("database"), "Forest plots OS and PFS"),
                 
                 htmltools::p("This sub-tab displays forest plots and the results of the Cox PH models for all AE metrics by AE Category.
-              Both for OS and PFS. Please click the 'Run Coxph models' button.")
+              Both for OS and PFS. Please click the 'Run Coxph models' button. NOTE: For any HR, if the UCL is above 10 it is set to NA." )
               ,
                 
                 htmltools::div(
@@ -363,7 +364,7 @@ function(request){
                          shiny::uiOutput("rendForestplotSelection")
                   )
                 ),
-                shinycssloaders::withSpinner(shiny::plotOutput("Forest_PlotOutput", width = "100%", height = "450px"), type = 6),
+                shinycssloaders::withSpinner(shiny::plotOutput("Forest_PlotOutput", width = "100%", height = "1800px"), type = 6),
                 htmltools::br(),
                 htmltools::div(shiny::downloadButton('forestplotcophinfodownload',"Download Coxph results"),
                     htmltools::br(),
@@ -399,7 +400,7 @@ function(request){
                           shiny::uiOutput("rendRESPplotSelection")
             )
           ),
-          shinycssloaders::withSpinner(shiny::plotOutput("RESP_PlotOutput_all", width = "100%", height = "450px"), type = 6),
+          shinycssloaders::withSpinner(shiny::plotOutput("RESP_PlotOutput_all", width = "100%", height = "900px"), type = 6),
           htmltools::br(),
           # shinycssloaders::withSpinner(plotOutput("RESP_PlotOutput_DC_PD", width = "100%", height = "450px"), type = 6),
 
@@ -411,23 +412,7 @@ function(request){
               shinycssloaders::withSpinner(DT::dataTableOutput("responsettestoutput"))
           )
 
-
-          # htmltools::div(icon("database"), "Response tests"),
-          # htmltools::div(
-          #   actionButton("goresponsetests", "Run tests" ),
-          #   htmltools::br(),
-          #   # downloadButton('download_responseplots',"Download Response plots"),
-          #   # htmltools::br(),
-          #
-          #   downloadButton('responsetabledownload',"Download response test results"),
-          #   htmltools::br()
-          #   ,
-          #   shinycssloaders::withSpinner(DT::dataTableOutput("responsettestoutput"))
-          # )
-
-
-
-
+ 
 
 
         ),
@@ -450,7 +435,7 @@ function(request){
                    shiny::uiOutput("rendCORplotSelection")
             )
           ),
-          shinycssloaders::withSpinner(shiny::plotOutput("COR_PlotOutput_all", width = "100%", height = "450px"), type = 6),
+          shinycssloaders::withSpinner(shiny::plotOutput("COR_PlotOutput_all", width = "100%", height = "1350px"), type = 6),
           htmltools::br(),
           # shinycssloaders::withSpinner(plotOutput("RESP_PlotOutput_DC_PD", width = "100%", height = "450px"), type = 6),
 
@@ -495,6 +480,7 @@ function(request){
             htmltools::br(),
             htmltools::br(),
             htmltools::br(),
+            shinycssloaders::withSpinner(shiny::plotOutput("summaryplot_out", width = "100%", height = "500px")),
             shinycssloaders::withSpinner(DT::dataTableOutput("survivalsummarytable"))
           )
         ),
@@ -525,7 +511,7 @@ function(request){
       ))
       #End  tabPanel("Tables and Reports", tabsetPanel(
       ,
-      # tab to documentation/feedback
+      #  documentation/feedback####
       shiny::tabPanel(
         htmltools::div(shiny::icon("info-circle"), "Documentation"),
         # htmltools::p("To use this app upload a file that has adverse event data stored in table format with first row as a header.
@@ -549,42 +535,30 @@ function(request){
         #                 )
         #          ),
         # htmltools::hr(),
-
-        htmltools::p(" 
-                     
-                     
-                     
-                      
-
-# Introduction ", htmltools::br(),   htmltools::br(), "
-
-This is an application for analysis of AE data from Oncore. The application requires 4 data sets 
-( a 5th tumor measurement file,with RECIST format as response is optional for additional plots).  
-In the OnCore biostats console download the clinical trial data from the 'Data Export' page by 
-selecting the protocol number, clicking 'Use Descriptions' in export options, and finally click export. See the Oncore data export screen shot. 
-", htmltools::br(), "
+        
+        h3(" Introduction  "), htmltools::br(),  
+        htmltools::p(" This is an application for analysis of AE data. The application requires 4 data sets 
+(a 5th tumor measurement file, with RECIST format as response is optional for additional plots).  
+If the data is from the OnCore Clinical Trial Management System go to the biostats console to download the clinical trial data from the 'Data Export' page by 
+selecting the protocol number, clicking 'Use Descriptions' in export options, and finally click export.  
+", htmltools::br(), htmltools::br(), "
 - Demographics", htmltools::br(), "
 - Follow up", htmltools::br(), "
 - Drug administration data", htmltools::br(), "
 - Adverse event data", htmltools::br(), "
-- RECIST data (optional)
+- RECIST data (optional)", htmltools::br(), htmltools::br(),
 
-"),
+htmltools::tags$b(
+  "After uploading data to the app one must click 'Calculate measures' before any analysis can be done. The  'Calculate measures'
+  button is located on the 'AE measures' subtab of the 'AE Plots and Measures' tab.") 
+     ),  htmltools::br(),  htmltools::br(),
 
-htmltools::p(" 
  
-# Running the app", htmltools::br(),   htmltools::br(),  "
 
-Once installed run the function runAEapp() to launch a browser with the applciation and demo data will be loaded. 
-
-"),
-
-htmltools::p(" 
-# RECIST data
-", htmltools::br(),    htmltools::br(), "
-RECIST (Response Evaluation Criteria in Solid Tumors) is a set of standardized criteria used to assess how well a tumor responds to treatment in clinical trials, particularly for cancer therapies. These criteria provide a consistent method for measuring tumor size and determining changes in tumor burden over time. Developed by an international collaboration of cancer organizations, RECIST ensures that tumor response can be compared across different studies.
+h3("RECIST data"), htmltools::br(),    
+htmltools::p( "RECIST (Response Evaluation Criteria in Solid Tumors) is a set of standardized criteria used to assess how well a tumor responds to treatment in clinical trials, particularly for cancer therapies. These criteria provide a consistent method for measuring tumor size and determining changes in tumor burden over time. Developed by an international collaboration of cancer organizations, RECIST ensures that tumor response can be compared across different studies.
 ", htmltools::br(),  htmltools::br(), "
-### Key Aspects of RECIST:", htmltools::br(),htmltools::br(), "
+# Key Aspects of RECIST:", htmltools::br(),htmltools::br(), "
 1. **Tumor Measurement**: Tumors are classified as target or non-target lesions. Target lesions are selected for precise measurement, while non-target lesions are qualitatively assessed.
    - Target lesions are measured in their longest diameter (except for lymph nodes, which are measured in their short axis).
    - Up to five target lesions are typically selected for measurement, with a maximum of two per organ.
@@ -597,7 +571,7 @@ RECIST (Response Evaluation Criteria in Solid Tumors) is a set of standardized c
 ", htmltools::br(),  "
 3. **Evaluation Frequency**: ", htmltools::br(), "Tumor measurements are taken at regular intervals during treatment to monitor changes. The results are used to assess whether the treatment is effective, should be continued, or requires adjustment.
 ", htmltools::br(), htmltools::br(),"
-### Importance of RECIST:", htmltools::br(),htmltools::br(),   "
+# Importance of RECIST:", htmltools::br(),htmltools::br(),   "
 - **Standardization**: Provides a consistent and objective way to assess tumor response across different clinical trials.", htmltools::br(), "
 - **Treatment Evaluation**: Helps determine whether a therapy is working by objectively measuring changes in tumor size.", htmltools::br(), "
 - **Regulatory Use**: Used by regulatory agencies like the FDA and EMA to evaluate the efficacy of new cancer treatments."
@@ -620,10 +594,8 @@ If using tumor measurement/RECIST data the each subject must have baseline measu
  
 "),
 
-htmltools::p(" 
-## Data tab ", htmltools::br(), htmltools::br(), "
-
-This is the home page (data tab), on the left upload the data. There are multiple tabs to view each of the raw uploaded
+h3("Data tab"), htmltools::br(), 
+htmltools::p(  "This is the home page (data tab), on the left upload the data. There are multiple tabs to view each of the raw uploaded
 data sets and the toxicity data is constructed from merging the uploaded data. 
  ", htmltools::br(),htmltools::br(), "
 On the data page there are 5 sub-tabs:
@@ -637,11 +609,100 @@ On the data page there are 5 sub-tabs:
 
 "),
 
-htmltools::p("  
- 
-## AE Plots and Measures", htmltools::br(),   htmltools::br(),"
 
-The next tab panel is the AE Plots and Measures page. This tab panel contains a swimmers plot of adverse events and 
+h3("Data Screenshots"), htmltools::br(), 
+
+img(src = "AEDataScreenShot.PNG", width = "80%"), htmltools::br(),htmltools::br(),
+htmltools::p("AE data set - This dataset captures detailed information about adverse events (AEs), 
+             including their onset, resolution, severity, and classification. 
+             Each row represents an AE occurrence for a patient.
+", htmltools::br(), "
+-   sequence_no – Identifier for each patient.", htmltools::br(), "
+-   cycle – Treatment cycle number when the AE occurred.", htmltools::br(), "
+-   visit_date  – Visit date", htmltools::br(), "
+-   start_date_of_course - Start date of course", htmltools::br(), "
+-   onset_date – Date when the AE began.", htmltools::br(), "
+-   resolved_date – Date when the AE resolved.", htmltools::br(), "
+-   cdus_ctcae_toxicity_type_code – AE type", htmltools::br(), "
+-   toxicity_category – Classification of the AE (e.g.,  Respiratory disorders ).  ", htmltools::br(), "
+-   grade – Severity level of the AE (numeric scale).", htmltools::br(), "
+-   attr_possible – Indicator of whether the AE was possibly related to treatment.", htmltools::br(), "
+-   attr_likely – Indicator of whether the AE was likely related to treatment.", htmltools::br(), "
+-   attr_definite – Indicator of whether the AE was definitely related to treatment." 
+),  htmltools::br(),
+
+img(src = "DemographicsScreenShot.PNG", width = "80%"), htmltools::br(),htmltools::br(),htmltools::br(),
+htmltools::p("Demographics data set - This dataset contains patient-level demographic and treatment-related information.
+             Each row represents a patient.
+", htmltools::br(), "
+-   sequence_no – Unique identifier for each patient.", htmltools::br(), "
+-   age_at_on_study – Patient’s age at study enrollment.", htmltools::br(), "
+-   gender – Patient’s gender.", htmltools::br(), "
+-   race – Patient’s racial classification.", htmltools::br(), "
+-   ethnicity – Patient’s ethnicity (e.g.,  Non-Hispanic ).", htmltools::br(), "
+-   expired_date – Date of death (if applicable).", htmltools::br(), "
+-   on_study_date – Date when the patient was enrolled in the study.", htmltools::br(), "
+-   on_treatment_date – Date when treatment began.", htmltools::br(), "
+-   off_treatment_date – Date when treatment ended.", htmltools::br(), "
+-   on_followup_date – Date when follow-up began.", htmltools::br(), "
+-   off_study_date – Date when the patient was removed from the study.", htmltools::br(), "
+-   last_visit_date – Date of the patient's last recorded visit."
+),  htmltools::br(),
+
+
+img(src = "FollowUpDataScreenShot.PNG", width = "80%"), htmltools::br(),htmltools::br(),htmltools::br(),
+htmltools::p("Follow-Up Data - This dataset records patient follow-up details, including survival status, best response to treatment, and key study dates. Each row represents a patient’s follow-up record.
+
+", htmltools::br(), "
+-   sequence_no – Unique identifier for each patient.", htmltools::br(), "
+-   followup_start_date – Date when patient follow-up began.", htmltools::br(), "
+-   off_treatment_date – Date patient is taken off treatment.", htmltools::br(), "
+-   off_study_date – Date when the patient was removed from the study.", htmltools::br(), "
+-   best_response – Best treatment response observed (e.g., Stable Disease, Partial Response).", htmltools::br(), "
+-   best_response_date – Date of the best treatment response.", htmltools::br(), "
+-   last_followup_date – Last recorded follow-up date.", htmltools::br(), "
+-   last_known_survival_status – Patient’s last known status (e.g., Alive, Dead). ", htmltools::br(), "
+-   date_of_progression – Date of disease progression, if applicable." 
+
+),  htmltools::br(),
+
+
+img(src = "DADataScreenShot.PNG", width = "80%"), htmltools::br(),htmltools::br(),htmltools::br(),
+htmltools::p(" Drug Administration Data - This dataset tracks drug administration details for each patient, including drug names, cycles, and start/stop dates. 
+Each row represents a single instance of drug administration.
+", htmltools::br(),  "
+-   sequence_no – Unique identifier for each patient.", htmltools::br(),  "
+-   cycle – Treatment cycle number.", htmltools::br(),  "
+-   visit_date – Date of the clinical visit during which the drug was administered.", htmltools::br(),  "
+-   drug – Name of the administered drug (e.g., Pembrolizumab, Vorinostat).", htmltools::br(),  "
+-   start_date_of_drug – Date when drug administration started.", htmltools::br(),  "
+-   stop_date_of_drug – Date when drug administration ended."  
+
+),  htmltools::br(),
+
+
+img(src = "RECISTdataScreenShot.PNG", width = "80%"), htmltools::br(),htmltools::br(),htmltools::br(),
+htmltools::p("RECIST Data - This dataset records tumor response assessments based on imaging results and percent change from baseline measurements. 
+             Each row represents a tumor assessment for a specific patient at a given time point.
+", htmltools::br(),  "
+-   sequence_no – Unique identifier for each patient.", htmltools::br(),  "
+-   cycle – Treatment cycle number when the assessment was conducted.", htmltools::br(),  "
+-   visit_date – Date of the clinical visit corresponding to the tumor assessment.", htmltools::br(),  "
+-   date_of_procedure – Date when the imaging procedure was performed.", htmltools::br(),  "
+-   percent_change_from_baseline – Percentage change in tumor size relative to baseline measurement.", htmltools::br(),  "
+-   response – RECIST-defined tumor response classification, such as:", htmltools::br(),  "
+    -   Baseline (BL) – Initial tumor measurement before treatment.", htmltools::br(),  "
+    -   Stable Disease (SD) – No significant change in tumor size.", htmltools::br(),  "
+    -   Progressive Disease (PD) – Increase in tumor size indicating disease progression.", htmltools::br() 
+
+
+),  htmltools::br(),
+
+
+
+h3("AE Plots and Measures  "), htmltools::br(),  
+
+htmltools::p("The next tab panel is the AE Plots and Measures page. This tab panel contains a swimmers plot of adverse events and 
 tables of AEs. It also provides download buttons to save the plots and data. The AE measures sub-tab contains the
 data with the calculated AE metrics used in all other tabs for analysis. 
 ", 
@@ -656,55 +717,93 @@ On the data page there are 4 sub-tabs:", htmltools::br(), "
 - AE table data (aggregated)", htmltools::br(), "
 - AE days data", htmltools::br(), "
 - AE measures", htmltools::br(), "
-- RECIST plot
-
- 
+- RECIST plot"),
 
 
-   
-
-"),
-
-htmltools::p(" 
-
-### AE measures ", htmltools::br(),htmltools::br(), "
-
-This data set contains all the AE variables for analysis on subsequent tabs. 
-It creates 18 variables, 6 for all grade AEs, 6 for low grade (1,2) and 6 for grade 3 AEs. 
-Half of the AE variables are calculated for all AEs and half are calculated for treatment related AEs.
+h3("AE measures"), htmltools::br(), 
+htmltools::p("This data set contains all the AE variables for analysis on subsequent tabs. 
+It creates many different variables, for all grade AEs,  for low grade (1,2) and for grade 3 AEs. 
+ AE variables are also calculated for all AEs and for treatment related AEs.
 ", htmltools::br(),htmltools::br(), "
-- all.grade.duration", htmltools::br(), "
-- all.grade.fre", htmltools::br(), "
-- all.grade.occurrence", htmltools::br(), "
-- all.grade.treatment.related.duration", htmltools::br(), "
-- all.grade.treatment.related.fre", htmltools::br(), "
-- all.grade.treatment.related.occurrence", htmltools::br(), "
-- grade12.duration", htmltools::br(), "
-- grade12.fre", htmltools::br(), "
-- grade12.occurrence", htmltools::br(), "
-- grade12.treatment.related.duration", htmltools::br(), "
-- grade12.treatment.related.fre", htmltools::br(), "
-- grade12.treatment.related.occurrence", htmltools::br(), "
-- grade3.duration", htmltools::br(), "
-- grade3.fre", htmltools::br(), "
-- grade3.occurrence", htmltools::br(), "
-- grade3.treatment.related.duration", htmltools::br(), "
-- grade3.treatment.related.fre", htmltools::br(), "
-- grade3.treatment.related.occurrence", htmltools::br(), "
+-all.grade.fre", htmltools::br(), "
+-HG.fre", htmltools::br(), "
+-LG.fre", htmltools::br(), "
+-g1.fre", htmltools::br(), "
+-g2.fre", htmltools::br(), "
+-g3.fre", htmltools::br(), "
+-g4.fre", htmltools::br(), "
+-g5.fre", htmltools::br(), "
+-all.grade.trt.fre", htmltools::br(), "
+-HG.trt.fre", htmltools::br(), "
+-LG.trt.fre", htmltools::br(), "
+-g1.trt.fre", htmltools::br(), "
+-g2.trt.fre", htmltools::br(), "
+-g3.trt.fre", htmltools::br(), "
+-g4.trt.fre", htmltools::br(), "
+-g5.trt.fre", htmltools::br(), "
+-all.grade.ntr.fre", htmltools::br(), "
+-HG.ntr.fre", htmltools::br(), "
+-LG.ntr.fre", htmltools::br(), "
+-g1.nontrt.fre", htmltools::br(), "
+-g2.nontrt.fre", htmltools::br(), "
+-g3.nontrt.fre", htmltools::br(), "
+-g4.nontrt.fre", htmltools::br(), "
+-g5.nontrt.fre", htmltools::br(), "
+-all.grade.duration", htmltools::br(), "
+-HG.duration", htmltools::br(), "
+-LG.duration", htmltools::br(), "
+-g1.duration", htmltools::br(), "
+-g2.duration", htmltools::br(), "
+-g3.duration", htmltools::br(), "
+-g4.duration", htmltools::br(), "
+-g5.duration", htmltools::br(), "
+-all.grade.trt.duration", htmltools::br(), "
+-HG.trt.duration", htmltools::br(), "
+-LG.trt.duration", htmltools::br(), "
+-g1.trt.duration", htmltools::br(), "
+-g2.trt.duration", htmltools::br(), "
+-g3.trt.duration", htmltools::br(), "
+-g4.trt.duration", htmltools::br(), "
+-g5.trt.duration", htmltools::br(), "
+-all.grade.ntr.duration", htmltools::br(), "
+-HG.ntr.duration", htmltools::br(), "
+-LG.ntr.duration", htmltools::br(), "
+-g1.ntr.duration", htmltools::br(), "
+-g2.ntr.duration", htmltools::br(), "
+-g3.ntr.duration", htmltools::br(), "
+-g4.ntr.duration", htmltools::br(), "
+-g5.ntr.duration", htmltools::br(), "
+-g1.occurrence", htmltools::br(), "
+-g2.occurrence", htmltools::br(), "
+-g3.occurrence", htmltools::br(), "
+-g4.occurrence", htmltools::br(), "
+-g5.occurrence", htmltools::br(), "
+-all.grade.occurrence", htmltools::br(), "
+-HG.occurrence", htmltools::br(), "
+-LG.occurrence", htmltools::br(), "
+-HG.trt.occurrence", htmltools::br(), "
+-LG.trt.occurrence", htmltools::br(), "
+-all.grade.trt.occurrence", htmltools::br(), "
+-all.grade.ntr.occurrence", htmltools::br(), "
+-HG.ntr.occurrence", htmltools::br(), "
+-LG.ntr.occurrence", htmltools::br(), "
+-g1.trt.occurrence", htmltools::br(), "
+-g2.trt.occurrence", htmltools::br(), "
+-g3.trt.occurrence", htmltools::br(), "
+-g4.trt.occurrence", htmltools::br(), "
+-g5.trt.occurrence", htmltools::br(), "
 
 The duration is measured in days these are continuouse measures and are the total number of days with an AE.
 Fre denotes the frequency of AEs. Occurrence is the unique number of occurrences.  
 ", htmltools::br(), "
 Entering a number in the 'Early AE Time Point' box will use that time as a cutoff. Example: if 30 is used
 only AEs in the first 30 days will be used. 
-
-
-
 "),
 
-htmltools::p("   
-## Survival Analysis 
-", htmltools::br(), htmltools::br(),"
+
+h3("Survival Analysis"), htmltools::br(), 
+
+htmltools::p("    
 This tab panel allows for survival analysis in the form of Cox PH models for all the adverse event metrics. KM plots for overall survival and progression free survival can be selected, as well as box plots of the AE metrics by outcome (partial response, stable disease, progressive disease).
 ", htmltools::br(),htmltools::br(),  "
 - Cox ph measures", htmltools::br(), "
@@ -713,7 +812,6 @@ This tab panel allows for survival analysis in the form of Cox PH models for all
 The Coxph measures sub-tab displays the results of Cox PH models for all AE metrics: original continous measure (labelled .y) and dicotomized as an indictor (ie. > 0, labelled .bin). Both for OS and PFS. Please click the 'Run Coxph models' button
 ", htmltools::br(), "
 
-                                          
 The Forest plot sub-tab displays forest plots for OS and PFS for all the AE metrics. 
 The analysis builds on the COXph measures tab analysis but it includes 6 more AE metrics for the unique number of AEs. 
 It also can run the models on particular types of adverse events, specified in the drop down box 
@@ -722,14 +820,14 @@ under 'Select plot to view'. This sub-tab also includes a table of the results.
 
 "),
 
-htmltools::p(" 
- 
-## Response and Correlation tab
-", htmltools::br(),htmltools::br(), "
-This panel has two sub-panels.
+
+
+h3("Response and Correlation tab"), htmltools::br(),  
+
+htmltools::p(" This panel has two sub-panels.
 ", htmltools::br(),htmltools::br(),  "
 - Response tests", htmltools::br(), "
-- Correlation ", htmltools::br(), "
+- Correlation ", htmltools::br(),htmltools::br(), "
 
 The repsonse tests tab runs t-tests comparing the AE metrics between disease control group (complete response + partial response + stable disease) vs progressive disease groups (DC vs PD), partial response vs progressive disease groups (PR vs PD), and stable disease vs progressive disease groups (SD vs PD). Bar plots of p values are displayed along with a table of results (p value and difference) by AE type. Similar to the forest plot panel there is a drop box for AE category. 
 ", htmltools::br(), "
@@ -740,11 +838,9 @@ The correlation tab displays a bar plot of the Pearson's correlation coefficient
  
 "),
 
+
+h3("Tables and reports"), htmltools::br(), 
 htmltools::p(" 
-
-## Tables and reports", htmltools::br(), htmltools::br()," 
-
-
 - Survival analysis ", htmltools::br(), "
 - Response analysis ", htmltools::br(), "
 - Summary report ", htmltools::br(),htmltools::br(),  "
