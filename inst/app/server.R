@@ -3626,13 +3626,25 @@ everything()) %>%
         # print(match("followup_start_date",names(a4.whole.summary)))
         # 
           a4<-suppressMessages(dplyr::left_join(a41.tmp.new,a4.whole.summary[,c(2,match("followup_start_date",names(a4.whole.summary)):dim(a4.whole.summary)[2])],by="pid"))
-         
+          
+          # print("-----names(a4)-----")
+          # print(names(a4))
         name.BOR<-c("Complete Response",   "Partial Response","Stable Disease","Progressive Disease")
         name.BOR.short<-c("CR","PR","SD","PD")
         a40<-a4%>%dplyr::filter(best_response%in%name.BOR)
         name.BOR1<-names(table(a40$best_response)[table(a40$best_response)>0])
         a40$best_response<-factor(a40$best_response,level=name.BOR[name.BOR%in%name.BOR1],label=name.BOR.short[name.BOR%in%name.BOR1])
-        AE.var<-names(a40)[2:25]
+        
+        
+        # print("-----names(a40)-----")
+        # print(dim(a40))
+        # print(names(a40))
+        
+        
+        #AE.var<-names(a40)[2:25] # Just the freq 
+        # all AE.vars
+        AE.var<-names(a40)[2:87] # all  
+        
         data.tmp<-a40%>%dplyr::select(c(pid,best_response,all_of(AE.var)))%>%tidyr::pivot_longer(cols=-(1:2),names_to ='type',values_to = 'value' )
         #---comparison of DC (CR/PR/SD) vs PD---
         tmp.com<-list('DC_vs_PD'=name.BOR.short,'PR_vs_PD'=name.BOR.short[c(1,2,4)],'SD_vs_PD'=name.BOR.short[c(3,4)])
@@ -3717,6 +3729,94 @@ everything()) %>%
         #    ggplot2::ylab('')+ggplot2::xlab('Difference ( PD-CD )')
         #  
         df1<-tissue.test.ans.long
+        
+        # print("NAMES(tissue.test.ans.long)")
+        # print(head(tissue.test.ans.long))
+        # print(names(tissue.test.ans.long))
+        # print(table(tissue.test.ans.long$Measurement.type))
+        # 
+        duration_data <- tissue.test.ans.long %>% filter(grepl("duration", Measurement.type)) #%>% mutate(cate="duration")
+        fre_data <- tissue.test.ans.long %>% filter(grepl("fre", Measurement.type))#%>% mutate(cate="fre")
+        occurrence_data <- tissue.test.ans.long %>% filter(grepl("occurrence", Measurement.type))#%>% mutate(cate="occurrence")
+        sum_unique_AE_data <- tissue.test.ans.long %>% filter(grepl("sum.unique", Measurement.type))#%>% mutate(cate="sum.unique")
+        
+        # print("Split the dataset by AE.Type using filtering")
+        # print(head(duration_data))
+        # print(head(fre_data)) 
+        # print(head(occurrence_data))
+        # print(head(sum_unique_AE_data)) 
+        
+        
+ if ( 1 == 1 )  {     # Split the dataset by AE.Type using filtering
+
+         plot1duration <- duration_data %>% filter(!is.nan(p.value)) %>%
+           ggplot2::ggplot( ggplot2::aes(y = Measurement.type, x = difference, col = p.value<0.05)) + #
+           ggplot2::labs(title=paste("",names(a41)[j],sep=''),fill='P value')+
+           scale_colour_manual(values=c("red","cyan"),breaks=c(T,F),labels=c('<0.05', '>0.05')) +
+           facet_wrap(vars(BOR)) +
+           ggplot2::geom_point(shape = 18, size = 3) +
+           geom_errorbarh(ggplot2::aes(xmin = LCL, xmax = UCL), height = 0.25) +
+           ggplot2::xlab("Difference (PD as reference)") +
+           ggplot2::ylab(" ") + 
+           coord_cartesian(xlim = c(-10, 10) ) +
+           ggplot2::labs(title =  "Forest Plot for duration" )
+         
+         plot1freq <- fre_data %>% filter(!is.nan(p.value)) %>%
+           ggplot2::ggplot( ggplot2::aes(y = Measurement.type, x = difference, col = p.value<0.05)) + #
+           ggplot2::labs(title=paste("",names(a41)[j],sep=''),fill='P value')+
+           scale_colour_manual(values=c("red","cyan"),breaks=c(T,F),labels=c('<0.05', '>0.05')) +
+           facet_wrap(vars(BOR)) +
+           ggplot2::geom_point(shape = 18, size = 3) +
+           geom_errorbarh(ggplot2::aes(xmin = LCL, xmax = UCL), height = 0.25) +
+           ggplot2::xlab("Difference (PD as reference)") +
+           ggplot2::ylab(" ") + 
+           coord_cartesian(xlim = c(-10, 10) )  +
+           ggplot2::labs(title =  "Forest Plot for frequency" )
+         
+         plot1occurrence <- occurrence_data %>% filter(!is.nan(p.value)) %>%
+           ggplot2::ggplot( ggplot2::aes(y = Measurement.type, x = difference, col = p.value<0.05)) + #
+           ggplot2::labs(title=paste("",names(a41)[j],sep=''),fill='P value')+
+           scale_colour_manual(values=c("red","cyan"),breaks=c(T,F),labels=c('<0.05', '>0.05')) +
+           facet_wrap(vars(BOR)) +
+           ggplot2::geom_point(shape = 18, size = 3) +
+           geom_errorbarh(ggplot2::aes(xmin = LCL, xmax = UCL), height = 0.25) +
+           ggplot2::xlab("Difference (PD as reference)") +
+           ggplot2::ylab(" ") + 
+           coord_cartesian(xlim = c(-10, 10) )  +
+           ggplot2::labs(title =  "Forest Plot for occurrence" )
+         
+         plot1sumunique <- sum_unique_AE_data %>% filter(!is.nan(p.value)) %>%
+           ggplot2::ggplot( ggplot2::aes(y = Measurement.type, x = difference, col = p.value<0.05)) + #
+           ggplot2::labs(title=paste("",names(a41)[j],sep=''),fill='P value')+
+           scale_colour_manual(values=c("red","cyan"),breaks=c(T,F),labels=c('<0.05', '>0.05')) +
+           facet_wrap(vars(BOR)) +
+           ggplot2::geom_point(shape = 18, size = 3) +
+           geom_errorbarh(ggplot2::aes(xmin = LCL, xmax = UCL), height = 0.25) +
+           
+           ggplot2::xlab("Difference (PD as reference)") +
+           ggplot2::ylab(" ") + 
+           coord_cartesian(xlim = c(-10, 10) ) +
+           ggplot2::labs(title =  "Forest Plot for sum of unique AEs" )
+         
+         
+         
+         library(patchwork)
+         
+         grid_plot <- (
+                   plot1freq /
+             plot1occurrence /
+               plot1sumunique/
+               plot1duration
+         ) + plot_layout(heights = max(c(NROW(duration_data), NROW(fre_data),
+                                         NROW(occurrence_data),NROW(sum_unique_AE_data))
+         )
+         )
+         
+         
+         }
+         
+         
+       #Original  
         plot1 <- tissue.test.ans.long %>% filter(!is.nan(p.value)) %>%
           ggplot2::ggplot( ggplot2::aes(y = Measurement.type, x = difference, col = p.value<0.05)) + #
           ggplot2::labs(title=paste("",names(a41)[j],sep=''),fill='P value')+
@@ -3728,7 +3828,11 @@ everything()) %>%
           ggplot2::xlab("Difference (PD as reference)") +
           ggplot2::ylab(" ") + 
           coord_cartesian(xlim = c(-10, 10) ) 
+       
+        # NEW 
+        plot1 <- grid_plot
         
+         
         plot2<-tissue.test.ans.long%>%dplyr::filter(BOR%in%'DC_vs_PD')%>% 
           filter(!is.nan(p.value)) %>%
           ggplot2::ggplot( ggplot2::aes(y = Measurement.type, x = difference, col = p.value<0.05)) + #
@@ -3751,9 +3855,7 @@ everything()) %>%
       twolists<-list(coef=coef.list.group,plot=AE.BOR.p.plot.list)
     }
     
-    # testing_BOR_ans<- responseplots(a41=a41now,adf=toxdataNOW)
-    # tibble::as_tibble(do.call(rbind,testing_BOR_ans$coef) %>% dplyr::select(AE,everything()))
-
+     
     testing_BOR_ans<- responseplots(a41=a41now,adf=toxdataNOW)
     # print("testing_BOR_ans")
     # print(head(testing_BOR_ans))
@@ -4021,9 +4123,9 @@ everything()) %>%
           
           cortestdata<-suppressWarnings(cor.test(x,treatment.time,method='pearson'))
           # print(names(cortestdata))
-          print(data.frame(x,treatment.time))
+          #print(data.frame(x,treatment.time))
           
-          print(cortestdata)
+          #print(cortestdata)
           # print(cortestdata$conf.int)
          p<- suppressWarnings(round(cor.test(x,treatment.time,method='pearson')$p.value,5))
         }
@@ -4148,7 +4250,7 @@ everything()) %>%
           coord_cartesian(xlim = c(-1.1, 1.1) ) +
           ggplot2::xlab('correlation coefficient (r)')+
           ggplot2::ylab('')+
-          ggplot2::labs(title=names(a41)[i],fill='P value')+                     # Scatter plot
+          ggplot2::labs(title= paste("Forest Plot for", catlabel ,"AEs: ",names(a41)[i]),fill='P value')+                     # Scatter plot
           geom_vline(xintercept = 0,         # Add vertical line at x = 0
                      color = "black",          # Line color
                      linetype = "dashed",    # Line type
