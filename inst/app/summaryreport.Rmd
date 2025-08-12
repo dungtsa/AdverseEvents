@@ -1,23 +1,88 @@
 ---
-output: pdf_document
- 
+output: pdf_document 
+geometry: landscape 
 ---
 ```{r echo=FALSE, message=FALSE, warning=FALSE, as.is = TRUE} 
 library(kableExtra) 
 ```
 
 # Survival table
+
+## OS 
+
+### Improved OS
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+ 
+#print(dim(survivialtempout()))
+OStable<-survivialtempout()
+ 
+OStableOUTPUT <- OStable[,c(1:3)] %>% filter( Improved.OS!="")
+#kable(survivialtempout())
+kable(OStableOUTPUT)
+```
+\newpage
+### Poorer OS
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE }
  
-print(dim(survivialtempout()))
+#print(dim(survivialtempout()))
+OStable<-survivialtempout()
 
-kable(survivialtempout())
+poorerOStableOUTPUT <- OStable[,c(1,2,4)] %>% filter( Poorer.OS!="")  
+#kable(survivialtempout())
+kable(poorerOStableOUTPUT)
 ```
+
+\newpage
+
+## PFS
+
+### Improved PFS
+
+```{r echo=FALSE, message=FALSE, warning=FALSE }
+ 
+#print(dim(survivialtempout()))
+PFStable<-survivialtempout()
+
+PFStableOUTPUT <- PFStable[,c(1,2,5)] %>% filter( Improved.PFS!="")    
+#kable(survivialtempout())
+#kable(PFStable[,c(1,2,5)])
+kable(PFStableOUTPUT)
+```
+
+\newpage
+
+### Poorer PFS
+
+```{r echo=FALSE, message=FALSE, warning=FALSE }
+ 
+#print(dim(survivialtempout()))
+PFStable<-survivialtempout()
+
+#kable(survivialtempout())
+poorerPFStableOUTPUT <- PFStable[,c(1,2,6)] %>% filter( Poorer.PFS!="")   
+#kable(PFStable[,c(1,2,6)])
+kable(poorerPFStableOUTPUT)
+```
+
+\newpage
 
 # Response table
+
+## Association with PD
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE }
  
-print(dim(responsetempout()))
-kable(responsetempout())
+#print(dim(responsetempout()))
+kable(responsetempout()[,c(1,2,3)])
 ```
+
+## Association with DC
+
+```{r echo=FALSE, message=FALSE, warning=FALSE }
+ 
+#print(dim(responsetempout()))
+kable(responsetempout()[,c(1,2,4)])
+```
+
  

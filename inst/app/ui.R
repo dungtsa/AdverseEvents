@@ -400,7 +400,7 @@ function(request){
                           shiny::uiOutput("rendRESPplotSelection")
             )
           ),
-          shinycssloaders::withSpinner(shiny::plotOutput("RESP_PlotOutput_all", width = "100%", height = "900px"), type = 6),
+          shinycssloaders::withSpinner(shiny::plotOutput("RESP_PlotOutput_all", width = "100%", height = "1800px"), type = 6),
           htmltools::br(),
           # shinycssloaders::withSpinner(plotOutput("RESP_PlotOutput_DC_PD", width = "100%", height = "450px"), type = 6),
 
@@ -439,14 +439,14 @@ function(request){
           htmltools::br(),
           # shinycssloaders::withSpinner(plotOutput("RESP_PlotOutput_DC_PD", width = "100%", height = "450px"), type = 6),
 
-          htmltools::div(shiny::downloadButton('correlationtabledownload',"Download correlation summary"),
-              htmltools::br(),
-              htmltools::br(),
-              htmltools::br()
-              ,
-              shinycssloaders::withSpinner(DT::dataTableOutput("durationanalysistableoutput"))
-          )
-          ,
+          # htmltools::div(shiny::downloadButton('correlationtabledownload',"Download correlation summary"),
+          #     htmltools::br(),
+          #     htmltools::br(),
+          #     htmltools::br()
+          #     # ,
+          #     # shinycssloaders::withSpinner(DT::dataTableOutput("durationanalysistableoutput"))
+          # )
+          #,
 
           htmltools::div(
             shiny::downloadButton('numericcorrelationtabledownload',"Download numeric correlation results"),
@@ -487,13 +487,35 @@ function(request){
         # Response summary tab ####
         shiny::tabPanel(
           htmltools::div(icon("database"), "Response summary"),
-          htmltools::div( htmltools::p("Please run the 'Response tests tab' before attempting to download the 'Response summary report'." ),
+          htmltools::div( htmltools::p("Please run the 'Response tests button' before attempting to download the 'Response summary report'." ),
                htmltools::br(),
                shiny::downloadButton('response_summarydownload',"Download Response summary"),
                htmltools::br(),
                htmltools::br(),
                htmltools::br(),
+               shinycssloaders::withSpinner(shiny::plotOutput("summaryREPSONSEplot_out", width = "100%", height = "500px")),
+               
                shinycssloaders::withSpinner(DT::dataTableOutput("responsesummarytable"))
+          )
+        ),
+        # Duration summary tab ####
+        shiny::tabPanel(
+          htmltools::div(icon("database"), "Duration summary"),
+          htmltools::div( htmltools::p("Please run the 'Run tests button' in the Correlation sub-tab before attempting to download the 'Duration/correlation summary report'." ),
+                          htmltools::br(),
+                          #htmltools::p("A Download button will go here to Download Duration summary" ),
+                          #htmltools::div(shiny::downloadButton('correlationtabledownload',"Download correlation summary"),
+                          shiny::downloadButton('correlationtabledownload',"Download Duration/correlation summary"),
+                          
+                          #shiny::downloadButton('duration_summarydownload',"Download Duration summary"),
+                          #shiny::downloadButton('response_summarydownload',"Download Response summary"),
+                          htmltools::br(),
+                          htmltools::br(),
+                          htmltools::br(),
+                      
+                          shinycssloaders::withSpinner(DT::dataTableOutput("durationanalysistableoutput"))
+                          #,
+                         # shinycssloaders::withSpinner(DT::dataTableOutput("responsesummarytable"))
           )
         ),
 

@@ -161,6 +161,28 @@ shiny::shinyServer(function(input, output, session) {
       dplyr::select(sequence_no, visit_date, start_date_of_course , onset_date , resolved_date, 
              cdus_toxicity_type_code, toxicity_category, grade, 
              attribution_possible, attribution_probable, attribution_definite)
+    
+    
+    # print("AEs~~~~~~~~~~~~~~~~~~~~~~~~~~~~cdus_toxicity_type_code")
+    # print(unique(output$cdus_toxicity_type_code))
+    # print("AEs~~~~~~~~~~~~~~~~~~~~~~~~~~~~toxicity_category")
+    # print(unique(output$toxicity_category))
+    
+    # SHORTEN some Categories
+    output<- as.data.frame(output
+    %>%
+      mutate(
+      cdus_toxicity_type_code=case_when(cdus_toxicity_type_code == "General disorders and administration site conditions - Other, specify" ~ 
+                                          "General disorders - Other",
+                                        TRUE ~ cdus_toxicity_type_code),
+    cdus_toxicity_type_code=gsub(" - Other, specify","",cdus_toxicity_type_code)
+    )
+    )
+    
+    # print("AEs~~~~~~~~~~~~~~~~~~~~~~~~~~~~cdus_toxicity_type_code")
+    # print(unique(output$cdus_toxicity_type_code))
+    # print("AEs~~~~~~~~~~~~~~~~~~~~~~~~~~~~toxicity_category")
+    # print(unique(output$toxicity_category))
     output
   })
 
@@ -1142,7 +1164,7 @@ shiny::shinyServer(function(input, output, session) {
       toxicity.type.within.category <- apply(table1, 2, function(x) dimnames(table1)[[1]][x != 0])
 
     
-      # 1136 ADD BIOMARKER NAMES ####
+      # 1145 ADD BIOMARKER NAMES ####
          name.tox.summary <-
         c(
           "all.grade.occurrence", "all.grade.fre", "all.grade.duration",
@@ -1158,12 +1180,13 @@ shiny::shinyServer(function(input, output, session) {
           "all.grade.ntr.occurrence" ,
           "all.grade.ntr.duration",
           "g1.trt.fre","g2.trt.fre","g3.trt.fre","g4.trt.fre","g5.trt.fre",
-          "g1.nontrt.fre","g2.nontrt.fre","g3.nontrt.fre","g4.nontrt.fre","g5.nontrt.fre",
+          "g1.ntr.fre","g2.ntr.fre","g3.ntr.fre","g4.ntr.fre","g5.ntr.fre",
           "g1.occurrence","g2.occurrence","g3.occurrence","g4.occurrence","g5.occurrence",  
           "g1.duration","g2.duration","g3.duration","g4.duration","g5.duration",
           "g1.trt.duration","g2.trt.duration","g3.trt.duration","g4.trt.duration","g5.trt.duration",
           "g1.ntr.duration","g2.ntr.duration","g3.ntr.duration","g4.ntr.duration","g5.ntr.duration",
-          "g1.trt.occurrence","g2.trt.occurrence","g3.trt.occurrence","g4.trt.occurrence","g5.trt.occurrence"
+          "g1.trt.occurrence","g2.trt.occurrence","g3.trt.occurrence","g4.trt.occurrence","g5.trt.occurrence",
+          "g1.ntr.occurrence","g2.ntr.occurrence","g3.ntr.occurrence","g4.ntr.occurrence","g5.ntr.occurrence"
         )
       # LG.ntr.fre <- round(sum(index.all * index.LG * index.not.tretament.related, na.rm = T),0)
       # LG.ntr.occurrence <- round(as.numeric(LG.ntr.fre > 0),0)
@@ -1255,7 +1278,7 @@ shiny::shinyServer(function(input, output, session) {
             g4.trt.fre <- sum(index.all * index.grade4 * index.tretament.related, na.rm = T)
             g5.trt.fre <- sum(index.all * index.grade5 * index.tretament.related, na.rm = T)
             
-            g1.trt.occurrence <-  round(as.numeric(g1.trt.fre > 0),0) #  NOT CORRECT...
+            g1.trt.occurrence <-  round(as.numeric(g1.trt.fre > 0),0) #  NOT CORRECT... or is it?
             g2.trt.occurrence <-  round(as.numeric(g2.trt.fre > 0),0)
             g3.trt.occurrence <-  round(as.numeric(g3.trt.fre > 0),0)
             g4.trt.occurrence <-  round(as.numeric(g4.trt.fre > 0),0)
@@ -1264,11 +1287,18 @@ shiny::shinyServer(function(input, output, session) {
             all.grade.ntr.fre <- round(sum(index.all * index.not.tretament.related, na.rm = T),0)
             all.grade.ntr.occurrence <- round(as.numeric(all.grade.ntr.fre > 0),0)
             all.grade.ntr.duration <- round(sum(duration.fun(x, index.tmp = index.all & index.not.tretament.related,AE.time.cutoff.tmp = AE.time.cutoff), na.rm = T),0)
-            g1.nontrt.fre <- sum(index.all * index.grade1 * index.not.tretament.related, na.rm = T)
-            g2.nontrt.fre <- sum(index.all * index.grade2 * index.not.tretament.related, na.rm = T)
-            g3.nontrt.fre <- sum(index.all * index.grade3 * index.not.tretament.related, na.rm = T)
-            g4.nontrt.fre <- sum(index.all * index.grade4 * index.not.tretament.related, na.rm = T)
-            g5.nontrt.fre <- sum(index.all * index.grade5 * index.not.tretament.related, na.rm = T)
+            g1.ntr.fre <- sum(index.all * index.grade1 * index.not.tretament.related, na.rm = T)
+            g2.ntr.fre <- sum(index.all * index.grade2 * index.not.tretament.related, na.rm = T)
+            g3.ntr.fre <- sum(index.all * index.grade3 * index.not.tretament.related, na.rm = T)
+            g4.ntr.fre <- sum(index.all * index.grade4 * index.not.tretament.related, na.rm = T)
+            g5.ntr.fre <- sum(index.all * index.grade5 * index.not.tretament.related, na.rm = T)
+            
+            g1.ntr.occurrence <-  round(as.numeric(g1.ntr.fre > 0),0)  
+            g2.ntr.occurrence <-  round(as.numeric(g2.ntr.fre > 0),0)
+            g3.ntr.occurrence <-  round(as.numeric(g3.ntr.fre > 0),0)
+            g4.ntr.occurrence <-  round(as.numeric(g4.ntr.fre > 0),0)
+            g5.ntr.occurrence <-  round(as.numeric(g5.ntr.fre > 0),0)
+            
             
             LG.ntr.fre <- round(sum(index.all * index.LG * index.not.tretament.related, na.rm = T),0)
             LG.ntr.occurrence <- round(as.numeric(LG.ntr.fre > 0),0)
@@ -1299,7 +1329,7 @@ shiny::shinyServer(function(input, output, session) {
             g5.ntr.duration <- round(sum(duration.fun(x, index.tmp = index.all & index.grade5 & index.not.tretament.related,AE.time.cutoff.tmp = AE.time.cutoff), na.rm = T),0)
             
           
-               # 1293 ADD NAMES HERE #### 
+ # 1302 ADD BIOMARKERS NAMES HERE ####
             c(
               all.grade.occurrence, all.grade.fre, all.grade.duration,
               LG.occurrence, LG.fre, LG.duration,
@@ -1315,13 +1345,13 @@ shiny::shinyServer(function(input, output, session) {
               all.grade.ntr.occurrence
               ,all.grade.ntr.duration,
               g1.trt.fre,g2.trt.fre,g3.trt.fre,g4.trt.fre,g5.trt.fre,
-              g1.nontrt.fre,g2.nontrt.fre,g3.nontrt.fre,g4.nontrt.fre,g5.nontrt.fre,
+              g1.ntr.fre,g2.ntr.fre,g3.ntr.fre,g4.ntr.fre,g5.ntr.fre,
               g1.occurrence,g2.occurrence,g3.occurrence,g4.occurrence,g5.occurrence,  
               g1.duration,g2.duration,g3.duration,g4.duration,g5.duration,
               g1.trt.duration,g2.trt.duration,g3.trt.duration,g4.trt.duration,g5.trt.duration,
               g1.ntr.duration,g2.ntr.duration,g3.ntr.duration,g4.ntr.duration,g5.ntr.duration,
-              g1.trt.occurrence,g2.trt.occurrence,g3.trt.occurrence,g4.trt.occurrence,g5.trt.occurrence
-            )
+              g1.trt.occurrence,g2.trt.occurrence,g3.trt.occurrence,g4.trt.occurrence,g5.trt.occurrence,
+              g1.ntr.occurrence,g2.ntr.occurrence,g3.ntr.occurrence,g4.ntr.occurrence,g5.ntr.occurrence )
           }
         )
         
@@ -1486,7 +1516,7 @@ shiny::shinyServer(function(input, output, session) {
   "all.grade.trt.fre","HG.trt.fre","LG.trt.fre",
   "g1.trt.fre","g2.trt.fre","g3.trt.fre","g4.trt.fre","g5.trt.fre",
   "all.grade.ntr.fre","HG.ntr.fre","LG.ntr.fre", 
-  "g1.nontrt.fre", "g2.nontrt.fre", "g3.nontrt.fre", "g4.nontrt.fre", "g5.nontrt.fre",
+  "g1.ntr.fre", "g2.ntr.fre", "g3.ntr.fre", "g4.ntr.fre", "g5.ntr.fre",
   
   "all.grade.duration","HG.duration", "LG.duration", 
   "g1.duration", "g2.duration", "g3.duration", "g4.duration", "g5.duration",
@@ -1528,7 +1558,7 @@ everything()) %>%
                                                             "all.grade.trt.fre","HG.trt.fre","LG.trt.fre",
                                                             "g1.trt.fre","g2.trt.fre","g3.trt.fre","g4.trt.fre","g5.trt.fre",
                                                             "all.grade.ntr.fre","HG.ntr.fre","LG.ntr.fre", 
-                                                            "g1.nontrt.fre", "g2.nontrt.fre", "g3.nontrt.fre", "g4.nontrt.fre", "g5.nontrt.fre",
+                                                            "g1.ntr.fre", "g2.ntr.fre", "g3.ntr.fre", "g4.ntr.fre", "g5.ntr.fre",
                                                             
                                                             "all.grade.duration","HG.duration", "LG.duration", 
                                                             "g1.duration", "g2.duration", "g3.duration", "g4.duration", "g5.duration",
@@ -2664,7 +2694,7 @@ everything()) %>%
       png.status<-F
       AE.km.and.boxplot.list<-coef.list<-list()
       k<-0
-      # 2626 HERE ADD VARS HERE ####
+      # 2667 HERE ADD BIOMARKER NAMES ####
       plotthesevars <-   c("all.grade.duration","all.grade.fre",  "all.grade.occurrence","all.grade.trt.duration",
                            "all.grade.trt.fre","all.grade.trt.occurrence",  "LG.duration","LG.fre",
                            "LG.occurrence","LG.trt.duration",  "LG.trt.fre","LG.trt.occurrence",
@@ -2677,12 +2707,13 @@ everything()) %>%
                            "all.grade.ntr.occurrence",
                            "all.grade.ntr.duration",
                            "g1.trt.fre","g2.trt.fre","g3.trt.fre","g4.trt.fre","g5.trt.fre",
-                           "g1.nontrt.fre","g2.nontrt.fre","g3.nontrt.fre","g4.nontrt.fre","g5.nontrt.fre",
+                           "g1.ntr.fre","g2.ntr.fre","g3.ntr.fre","g4.ntr.fre","g5.ntr.fre",
                            "g1.occurrence","g2.occurrence","g3.occurrence","g4.occurrence","g5.occurrence",  
                            "g1.trt.occurrence","g2.trt.occurrence","g3.trt.occurrence","g4.trt.occurrence","g5.trt.occurrence",
                            "g1.duration","g2.duration","g3.duration","g4.duration","g5.duration",
                            "g1.trt.duration","g2.trt.duration","g3.trt.duration","g4.trt.duration","g5.trt.duration",
-                           "g1.ntr.duration","g2.ntr.duration","g3.ntr.duration","g4.ntr.duration","g5.ntr.duration"
+                           "g1.ntr.duration","g2.ntr.duration","g3.ntr.duration","g4.ntr.duration","g5.ntr.duration",
+                           "g1.ntr.occurrence","g2.ntr.occurrence","g3.ntr.occurrence","g4.ntr.occurrence","g5.ntr.occurrence" 
       )
        
       for (h in match(plotthesevars,names(df)))#[howmany])
@@ -2828,7 +2859,7 @@ everything()) %>%
                  predictor = c("y","AE.bin","y","AE.bin")) })
       step2<-do.call(rbind,step1)
       
-      # ADD HERE TOO !? 2929 ####
+      # 2831 ADD HERE TOO !? ADD BIOMARKER NAMES ####
       coef.data <- tibble::as_tibble(as.data.frame(step2) %>% 
                                        dplyr::mutate(
                                          AEmeasure  = rep( c("all.grade.duration","all.grade.fre",  "all.grade.occurrence","all.grade.trt.duration",
@@ -2842,10 +2873,11 @@ everything()) %>%
                                                                          "all.grade.ntr.occurrence" ,
                                                                          "all.grade.ntr.duration",
                                                                          "g1.trt.fre","g2.trt.fre","g3.trt.fre","g4.trt.fre","g5.trt.fre",
-                                                                         "g1.nontrt.fre","g2.nontrt.fre","g3.nontrt.fre","g4.nontrt.fre","g5.nontrt.fre",
+                                                                         "g1.ntr.fre","g2.ntr.fre","g3.ntr.fre","g4.ntr.fre","g5.ntr.fre",
                                                                           "g1.occurrence","g2.occurrence","g3.occurrence","g4.occurrence","g5.occurrence",
                                                              
                                                              "g1.trt.occurrence","g2.trt.occurrence","g3.trt.occurrence","g4.trt.occurrence","g5.trt.occurrence",
+                                                             "g1.ntr.occurrence","g2.ntr.occurrence","g3.ntr.occurrence","g4.ntr.occurrence","g5.ntr.occurrence", 
                                                                          "g1.duration","g2.duration","g3.duration","g4.duration","g5.duration",
                                                                          "g1.trt.duration","g2.trt.duration","g3.trt.duration","g4.trt.duration","g5.trt.duration",
                                                                          "g1.ntr.duration","g2.ntr.duration","g3.ntr.duration","g4.ntr.duration","g5.ntr.duration"
@@ -3096,9 +3128,9 @@ everything()) %>%
         # a4<-dplyr::left_join(a41[[j]],a4.whole.summary[,c(2,21:dim(a4.whole.summary)[2])])
         # a4<-dplyr::left_join(a41[[j]],a4.whole.summary[,c(2,26:dim(a4.whole.summary)[2])],by="pid")
         
-     # CHANGE COL NUMBERS WHEN ADDING BIOMARKERS ####
-     # print("--line 2978---------------names(a4.whole.summary)-----------------")
-     # print(names(a4.whole.summary))
+     # 3109 CHANGE COL NUMBERS WHEN ADDING BIOMARKERS ####
+     #print("--line 3110---------------names(a4.whole.summary)-----------------")
+      #print(names(a4.whole.summary))
           #a4<-dplyr::left_join(a41[[j]],a4.whole.summary[,c(2,30:dim(a4.whole.summary)[2])],by="pid")
           #a4<-dplyr::left_join(a41[[j]],a4.whole.summary[,c(2,34:dim(a4.whole.summary)[2])],by="pid")
           #a4<-dplyr::left_join(a41[[j]],a4.whole.summary[,c(2,39:dim(a4.whole.summary)[2])],by="pid")
@@ -3111,7 +3143,7 @@ everything()) %>%
         # print(png.status)
         coef.list<-list()
         k<-0
-  # 3114 ADD VARS HERE ####
+  # 3114 ADD BIOMARKER NAMES ####
         measures<-c("all.grade.duration","all.grade.fre",
                     "all.grade.occurrence","all.grade.trt.duration","all.grade.trt.fre",
                     "all.grade.trt.occurrence", "LG.duration","LG.fre",
@@ -3125,13 +3157,15 @@ everything()) %>%
                     "g1.fre","g2.fre","g3.fre","g4.fre","g5.fre",
                     "all.grade.ntr.fre","all.grade.ntr.occurrence","all.grade.ntr.duration",
                     "g1.trt.fre","g2.trt.fre","g3.trt.fre","g4.trt.fre","g5.trt.fre",
-                    "g1.nontrt.fre","g2.nontrt.fre","g3.nontrt.fre","g4.nontrt.fre","g5.nontrt.fre", 
+                    "g1.ntr.fre","g2.ntr.fre","g3.ntr.fre","g4.ntr.fre","g5.ntr.fre", 
                    "g1.occurrence","g2.occurrence","g3.occurrence","g4.occurrence","g5.occurrence"  ,   
                    "g1.trt.occurrence","g2.trt.occurrence","g3.trt.occurrence","g4.trt.occurrence","g5.trt.occurrence",
-                    "g1.duration","g2.duration","g3.duration","g4.duration","g5.duration",
+                   "g1.ntr.occurrence","g2.ntr.occurrence","g3.ntr.occurrence","g4.ntr.occurrence","g5.ntr.occurrence",   
+                   "g1.duration","g2.duration","g3.duration","g4.duration","g5.duration",
                     "g1.trt.duration","g2.trt.duration","g3.trt.duration","g4.trt.duration","g5.trt.duration",
                     "g1.ntr.duration","g2.ntr.duration","g3.ntr.duration","g4.ntr.duration","g5.ntr.duration"
-        )
+        
+                   )
          
 
         for(h in  match(measures,names(a4)) )
@@ -3256,8 +3290,8 @@ everything()) %>%
             # print(e23)
             #   print(dim(e23))
             e2.comb<-rbind(e2.comb,rbind(e21,e22,e23))
-              # print("ecombined")
-              # print(e2.comb)
+              # print("e2.comb!!!!!!!!!!!!!!!!!!!!!!")
+              # print(names(e2.comb))
               # print(dim(e2.comb))
               
              
@@ -3371,19 +3405,174 @@ everything()) %>%
     # print("dim(e4o")
     # print(dim(e4o))
     e4v2<- rbind(duration_data,fre_data,occurrence_data,sum_unique_AE_data)
-    # print("dim(e4)")
-    # print(dim(e4v2))
+     # print("line 3386 - dim(e4) and names")
+     # print(dim(e4v2))
+     # print(names(e4v2))
+     # print(table(e4v2$AE.type))
     # Initialize an empty list to store plots
     #AE.survival.p.forestplot.list <- list()
     AE.survival.p.forestplot.list.cat <- list()
     AE.survival.p.forestplot.list.cat.NROWS <-c(NA,NA,NA,NA)
     # Define the AE.type categories
     categories <- c("duration", "fre", "occurrence", "sum.unique")
-    
+    #save(e4v2,file="F:\\myGitRepo\\e4v2.RData")
     # Loop through each AE.type category and generate a forest plot
     for (cat in categories) {
+      #3398 ADD BIOMARKER NAMES custom order ####
+      
+    
+    
+
       # Filter the data for the current AE.Type
       e4_filtered <- e4v2 %>% filter(cate == cat)  
+      #c("duration", "fre", "occurrence", "sum.unique")
+      if (cat == "duration") { 
+        customorder<-c(
+          
+          "g1.trt.duration",
+          "g2.trt.duration",
+          "LG.trt.duration",
+          "g3.trt.duration",
+          "g4.trt.duration",
+          "g5.trt.duration",
+          "HG.trt.duration",
+          "all.grade.trt.duration",
+          
+          "g1.ntr.duration",
+          "g2.ntr.duration",
+          "LG.ntr.duration",
+          "g3.ntr.duration",
+          "g4.ntr.duration",
+          "g5.ntr.duration",
+          "HG.ntr.duration",
+          "all.grade.ntr.duration",    
+          
+          "g1.duration",
+          "g2.duration",
+          "LG.duration",
+          "g3.duration",
+          "g4.duration",
+          "g5.duration",
+          "HG.duration",
+          "all.grade.duration"
+                       
+                       
+                       )
+        
+      }
+      
+      if (cat == "fre") { 
+        
+        customorder<-c(  # freq
+                        
+          "g1.trt.fre",
+          "g2.trt.fre",
+          "LG.trt.fre",
+          "g3.trt.fre",
+          "g4.trt.fre",
+          "g5.trt.fre",
+          "HG.trt.fre",
+          "all.grade.trt.fre",
+          
+          "g1.ntr.fre",
+          "g2.ntr.fre",
+          "LG.ntr.fre",
+          "g3.ntr.fre",
+          "g4.ntr.fre",
+          "g5.ntr.fre",
+          "HG.ntr.fre",
+          "all.grade.ntr.fre",    
+          
+          "g1.fre",
+          "g2.fre",
+          "LG.fre",
+          "g3.fre",
+          "g4.fre",
+          "g5.fre",
+          "HG.fre",
+          "all.grade.fre"
+          
+                         )
+      }
+      
+      if (cat == "occurrence") { 
+        # Occurrence
+        customorder<- c(
+          
+          "g1.trt.occurrence",
+          "g2.trt.occurrence",
+          "LG.trt.occurrence",
+          "g3.trt.occurrence",
+          "g4.trt.occurrence",
+          "g5.trt.occurrence",
+          "HG.trt.occurrence",
+          "all.grade.trt.occurrence",
+          
+          "g1.ntr.occurrence",
+          "g2.ntr.occurrence",
+          "LG.ntr.occurrence",
+          "g3.ntr.occurrence",
+          "g4.ntr.occurrence",
+          "g5.ntr.occurrence",
+          "HG.ntr.occurrence",
+          "all.grade.ntr.occurrence",    
+          
+          "g1.occurrence",
+          "g2.occurrence",
+          "LG.occurrence",
+          "g3.occurrence",
+          "g4.occurrence",
+          "g5.occurrence",
+          "HG.occurrence",
+          "all.grade.occurrence"
+        
+        )
+        
+      }
+    
+      if (cat == "sum.unique") { 
+        
+        # sum.unique
+        customorder<- c(
+          "g1.trt.sum.unique",
+          "g2.trt.sum.unique",
+          "LG.trt.sum.unique",
+          "g3.trt.sum.unique",
+          "g4.trt.sum.unique",
+          "g5.trt.sum.unique",
+          "HG.trt.sum.unique",
+          "all.grade.trt.sum.unique",
+          
+          "g1.ntr.sum.unique",
+          "g2.ntr.sum.unique",
+          "LG.ntr.sum.unique",
+          "g3.ntr.sum.unique",
+          "g4.ntr.sum.unique",
+          "g5.ntr.sum.unique",
+          "HG.ntr.sum.unique",
+          "all.grade.ntr.sum.unique",    
+          
+          "g1.sum.unique",
+          "g2.sum.unique",
+          "LG.sum.unique",
+          "g3.sum.unique",
+          "g4.sum.unique",
+          "g5.sum.unique",
+          "HG.sum.unique",
+          "all.grade.sum.unique"
+          
+        
+        
+        )
+      }
+      
+      
+      # Make sure AE.type is a factor with custom levels
+      e4_filtered$AE.type <- factor(e4_filtered$AE.type, levels = rev(customorder))  # rev() to match top-to-bottom plot
+      # print("names(e4_filtered)-------------------------")
+      #  print(names(e4_filtered))
+       e4_filtered$index <- as.numeric(e4_filtered$AE.type) 
+       
       AE.survival.p.forestplot.list.cat.NROWS[cat]<-NROW(e4_filtered)
       catlabel <- ifelse(cat=="fre","frequency",cat)
       # print("names(e4_filtered)----------------------------------")
@@ -3406,15 +3595,7 @@ everything()) %>%
     }
     
     library(patchwork)
-    
-    # Combine the plots into a 4x1 grid
-    # grid_plot <- (
-    #     AE.survival.p.forestplot.list.cat[["fre"]] +
-    #     AE.survival.p.forestplot.list.cat[["occurrence"]] +
-    #     AE.survival.p.forestplot.list.cat[["sum.unique"]] +
-    #     AE.survival.p.forestplot.list.cat[["duration"]]
-    # ) + plot_layout(ncol = 1, nrow = 4)
-    
+
     grid_plot <- (
       AE.survival.p.forestplot.list.cat[["fre"]] /
         AE.survival.p.forestplot.list.cat[["occurrence"]] /
@@ -3424,10 +3605,6 @@ everything()) %>%
                                 AE.survival.p.forestplot.list.cat.NROWS["sum.unique"], AE.survival.p.forestplot.list.cat.NROWS["duration"])
     )
                     )
-    
-    
-    
-    
     
     
     # Save the grid plot in the list
@@ -3600,9 +3777,9 @@ everything()) %>%
       coef.list.group<-AE.BOR.p.plot.list<-list()
       for(j in 1:length(a41))
       {
-        #if(j%%10 == 0 ){#print("working on it: #");
-        #print(j)
-        #}
+        if(j%%10 == 0 ){#print("working on it: #");
+        print(j)
+        }
         a41.tmp<-dplyr::ungroup(a41[[j]])
         var.drop<-c('AE.category','AE')[c('AE.category','AE')%in%names(a41.tmp)]
         #---get AE occurrence from sum.unique.AE
@@ -3639,12 +3816,14 @@ everything()) %>%
         # print("-----names(a40)-----")
         # print(dim(a40))
         # print(names(a40))
-        
+        # print(match("followup_start_date",names(a40)))
+        # print((match("followup_start_date",names(a40))-1))
+
         
         #AE.var<-names(a40)[2:25] # Just the freq 
         # all AE.vars
-        AE.var<-names(a40)[2:87] # all  
         
+        AE.var<-names(a40)[2:(match("followup_start_date",names(a40))-1)] # all  
         data.tmp<-a40%>%dplyr::select(c(pid,best_response,all_of(AE.var)))%>%tidyr::pivot_longer(cols=-(1:2),names_to ='type',values_to = 'value' )
         #---comparison of DC (CR/PR/SD) vs PD---
         tmp.com<-list('DC_vs_PD'=name.BOR.short,'PR_vs_PD'=name.BOR.short[c(1,2,4)],'SD_vs_PD'=name.BOR.short[c(3,4)])
@@ -3711,7 +3890,8 @@ everything()) %>%
                         "meanDC","meanPD" ))%>%
           dplyr::mutate(Measurement.type=factor(Measurement.type,level=sort(names(table(Measurement.type)))))
         
-        #THE PLOTS ####
+        #THE ReSPONSE PLOTS ####
+        
         #  plot1<-tissue.test.ans.long%>%
         #    ggplot2::ggplot(ggplot2::aes(y=Measurement.type,x=difference,fill=p.value<0.05))+
         #    ggplot2::geom_bar(stat = 'identity')+
@@ -3740,58 +3920,223 @@ everything()) %>%
         occurrence_data <- tissue.test.ans.long %>% filter(grepl("occurrence", Measurement.type))#%>% mutate(cate="occurrence")
         sum_unique_AE_data <- tissue.test.ans.long %>% filter(grepl("sum.unique", Measurement.type))#%>% mutate(cate="sum.unique")
         
-        # print("Split the dataset by AE.Type using filtering")
-        # print(head(duration_data))
-        # print(head(fre_data)) 
-        # print(head(occurrence_data))
-        # print(head(sum_unique_AE_data)) 
-        
-        
- if ( 1 == 1 )  {     # Split the dataset by AE.Type using filtering
+        # print("Split the dataset by AE.Type using filtering NROW or DIM")
+        # print(NROW(duration_data))
+        # print(dim(fre_data))
+        # print(NROW(occurrence_data))
+        # print(NROW(sum_unique_AE_data))
 
-         plot1duration <- duration_data %>% filter(!is.nan(p.value)) %>%
-           ggplot2::ggplot( ggplot2::aes(y = Measurement.type, x = difference, col = p.value<0.05)) + #
+   #print(table(duration_data$Measurement.type))
+        
+ if ( 1 == 1 )  {   
+   customorder<-c(
+     
+     "g1.trt.duration",
+     "g2.trt.duration",
+     "LG.trt.duration",
+     "g3.trt.duration",
+     "g4.trt.duration",
+     "g5.trt.duration",
+     "HG.trt.duration",
+     "all.grade.trt.duration",
+     
+     "g1.ntr.duration",
+     "g2.ntr.duration",
+     "LG.ntr.duration",
+     "g3.ntr.duration",
+     "g4.ntr.duration",
+     "g5.ntr.duration",
+     "HG.ntr.duration",
+     "all.grade.ntr.duration",    
+     
+     "g1.duration",
+     "g2.duration",
+     "LG.duration",
+     "g3.duration",
+     "g4.duration",
+     "g5.duration",
+     "HG.duration",
+     "all.grade.duration"
+     
+     
+   )
+   
+   
+   #print(duration_data)
+   #save(duration_data,file="F:\\myGitRepo\\duration_data.RData")
+   
+   duration_data <- duration_data %>% 
+           mutate(Measurement.type=factor(Measurement.type,levels=rev(customorder)),
+                  index=as.numeric(Measurement.type)) %>%
+           filter(!is.nan(p.value)) 
+   
+   #print(duration_data)
+   
+           plot1duration<-  duration_data %>% 
+           ggplot2::ggplot( ggplot2::aes(y = index, x = difference, col = p.value<0.05)) + #
            ggplot2::labs(title=paste("",names(a41)[j],sep=''),fill='P value')+
            scale_colour_manual(values=c("red","cyan"),breaks=c(T,F),labels=c('<0.05', '>0.05')) +
            facet_wrap(vars(BOR)) +
            ggplot2::geom_point(shape = 18, size = 3) +
            geom_errorbarh(ggplot2::aes(xmin = LCL, xmax = UCL), height = 0.25) +
+           
+           ggplot2::scale_y_continuous(name = "", 
+                                       breaks = duration_data$index, 
+                                       labels = duration_data$Measurement.type) +
+           
+           
+           
            ggplot2::xlab("Difference (PD as reference)") +
            ggplot2::ylab(" ") + 
            coord_cartesian(xlim = c(-10, 10) ) +
            ggplot2::labs(title =  "Forest Plot for duration" )
          
-         plot1freq <- fre_data %>% filter(!is.nan(p.value)) %>%
-           ggplot2::ggplot( ggplot2::aes(y = Measurement.type, x = difference, col = p.value<0.05)) + #
+         customorder<-c(  # freq
+           "g1.trt.fre",
+           "g2.trt.fre",
+           "LG.trt.fre",
+           "g3.trt.fre",
+           "g4.trt.fre",
+           "g5.trt.fre",
+           "HG.trt.fre",
+           "all.grade.trt.fre",
+           
+           "g1.ntr.fre",
+           "g2.ntr.fre",
+           "LG.ntr.fre",
+           "g3.ntr.fre",
+           "g4.ntr.fre",
+           "g5.ntr.fre",
+           "HG.ntr.fre",
+           "all.grade.ntr.fre",    
+           
+           "g1.fre",
+           "g2.fre",
+           "LG.fre",
+           "g3.fre",
+           "g4.fre",
+           "g5.fre",
+           "HG.fre",
+           "all.grade.fre"
+           
+           )
+         
+         
+         
+         fre_data <- fre_data  %>% 
+           mutate(Measurement.type=factor(Measurement.type,levels=rev(customorder)),
+                  index=as.numeric(Measurement.type)) %>%
+           filter(!is.nan(p.value)) 
+         
+          
+           plot1freq <-  fre_data %>%    ggplot2::ggplot( ggplot2::aes(y = index, x = difference, col = p.value<0.05)) + #
            ggplot2::labs(title=paste("",names(a41)[j],sep=''),fill='P value')+
            scale_colour_manual(values=c("red","cyan"),breaks=c(T,F),labels=c('<0.05', '>0.05')) +
            facet_wrap(vars(BOR)) +
            ggplot2::geom_point(shape = 18, size = 3) +
            geom_errorbarh(ggplot2::aes(xmin = LCL, xmax = UCL), height = 0.25) +
-           ggplot2::xlab("Difference (PD as reference)") +
+           ggplot2::scale_y_continuous(name = "", 
+                                       breaks = fre_data$index, 
+                                       labels = fre_data$Measurement.type) +
+           
+           
+            ggplot2::xlab("Difference (PD as reference)") +
            ggplot2::ylab(" ") + 
            coord_cartesian(xlim = c(-10, 10) )  +
            ggplot2::labs(title =  "Forest Plot for frequency" )
+         customorder<- c( 
+           "g1.trt.occurrence",
+           "g2.trt.occurrence",
+           "LG.trt.occurrence",
+           "g3.trt.occurrence",
+           "g4.trt.occurrence",
+           "g5.trt.occurrence",
+           "HG.trt.occurrence",
+           "all.grade.trt.occurrence",
+           
+           "g1.ntr.occurrence",
+           "g2.ntr.occurrence",
+           "LG.ntr.occurrence",
+           "g3.ntr.occurrence",
+           "g4.ntr.occurrence",
+           "g5.ntr.occurrence",
+           "HG.ntr.occurrence",
+           "all.grade.ntr.occurrence",    
+           
+           "g1.occurrence",
+           "g2.occurrence",
+           "LG.occurrence",
+           "g3.occurrence",
+           "g4.occurrence",
+           "g5.occurrence",
+           "HG.occurrence",
+           "all.grade.occurrence")
          
-         plot1occurrence <- occurrence_data %>% filter(!is.nan(p.value)) %>%
-           ggplot2::ggplot( ggplot2::aes(y = Measurement.type, x = difference, col = p.value<0.05)) + #
+         occurrence_data <- occurrence_data %>% 
+           mutate(Measurement.type=factor(Measurement.type,levels=rev(customorder)),
+                  index=as.numeric(Measurement.type)) %>%
+           filter(!is.nan(p.value))  
+         
+          plot1occurrence<-occurrence_data %>%      ggplot2::ggplot( ggplot2::aes(y = index, x = difference, col = p.value<0.05)) + #
            ggplot2::labs(title=paste("",names(a41)[j],sep=''),fill='P value')+
            scale_colour_manual(values=c("red","cyan"),breaks=c(T,F),labels=c('<0.05', '>0.05')) +
            facet_wrap(vars(BOR)) +
            ggplot2::geom_point(shape = 18, size = 3) +
            geom_errorbarh(ggplot2::aes(xmin = LCL, xmax = UCL), height = 0.25) +
+           ggplot2::scale_y_continuous(name = "", 
+                                       breaks = occurrence_data$index, 
+                                       labels = occurrence_data$Measurement.type) +
+           
+           
            ggplot2::xlab("Difference (PD as reference)") +
            ggplot2::ylab(" ") + 
            coord_cartesian(xlim = c(-10, 10) )  +
            ggplot2::labs(title =  "Forest Plot for occurrence" )
-         
-         plot1sumunique <- sum_unique_AE_data %>% filter(!is.nan(p.value)) %>%
-           ggplot2::ggplot( ggplot2::aes(y = Measurement.type, x = difference, col = p.value<0.05)) + #
+         customorder<- c(
+           
+           
+           "g1.trt.sum.unique",
+           "g2.trt.sum.unique",
+           "LG.trt.sum.unique",
+           "g3.trt.sum.unique",
+           "g4.trt.sum.unique",
+           "g5.trt.sum.unique",
+           "HG.trt.sum.unique",
+           "all.grade.trt.sum.unique",
+           
+           "g1.ntr.sum.unique",
+           "g2.ntr.sum.unique",
+           "LG.ntr.sum.unique",
+           "g3.ntr.sum.unique",
+           "g4.ntr.sum.unique",
+           "g5.ntr.sum.unique",
+           "HG.ntr.sum.unique",
+           "all.grade.ntr.sum.unique",    
+           
+           "g1.sum.unique",
+           "g2.sum.unique",
+           "LG.sum.unique",
+           "g3.sum.unique",
+           "g4.sum.unique",
+           "g5.sum.unique",
+           "HG.sum.unique",
+           "all.grade.sum.unique"
+         )
+         sum_unique_AE_data <- sum_unique_AE_data %>% 
+           mutate(Measurement.type=factor(Measurement.type,levels=rev(customorder)),
+                  index=as.numeric(Measurement.type)) %>%
+           filter(!is.nan(p.value)) 
+           plot1sumunique<-sum_unique_AE_data %>%
+           ggplot2::ggplot( ggplot2::aes(y = index, x = difference, col = p.value<0.05)) + #
            ggplot2::labs(title=paste("",names(a41)[j],sep=''),fill='P value')+
            scale_colour_manual(values=c("red","cyan"),breaks=c(T,F),labels=c('<0.05', '>0.05')) +
            facet_wrap(vars(BOR)) +
            ggplot2::geom_point(shape = 18, size = 3) +
            geom_errorbarh(ggplot2::aes(xmin = LCL, xmax = UCL), height = 0.25) +
+           ggplot2::scale_y_continuous(name = "", 
+                                       breaks = sum_unique_AE_data$index, 
+                                       labels = sum_unique_AE_data$Measurement.type) +
+           
            
            ggplot2::xlab("Difference (PD as reference)") +
            ggplot2::ylab(" ") + 
@@ -3807,9 +4152,9 @@ everything()) %>%
              plot1occurrence /
                plot1sumunique/
                plot1duration
-         ) + plot_layout(heights = max(c(NROW(duration_data), NROW(fre_data),
-                                         NROW(occurrence_data),NROW(sum_unique_AE_data))
-         )
+         ) + plot_layout(
+           #heights = max(c(NROW(duration_data), NROW(fre_data),  NROW(occurrence_data),NROW(sum_unique_AE_data)))
+           heights = c(24, 24, 24, 24)
          )
          
          
@@ -4235,18 +4580,172 @@ everything()) %>%
         cor1v2_filtered <- cor1v2 %>% filter(cate == cat)
         
         catlabel <- ifelse(cat=="fre","frequency",cat)
-        # print("names(cor1v2_filtered)----------------------------------")
+        
+        
+        
+        if (cat == "duration") { 
+          customorder<-c("all.grade.trt.duration",
+                         "HG.trt.duration",
+                         "g5.trt.duration",
+                         "g4.trt.duration",
+                         "g3.trt.duration",
+                         "LG.trt.duration",
+                         "g2.trt.duration",
+                         "g1.trt.duration",
+                         
+                         "all.grade.ntr.duration",
+                         "HG.ntr.duration",
+                         "g5.ntr.duration",
+                         "g4.ntr.duration",
+                         "g3.ntr.duration",
+                         "LG.ntr.duration",
+                         "g2.ntr.duration",
+                         "g1.ntr.duration",
+                         
+                         "all.grade.duration",
+                         "HG.duration",
+                         "g5.duration",
+                         "g4.duration",
+                         "g3.duration", 
+                         "LG.duration",
+                         "g2.duration",
+                         "g1.duration"
+                         
+                         
+          )
+          
+        }
+        
+        if (cat == "fre") { 
+          
+          customorder<-c(  # freq
+            
+            "all.grade.trt.fre",
+            "HG.trt.fre",
+            "g5.trt.fre",
+            "g4.trt.fre",
+            "g3.trt.fre",
+            "LG.trt.fre",
+            "g2.trt.fre",
+            "g1.trt.fre",
+            
+            "all.grade.ntr.fre",
+            "HG.ntr.fre",
+            "g5.ntr.fre",
+            "g4.ntr.fre", 
+            "g3.ntr.fre",
+            "LG.ntr.fre",
+            "g2.ntr.fre",
+            "g1.ntr.fre",
+            "all.grade.fre",
+            
+            "HG.fre",
+            "g5.fre",
+            "g4.fre",
+            "g3.fre",
+            "LG.fre",
+            "g2.fre",
+            "g1.fre"
+          )
+        }
+        
+        if (cat == "occurrence") { 
+          # Occurrence
+          customorder<- c(
+            "all.grade.trt.occurrence",
+            "HG.trt.occurrence",
+            "g5.trt.occurrence",
+            "g4.trt.occurrence",
+            "g3.trt.occurrence",
+            "LG.trt.occurrence",
+            "g2.trt.occurrence",
+            "g1.trt.occurrence",
+            
+            "all.grade.ntr.occurrence",
+            "HG.ntr.occurrence",
+            "g5.ntr.occurrence",  
+            "g4.ntr.occurrence", 
+            "g3.ntr.occurrence",
+            "LG.ntr.occurrence",
+            "g2.ntr.occurrence",
+            "g1.ntr.occurrence",
+            
+            
+            "all.grade.occurrence", 
+            "HG.occurrence",
+            "g5.occurrence",  
+            "g4.occurrence", 
+            "g3.occurrence",
+            "LG.occurrence",
+            "g2.occurrence",
+            "g1.occurrence")
+          
+        }
+        
+        if (cat == "sum.unique") { 
+          
+          # sum.unique
+          customorder<- c(
+            "all.grade.trt.sum.unique",
+            "HG.trt.sum.unique",
+            "g5.trt.sum.unique",
+            "g4.trt.sum.unique",
+            "g3.trt.sum.unique",
+            "LG.trt.sum.unique",
+            "g2.trt.sum.unique",
+            "g1.trt.sum.unique",
+            
+            "all.grade.ntr.sum.unique",
+            "HG.ntr.sum.unique",
+            "g5.ntr.sum.unique",  
+            "g4.ntr.sum.unique", 
+            "g3.ntr.sum.unique",
+            "LG.ntr.sum.unique",
+            "g2.ntr.sum.unique",
+            "g1.ntr.sum.unique",     
+            
+            "all.grade.sum.unique", 
+            "HG.sum.unique",
+            "g5.sum.unique",  
+            "g4.sum.unique", 
+            "g3.sum.unique",
+            "LG.sum.unique",
+            "g2.sum.unique",
+            "g1.sum.unique"
+            
+            
+          )
+        }
+        
+         # Make sure AE.type is a factor with custom levels
+        cor1v2_filtered$AE.measurement.type <- factor(cor1v2_filtered$AE.measurement.type, levels = rev(customorder))  # rev() to match top-to-bottom plot
+ 
+        cor1v2_filtered$index <- as.numeric(cor1v2_filtered$AE.measurement.type) 
+         
+        # print("~~~~~~~~~~~~~~~~names(cor1v2_filtered)~~~~~~~~~~~~~~~~~~~")
         # print(names(cor1v2_filtered))
         # print(dim(cor1v2_filtered)) 
+        # print("THE CATEGORY")
         # print(cat)
+        # 
+        
+        
         # Create the forest plot for this category
         cor.plot.AE.treatment.time.cat[[cat]] <- cor1v2_filtered%>%
-          ggplot2::ggplot(ggplot2::aes(y=AE.measurement.type,x=r,col=pvalue<0.05))+
+          ggplot2::ggplot(ggplot2::aes(y=index,x=r,col=pvalue<0.05))+
           #ggplot2::scale_fill_manual(values=c("cyan","red"),breaks=c(F,T),labels=c('>0.05', '<0.05'))+
           scale_colour_manual(values=c("red","cyan"),breaks=c(T,F),labels=c('<0.05', '>0.05')) +
           
           ggplot2::geom_point(shape = 18, size = 3) +
           geom_errorbarh(ggplot2::aes(xmin = LCL, xmax = UCL), height = 0.25) +
+          
+          ggplot2::scale_y_continuous(name = "", 
+                                      breaks = cor1v2_filtered$index, 
+                                      labels = cor1v2_filtered$AE.measurement.type) +
+          
+          
+          
+          
           coord_cartesian(xlim = c(-1.1, 1.1) ) +
           ggplot2::xlab('correlation coefficient (r)')+
           ggplot2::ylab('')+
@@ -4704,7 +5203,7 @@ everything()) %>%
   })
 
 
-  # Display t-test pvalues and differences ####
+  # Display  pvalues and differences ####
   output$survivalsummarytable <- DT::renderDataTable({
     todisplay <-  survivialtempout()
     showN<- NROW(todisplay)
@@ -4712,7 +5211,7 @@ everything()) %>%
 
   })
 
-  # Down load toxicity.whole.summary.data()
+  # Down load survival summary csv
   output$survival_summarydownload <- shiny::downloadHandler(
     filename = function(){"survival_summary.csv"},
     content = function(fname){
@@ -4720,20 +5219,24 @@ everything()) %>%
     }
   )
   
-  # FOR THE PLOT ####
+  # FOR THE SURVIVAL SUMMARY PLOT ####
   
   
   
   summaryplot <- shiny::reactive({
-    
-    
-    heatmap_long <-data<-survivialtempout()%>%pivot_longer(cols = -(1:3),names_to = 'Outcome', values_to ='Association')%>%
+    #survivialtempout<-survivialtempout()
+   
+    heatmap_long <-data<-survivialtempout()%>%
+      pivot_longer(cols = -(1:2),names_to = 'Outcome', # was cols = -(1:3) I think this is wrong and should be 2
+                   values_to ='Association')%>%
       mutate(Association= na_if(Association, ""),
              outcome_short=sub('\\..*','',Outcome),
              var.new=ifelse(is.na(Association),NA,outcome_short),
              AE2=if_else(is.na(AE),"",AE),
              AE_Category=paste(cate.AE,"-",AE2,sep=" "),
              AE_Category=if_else(is.na(AE),gsub("-"," ",AE_Category),AE_Category))
+  
+    #save(heatmap_long,survivialtempout,file="F:\\myGitRepo\\survivialtempout_and_longversion.RData")
     
     
     plot1 <- ggplot(heatmap_long, aes(x = Outcome, y = AE_Category, fill = var.new)) +
@@ -4873,7 +5376,58 @@ everything()) %>%
       write.csv(responsetempout(), fname, row.names = FALSE)
     }
   )
-
+  # FOR THE PLOT ####
+  
+  
+  
+  summaryRESPONSEplot <- shiny::reactive({
+    
+    
+    # heatmap_long <-data<-responsetempout()%>%
+    #   pivot_longer(cols = -(1:3),names_to = 'Outcome', 
+    #                values_to ='Association')%>%
+    #   mutate(Association= na_if(Association, ""),
+    #          outcome_short=sub('\\..*','',Outcome),
+    #          var.new=ifelse(is.na(Association),NA,outcome_short),
+    #          AE2=if_else(is.na(AE),"",AE),
+    #          AE_Category=paste(cate.AE,"-",AE2,sep=" "),
+    #          AE_Category=if_else(is.na(AE),gsub("-"," ",AE_Category),AE_Category))
+    # 
+    data0<-responsetempout()
+    
+    data<-data0 %>%
+      mutate(AE_Category =paste(data0$cate.AE,ifelse(data0$AE%in%'','',' - '),data0$AE,sep='')) %>%
+      relocate(cate.AE,AE,AE_Category)
+  
+    
+    heatmap_long <- data  %>%
+      pivot_longer(cols = -(1:3),names_to = 'Outcome', values_to ='Association')%>%
+      mutate(Association= na_if(Association, ""),
+             outcome_short=sub('\\..*','',Outcome),
+             var.new=ifelse(is.na(Association),NA,outcome_short)) %>%   
+      filter(!is.na(var.new))
+    
+    plot1 <-ggplot(heatmap_long, aes(x = Outcome, y = AE_Category, fill = Outcome)) +
+      geom_tile(color = "white") +
+      geom_text(aes(label = Association), size = 3, na.rm = TRUE) +
+      scale_fill_manual(values = c("Associated.with.DC" = "cornflowerblue",'Associated.with.PD'='brown1' ),
+                        na.value =  "white", guide = FALSE)  +
+       theme_minimal() +
+      labs(title = "AE Associations with PD and DC", x = "Outcome", y = "AE Category") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
+    
+    
+    
+  })
+  
+  
+  
+  
+  
+  output$summaryREPSONSEplot_out <- shiny::renderPlot({   print(summaryRESPONSEplot())    })
+  
+  
+  
   # end: response summary          ^^^^^^^^^####
 
   # start: summary report VVVVVVVVVVVVV#####
