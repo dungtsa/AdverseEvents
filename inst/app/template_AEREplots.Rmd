@@ -6,7 +6,7 @@ classoption: landscape
 geometry: "left=1cm,right=1cm,top=1cm,bottom=1cm"
 ---
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, as.is = TRUE, fig.width=11, fig.height=8.5}
+```{r echo=FALSE, message=FALSE, warning=FALSE, as.is = TRUE, fig.height=12, fig.width=11}
 if (!is.null(params$draw_AEREplot))
   params$draw_AEREplot()
 ```

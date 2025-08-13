@@ -4,7 +4,7 @@ params:
   draw_plot: NULL
 ---
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, as.is = TRUE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, as.is = TRUE, fig.height=9, fig.width=10}
 if (!is.null(params$draw_plot))
   params$draw_plot()
 ```

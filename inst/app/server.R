@@ -4187,7 +4187,7 @@ everything()) %>%
           geom_errorbarh(ggplot2::aes(xmin = LCL, xmax = UCL), height = 0.25) +
           ggplot2::labs(title=paste("",names(a41)[j],sep=''),fill='P value')+
           ggplot2::scale_fill_manual(values=c("cyan","red"),breaks=c(F,T),labels=c('>0.05', '<0.05'))+
-          ggplot2::ylab('')+ggplot2::xlab('Difference ( CD-PD )')+ 
+          ggplot2::ylab('')+ggplot2::xlab('Difference (DC-PD )')+ 
           coord_cartesian(xlim = c(-20, 20) )
         
         
@@ -4367,7 +4367,7 @@ everything()) %>%
 
     a1<-alldataoutput()
     a0<-a0%>%dplyr::mutate(treatment.time=as.numeric(treatment.time))
-    # 3694 DO I CHANGE  THIS the AE.VARS??####
+    # 4370 DO I CHANGE  THIS the AE.VARS??####
     # sink(file="C:\\Users\\thompszj\\Desktop\\sinktest.txt")
     # print("----line 3696----COR TAB------------------>names(a0)[3:20]... no ALL OF THEM")
     # print(names(a0))
@@ -4376,9 +4376,11 @@ everything()) %>%
     # a0=a0%>%dplyr::select(-c(3:20))
     
     #dplyr::left_join(a41[[j]],a4.whole.summary[,c(2,match("followup_start_date",names(a4.whole.summary)):dim(a4.whole.summary)[2])],by="pid")
+    # print("----------------names(a0")
+    # print(a0)
     # print("--------------matching for the correlation data--------------------")
     # print(match("followup_start_date",names(a0)))
-    # 
+
     AE.var=names(a0)[3:(match("followup_start_date",names(a0))-1)]
     # print("----------------AE.var")
     # print(AE.var)
@@ -4392,6 +4394,20 @@ everything()) %>%
             alldataoutput()$toxicity.type.summary.data)
     a41<-a400
     
+     #  print("----line 4397----COR TAB------------------>names(a41)  ")
+     # print(names(a41))
+    
+    # a41.tmp<-dplyr::ungroup(a41[[j]])
+    # var.drop<-c('AE.category','AE')[c('AE.category','AE')%in%names(a41.tmp)]
+    # #---get AE occurrence from sum.unique.AE
+    # a41.tmp<-dplyr::select(a41.tmp,-all_of(var.drop))
+    # a41.tmp.sum.unique.AE<-a41.tmp%>%dplyr::select(c(pid,dplyr::ends_with('occurrence')))
+    # a41.tmp.occurrence<-as.list(a41.tmp.sum.unique.AE)[-1]%>%map_dfr(function(x) as.numeric(x>0))
+    # names(a41.tmp.sum.unique.AE)<-sub('occurrence','sum.unique',names(a41.tmp.sum.unique.AE))
+    # a41.tmp.fre.duraiton<-a41.tmp%>%dplyr::select(c(pid,dplyr::ends_with(c('fre','duration'))))
+    # a41.tmp.new<-cbind(a41.tmp.fre.duraiton,a41.tmp.sum.unique.AE%>%dplyr::select(-pid),a41.tmp.occurrence)
+    
+    
     # sink("C:\\Users\\thompszj\\Desktop\\names41.txt")
     # print(names(a41))
     # print(AE.var)
@@ -4404,7 +4420,28 @@ everything()) %>%
       # print("names(dplyr::left_join(a0,a41[[i]],by= pid ))")
       # print(names(dplyr::left_join(a0,a41[[i]],by="pid")))
       # WHAT ABOUT HERE???
-      tmp1<-dplyr::left_join(a0,a41[[i]],by="pid")%>%
+      if(i%%10 == 0 ){print("working on it: #");
+        print(i)
+      }
+      a41.tmp<-dplyr::ungroup(a41[[i]])    
+      # print("----line 4425----COR TAB------------------>names(a41.tmp)  ")
+      # print(names(a41.tmp))
+      var.drop<-c('AE.category','AE')[c('AE.category','AE')%in%names(a41.tmp)]
+      #---get AE occurrence from sum.unique.AE
+      a41.tmp<-dplyr::select(a41.tmp,-all_of(var.drop))
+      a41.tmp.sum.unique.AE<-a41.tmp%>%dplyr::select(c(pid,dplyr::ends_with('occurrence')))
+      a41.tmp.occurrence<-as.list(a41.tmp.sum.unique.AE)[-1]%>%map_dfr(function(x) as.numeric(x>0))
+      names(a41.tmp.sum.unique.AE)<-sub('occurrence','sum.unique',names(a41.tmp.sum.unique.AE))
+      a41.tmp.fre.duration<-a41.tmp%>%dplyr::select(c(pid,dplyr::ends_with(c('fre','duration'))))
+      a41.tmp.new<-cbind(a41.tmp.fre.duration,a41.tmp.sum.unique.AE%>%dplyr::select(-pid),a41.tmp.occurrence)
+       # print("----line 4437----COR TAB------------------>names(a41.tmp.new)  ")
+       # print(names(a41.tmp.new))
+       # print("----line 4439----COR TAB------------------>names(a41.tmp.sum.unique.AE)  ")
+       #  print(names(a41.tmp.sum.unique.AE))
+       # 
+        AE.var<-names(a41.tmp.new)[-1]
+      
+      tmp1<-dplyr::left_join(a0,a41.tmp.new,by="pid")%>% #wasa41[[i]]
         dplyr::select(pid,treatment.time,all_of(AE.var))
       #cor1<-cor(tmp1[,c('treatment.time',AE.var)],method = 'pearson', use = "complete.obs")[1,]
       
@@ -4552,19 +4589,25 @@ everything()) %>%
       
      # save(cor1,file=paste(names(a41)[i],"cor1dataset.RData",sep="-"))
       
+       #  print("cor1 data info !@#$%^&$@#!@#^&#%$!@%#^$@#!@%#^#$!@%#^$&^%@#$%^$#@")
+       # print(names(cor1))
+       # print(dim(cor1))
+      # print(table(cor1$AE.measurement.type))
       # Split the cor1 dataset by AE.Type using filtering
       duration_data <- cor1 %>% filter(grepl("duration", AE.measurement.type)) %>% mutate(cate="duration")
       fre_data <- cor1 %>% filter(grepl("fre", AE.measurement.type))%>% mutate(cate="fre")
       occurrence_data <- cor1 %>% filter(grepl("occurrence", AE.measurement.type))%>% mutate(cate="occurrence")
-     
+      sum_unique_data <- cor1 %>% filter(grepl("sum.unique", AE.measurement.type))%>% mutate(cate="sum.unique")
+      
       # print("THE DIMENSIONS !@#$%^&$@#!@#^&#%$!@%#^$@#!@%#^#$!@%#^$&^%@#$%^$#@")
       # print(dim(duration_data))
       # print(dim(fre_data))
-      # print(dim(occurrence_data)) 
+      # print(dim(occurrence_data))
+      # print(dim(sum_unique_data))
       cor1o<-cor1
       # print("dim(cor1o")
       # print(dim(cor1o))
-      cor1v2<- rbind(duration_data,fre_data,occurrence_data)
+      cor1v2<- rbind(duration_data,fre_data,occurrence_data,sum_unique_data)
       # print("dim(cor1v2)")
       # print(dim(cor1v2))
       # Initialize an empty list to store plots
@@ -4572,7 +4615,7 @@ everything()) %>%
       #cor.plot.AE.treatment.time.test<-cor.plot.AE.treatment.time.cat <- list()
       
       # Define the AE.type categories
-      categories <- c("duration", "fre", "occurrence")# "sum_unique_AE")
+      categories <- c("duration", "fre", "occurrence", "sum.unique")
       # GGPLOT CORR !!!!!!!!####
       # Loop through each AE.type category and generate a forest plot
       for (cat in categories) {
@@ -4768,8 +4811,9 @@ everything()) %>%
       grid_plot <- (
           cor.plot.AE.treatment.time.cat[["duration"]] +
           cor.plot.AE.treatment.time.cat[["fre"]] +
-          cor.plot.AE.treatment.time.cat[["occurrence"]]  
-      ) + plot_layout(ncol = 1, nrow = 3)
+          cor.plot.AE.treatment.time.cat[["occurrence"]] +
+            cor.plot.AE.treatment.time.cat[["sum.unique"]] 
+      ) + plot_layout(ncol = 1, nrow = 4)
       
       
       
@@ -5196,8 +5240,7 @@ everything()) %>%
 
     #sink()
 
-    # save(a1,a31,a5,a6,a7,q1,q2,q3,q31,q5,q6,q7,q11,q8,
-    #      file="F:\\myGitRepo\\datasetswithq7andq8.RData")
+     save(a1,a31,a5,a6,a7,q1,q2,q3,q31,q5,q6,q7,q11,q8,     file="F:\\myGitRepo\\datasetswithq7andq8.RData")
     q8
 
   })
@@ -5239,7 +5282,7 @@ everything()) %>%
     #save(heatmap_long,survivialtempout,file="F:\\myGitRepo\\survivialtempout_and_longversion.RData")
     
     
-    plot1 <- ggplot(heatmap_long, aes(x = Outcome, y = AE_Category, fill = var.new)) +
+    plot1o <- ggplot(heatmap_long, aes(x = Outcome, y = AE_Category, fill = var.new)) +
       geom_tile(color = "white") +
       geom_text(aes(label = Association), size = 3, na.rm = TRUE) +
       scale_fill_manual(values = c("Improved" = "cornflowerblue",'Poorer'='brown1' ),na.value =  "white", guide = FALSE) +
@@ -5249,6 +5292,148 @@ everything()) %>%
       theme(axis.text.x = element_text(angle = 45, hjust = 1))
     
     
+    
+    my_str.fun<-function(x,type='Trt')
+    {
+      # type could be 'Trt','Non-Trt', and 'Trt+Non-Trt'
+      if(x!='') {
+        tmp1=str_split(x,'/')[[1]]
+        tmp1=unique(sub('nontrt','ntr',tmp1))
+        
+        tmp21=tmp21_org=tmp1[str_detect(tmp1,'.trt')]
+        if(length(tmp21)>0)
+        {
+          tmp21=paste(sub('\\.trt','',tmp21),collapse = ', ')
+          tmp21=paste('Trt: ',tmp21,sep='')
+        } else tmp21=''
+        
+        
+        tmp22=tmp22_org=tmp1[str_detect(tmp1,'.ntr')]
+        
+        if(length(tmp22)>0)
+        {
+          tmp22=paste(sub('\\.ntr','',tmp22),collapse = ',')
+          tmp22=paste('Non-Trt: ',tmp22,sep='')
+        } else tmp22=''
+        
+        
+        
+        tmp23=tmp1[!tmp1%in%c(tmp21_org,tmp22_org)]
+        if(length(tmp23)>0)
+          tmp23=paste(tmp23,collapse = ',') else tmp23=''
+        
+        
+        if(1>2)
+        {
+          index1=tmp21!='' & tmp22!=''
+          if(tmp23=='')
+            tmp3=paste(paste(tmp21,tmp22,sep=ifelse(index1,'\n ','')),tmp23,sep='\n ') else
+              tmp3=paste(tmp21,tmp22,sep=ifelse(index1,' \n ',''))
+        }
+        
+        if(1>2)
+        {
+          if(tmp21!='' & tmp22!='') tmp3=paste(tmp21,tmp22,sep=' \n ')
+          if(tmp21!='' & tmp22=='') tmp3=tmp21
+          if(tmp21=='' & tmp22!='') tmp3=tmp22
+          if(tmp21=='' & tmp22=='') tmp3=''
+        }
+        if(type=='Trt') tmp3=tmp21
+        if(type=='Non-Trt') tmp3=tmp22
+        if(type=='Trt+Non-Trt') tmp3=tmp23
+      } else tmp3=''
+      tmp3
+    }
+    
+    # type could be 'Trt','Non-Trt', and 'Trt+Non-Trt'
+    i=1
+    if(i==1) type.tmp='Trt'
+    if(i==2) type.tmp='Non-Trt'
+    if(i==3) type.tmp='Trt+Non-Trt'
+    data=survivialtempout()%>%
+      mutate(AE_Category =paste(cate.AE,ifelse(AE%in%'','',' - '),AE,sep=''))%>%
+      relocate(cate.AE,AE,AE_Category)
+    
+    
+    data$Improved.OS=sapply(data0$Improved.OS,my_str.fun,type=type.tmp)
+    data$Improved.PFS=sapply(data0$Improved.PFS,my_str.fun,type=type.tmp)
+    data$Poorer.OS=sapply(data0$Poorer.OS,my_str.fun,type=type.tmp)
+    data$Poorer.PFS=sapply(data0$Poorer.PFS,my_str.fun,type=type.tmp)
+    
+    heatmap_long <-data%>%pivot_longer(cols = -(1:3),names_to = 'Outcome', values_to ='Association')%>%mutate(Association= na_if(Association, ""),
+                                                                                                              outcome_short=sub('\\..*','',Outcome),var.new=ifelse(is.na(Association),NA,outcome_short))
+    
+    # Plot heatmap with labels
+    
+    plot1=ggplot(heatmap_long, aes(x = Outcome, y = AE_Category, fill = var.new)) +
+      geom_tile(color = "white") +
+      geom_text(aes(label = Association), size = 3, na.rm = TRUE) +
+      scale_fill_manual(values = c("Improved" = "cornflowerblue",'Poorer'='brown1' ),na.value =  "white", guide = FALSE) +
+      #  scale_color_manual(values = c("Improved.OS"='blue',  "Improved.PFS"='blue', "Poorer.OS"='red',    "Poorer.PFS"='red'), guide = FALSE) +
+      theme_minimal() +
+      labs(title = paste(type.tmp,": AE Associations with OS and PFS",sep=''), x = "Outcome", y = "AE Category") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
+     
+    
+    i=2
+    if(i==1) type.tmp='Trt'
+    if(i==2) type.tmp='Non-Trt'
+    if(i==3) type.tmp='Trt+Non-Trt'
+    data=survivialtempout()%>%
+      mutate(AE_Category =paste(cate.AE,ifelse(AE%in%'','',' - '),AE,sep=''))%>%
+      relocate(cate.AE,AE,AE_Category)
+    
+    data$Improved.OS=sapply(data0$Improved.OS,my_str.fun,type=type.tmp)
+    data$Improved.PFS=sapply(data0$Improved.PFS,my_str.fun,type=type.tmp)
+    data$Poorer.OS=sapply(data0$Poorer.OS,my_str.fun,type=type.tmp)
+    data$Poorer.PFS=sapply(data0$Poorer.PFS,my_str.fun,type=type.tmp)
+    
+    heatmap_long <-data%>%pivot_longer(cols = -(1:3),names_to = 'Outcome', values_to ='Association')%>%mutate(Association= na_if(Association, ""),
+                                                                                                              outcome_short=sub('\\..*','',Outcome),var.new=ifelse(is.na(Association),NA,outcome_short))
+    
+    # Plot heatmap with labels
+    
+    plot2=ggplot(heatmap_long, aes(x = Outcome, y = AE_Category, fill = var.new)) +
+      geom_tile(color = "white") +
+      geom_text(aes(label = Association), size = 3, na.rm = TRUE) +
+      scale_fill_manual(values = c("Improved" = "cornflowerblue",'Poorer'='brown1' ),na.value =  "white", guide = FALSE) +
+      #  scale_color_manual(values = c("Improved.OS"='blue',  "Improved.PFS"='blue', "Poorer.OS"='red',    "Poorer.PFS"='red'), guide = FALSE) +
+      theme_minimal() +
+      labs(title = paste(type.tmp,": AE Associations with OS and PFS",sep=''), x = "Outcome", y = "AE Category") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ 
+    
+    i=3
+    if(i==1) type.tmp='Trt'
+    if(i==2) type.tmp='Non-Trt'
+    if(i==3) type.tmp='Trt+Non-Trt'
+    data=survivialtempout() %>%
+      mutate(AE_Category =paste(cate.AE,ifelse(AE%in%'','',' - '),AE,sep=''))%>%
+      relocate(cate.AE,AE,AE_Category)
+    
+    data$Improved.OS=sapply(data0$Improved.OS,my_str.fun,type=type.tmp)
+    data$Improved.PFS=sapply(data0$Improved.PFS,my_str.fun,type=type.tmp)
+    data$Poorer.OS=sapply(data0$Poorer.OS,my_str.fun,type=type.tmp)
+    data$Poorer.PFS=sapply(data0$Poorer.PFS,my_str.fun,type=type.tmp)
+    
+    heatmap_long <-data%>%pivot_longer(cols = -(1:3),names_to = 'Outcome', values_to ='Association')%>%mutate(Association= na_if(Association, ""),
+                                                                                                              outcome_short=sub('\\..*','',Outcome),var.new=ifelse(is.na(Association),NA,outcome_short))
+    
+    # Plot heatmap with labels
+    
+    plot3=ggplot(heatmap_long, aes(x = Outcome, y = AE_Category, fill = var.new)) +
+      geom_tile(color = "white") +
+      geom_text(aes(label = Association), size = 3, na.rm = TRUE) +
+      scale_fill_manual(values = c("Improved" = "cornflowerblue",'Poorer'='brown1' ),na.value =  "white", guide = FALSE) +
+      #  scale_color_manual(values = c("Improved.OS"='blue',  "Improved.PFS"='blue', "Poorer.OS"='red',    "Poorer.PFS"='red'), guide = FALSE) +
+      theme_minimal() +
+      labs(title = paste(type.tmp,": AE Associations with OS and PFS",sep=''), x = "Outcome", y = "AE Category") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
+    
+    library(patchwork)
+ 
+    # Combine the plots into a 2x2 grid
+    plot4 <- ( plot1+ plot2+ plot3 ) + plot_layout(ncol = 1, nrow = 3)
     
     
   })
