@@ -493,7 +493,7 @@ function(request){
                htmltools::br(),
                htmltools::br(),
                htmltools::br(),
-               shinycssloaders::withSpinner(shiny::plotOutput("summaryREPSONSEplot_out", width = "100%", height = "500px")),
+               shinycssloaders::withSpinner(shiny::plotOutput("summaryREPSONSEplot_out", width = "100%", height = "1800px")),
                
                shinycssloaders::withSpinner(DT::dataTableOutput("responsesummarytable"))
           )
