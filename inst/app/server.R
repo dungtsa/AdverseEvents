@@ -5350,11 +5350,12 @@ everything()) %>%
     if(i==1) type.tmp='Trt'
     if(i==2) type.tmp='Non-Trt'
     if(i==3) type.tmp='Trt+Non-Trt'
-    data=survivialtempout()%>%
+    data0=survivialtempout()%>%
       mutate(AE_Category =paste(cate.AE,ifelse(AE%in%'','',' - '),AE,sep=''))%>%
       relocate(cate.AE,AE,AE_Category)
     
     
+    data<-data0
     data$Improved.OS=sapply(data0$Improved.OS,my_str.fun,type=type.tmp)
     data$Improved.PFS=sapply(data0$Improved.PFS,my_str.fun,type=type.tmp)
     data$Poorer.OS=sapply(data0$Poorer.OS,my_str.fun,type=type.tmp)
@@ -5373,16 +5374,17 @@ everything()) %>%
       theme_minimal() +
       labs(title = paste(type.tmp,": AE Associations with OS and PFS",sep=''), x = "Outcome", y = "AE Category") +
       theme(axis.text.x = element_text(angle = 45, hjust = 1))
-     
+
     
     i=2
     if(i==1) type.tmp='Trt'
     if(i==2) type.tmp='Non-Trt'
     if(i==3) type.tmp='Trt+Non-Trt'
-    data=survivialtempout()%>%
+    data0=survivialtempout()%>%
       mutate(AE_Category =paste(cate.AE,ifelse(AE%in%'','',' - '),AE,sep=''))%>%
       relocate(cate.AE,AE,AE_Category)
     
+    data<-data0
     data$Improved.OS=sapply(data0$Improved.OS,my_str.fun,type=type.tmp)
     data$Improved.PFS=sapply(data0$Improved.PFS,my_str.fun,type=type.tmp)
     data$Poorer.OS=sapply(data0$Poorer.OS,my_str.fun,type=type.tmp)
@@ -5407,10 +5409,11 @@ everything()) %>%
     if(i==1) type.tmp='Trt'
     if(i==2) type.tmp='Non-Trt'
     if(i==3) type.tmp='Trt+Non-Trt'
-    data=survivialtempout() %>%
+    data0=survivialtempout() %>%
       mutate(AE_Category =paste(cate.AE,ifelse(AE%in%'','',' - '),AE,sep=''))%>%
       relocate(cate.AE,AE,AE_Category)
     
+    data<-data0
     data$Improved.OS=sapply(data0$Improved.OS,my_str.fun,type=type.tmp)
     data$Improved.PFS=sapply(data0$Improved.PFS,my_str.fun,type=type.tmp)
     data$Poorer.OS=sapply(data0$Poorer.OS,my_str.fun,type=type.tmp)
@@ -5579,7 +5582,7 @@ everything()) %>%
     #          AE_Category=if_else(is.na(AE),gsub("-"," ",AE_Category),AE_Category))
     # 
     data0<-responsetempout()
-    
+    save(data0,file="F://myGitRepo//responsedata.RData")
     data<-data0 %>%
       mutate(AE_Category =paste(data0$cate.AE,ifelse(data0$AE%in%'','',' - '),data0$AE,sep='')) %>%
       relocate(cate.AE,AE,AE_Category)
