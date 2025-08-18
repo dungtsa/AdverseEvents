@@ -5264,8 +5264,6 @@ everything()) %>%
   
   # FOR THE SURVIVAL SUMMARY PLOT ####
   
-  
-  
   summaryplot <- shiny::reactive({
     #survivialtempout<-survivialtempout()
    
@@ -5442,14 +5440,7 @@ everything()) %>%
   })
   
   
-  
-  
-  
   output$summaryplot_out <- shiny::renderPlot({   print(summaryplot())    })
-  
-  
-  
-  
   
   
   # end: survival summary          ^^^^^^^^^####
@@ -5763,6 +5754,173 @@ everything()) %>%
   
   # end: response summary          ^^^^^^^^^####
 
+  
+  
+  
+  # start: duration summary tab VVVVVVVVVVVVVVVV####
+  durationsummaryplot <- shiny::reactive({
+    #survivialtempout<-survivialtempout()
+    
+    
+    my_str.fun<-function(x,type='Trt')
+    {  
+      # type could be 'Trt','Non-Trt', and 'Trt+Non-Trt'
+      if(x!='') {
+        tmp1=str_split(x,'/')[[1]]
+        tmp1=unique(sub('nontrt','ntr',tmp1))
+        
+        tmp21=tmp21_org=tmp1[str_detect(tmp1,'.trt')]
+        if(length(tmp21)>0)
+        {
+          tmp21=paste(sub('\\.trt','',tmp21),collapse = ', ')
+          tmp21=paste('Trt: ',tmp21,sep='')
+        } else tmp21=''
+        
+        
+        tmp22=tmp22_org=tmp1[str_detect(tmp1,'.ntr')]
+        
+        if(length(tmp22)>0)
+        {
+          tmp22=paste(sub('\\.ntr','',tmp22),collapse = ',')
+          tmp22=paste('Non-Trt: ',tmp22,sep='')
+        } else tmp22=''
+        
+        
+        
+        tmp23=tmp1[!tmp1%in%c(tmp21_org,tmp22_org)]
+        if(length(tmp23)>0)
+          tmp23=paste(tmp23,collapse = ',') else tmp23=''
+        
+        
+        if(1>2)
+        {
+          index1=tmp21!='' & tmp22!=''
+          if(tmp23=='')
+            tmp3=paste(paste(tmp21,tmp22,sep=ifelse(index1,'\n ','')),tmp23,sep='\n ') else
+              tmp3=paste(tmp21,tmp22,sep=ifelse(index1,' \n ',''))
+        }
+        
+        if(1>2)
+        {
+          if(tmp21!='' & tmp22!='') tmp3=paste(tmp21,tmp22,sep=' \n ')
+          if(tmp21!='' & tmp22=='') tmp3=tmp21
+          if(tmp21=='' & tmp22!='') tmp3=tmp22
+          if(tmp21=='' & tmp22=='') tmp3=''
+        }
+        if(type=='Trt') tmp3=tmp21
+        if(type=='Non-Trt') tmp3=tmp22
+        if(type=='Trt+Non-Trt') tmp3=tmp23
+      } else tmp3=''
+      tmp3
+    }
+    
+    # type could be 'Trt','Non-Trt', and 'Trt+Non-Trt'
+    i=1
+    if(i==1) type.tmp='Trt'
+    if(i==2) type.tmp='Non-Trt'
+    if(i==3) type.tmp='Trt+Non-Trt'
+    data0=durationanalysis()$q8 %>%
+      mutate(AE_Category =paste(cate.AE,ifelse(AE%in%'' | is.na(AE),'',' - '),ifelse(is.na(AE),'',AE),sep=''))%>%
+      relocate(cate.AE,AE,AE_Category)
+    
+    data<-data0
+    data$Negative.Correlation=sapply(data0$Negative.Correlation,my_str.fun,type=type.tmp)
+    data$Positive.Correlation=sapply(data0$Positive.Correlation,my_str.fun,type=type.tmp)
+    
+    
+    heatmap_long <-data%>%pivot_longer(cols = -(1:3),names_to = 'Outcome', values_to ='Association')%>%
+      mutate(Association= na_if(Association, ""),
+             outcome_short=sub('\\..*','',Outcome),var.new=ifelse(is.na(Association),NA,Outcome))
+    
+    # Plot heatmap with label s
+    
+    plot1=ggplot(heatmap_long, aes(x = Outcome, y = AE_Category, fill = var.new)) +
+      geom_tile(color = "white") +
+      geom_text(aes(label = Association), size = 3, na.rm = TRUE) +
+      scale_fill_manual(values = c("Positive.Correlation" = "cornflowerblue",'Negative.Correlation'='brown1' ),
+                        na.value =  "white", guide = FALSE) +
+      #  scale_color_manual(values = c("Improved.OS"='blue',  "Improved.PFS"='blue', "Poorer.OS"='red',    "Poorer.PFS"='red'), guide = FALSE) +
+      theme_minimal() +
+      labs(title = paste(type.tmp,": AE correlations",sep=''), x = "Outcome", y = "AE Category") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
+    
+    
+    
+    i=2
+    if(i==1) type.tmp='Trt'
+    if(i==2) type.tmp='Non-Trt'
+    if(i==3) type.tmp='Trt+Non-Trt'
+    data0=durationanalysis()$q8 %>%
+      mutate(AE_Category =paste(cate.AE,ifelse(AE%in%'' | is.na(AE),'',' - '),ifelse(is.na(AE),'',AE),sep=''))%>%
+      relocate(cate.AE,AE,AE_Category)
+    
+    data<-data0
+    data$Negative.Correlation=sapply(data0$Negative.Correlation,my_str.fun,type=type.tmp)
+    data$Positive.Correlation=sapply(data0$Positive.Correlation,my_str.fun,type=type.tmp)
+    
+    
+    heatmap_long <-data%>%pivot_longer(cols = -(1:3),names_to = 'Outcome', values_to ='Association')%>%
+      mutate(Association= na_if(Association, ""),
+             outcome_short=sub('\\..*','',Outcome),var.new=ifelse(is.na(Association),NA,Outcome))
+    
+    # Plot heatmap with labels
+    
+    plot2 =ggplot(heatmap_long, aes(x = Outcome, y = AE_Category, fill = var.new)) +
+      geom_tile(color = "white") +
+      geom_text(aes(label = Association), size = 3, na.rm = TRUE) +
+      scale_fill_manual(values = c("Positive.Correlation" = "cornflowerblue",'Negative.Correlation'='brown1' ),
+                        na.value =  "white", guide = FALSE) +
+      #  scale_color_manual(values = c("Improved.OS"='blue',  "Improved.PFS"='blue', "Poorer.OS"='red',    "Poorer.PFS"='red'), guide = FALSE) +
+      theme_minimal() +
+      labs(title = paste(type.tmp,": AE correlations",sep=''), x = "Outcome", y = "AE Category") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
+    
+    
+    i=3
+    if(i==1) type.tmp='Trt'
+    if(i==2) type.tmp='Non-Trt'
+    if(i==3) type.tmp='Trt+Non-Trt'
+    data0=durationanalysis()$q8 %>%
+      mutate(AE_Category =paste(cate.AE,ifelse(AE%in%'' | is.na(AE),'',' - '),ifelse(is.na(AE),'',AE),sep=''))%>%
+      relocate(cate.AE,AE,AE_Category)
+    
+    data<-data0
+    data$Negative.Correlation=sapply(data0$Negative.Correlation,my_str.fun,type=type.tmp)
+    data$Positive.Correlation=sapply(data0$Positive.Correlation,my_str.fun,type=type.tmp)
+    
+    
+    heatmap_long <-data%>%pivot_longer(cols = -(1:3),names_to = 'Outcome', values_to ='Association')%>%
+      mutate(Association= na_if(Association, ""),
+             outcome_short=sub('\\..*','',Outcome),var.new=ifelse(is.na(Association),NA,Outcome))
+    
+    # Plot heatmap with labels
+    
+    plot3  =ggplot(heatmap_long, aes(x = Outcome, y = AE_Category, fill = var.new)) +
+      geom_tile(color = "white") +
+      geom_text(aes(label = Association), size = 3, na.rm = TRUE) +
+      scale_fill_manual(values = c("Positive.Correlation" = "cornflowerblue",'Negative.Correlation'='brown1' ),
+                        na.value =  "white", guide = FALSE) +
+      #  scale_color_manual(values = c("Improved.OS"='blue',  "Improved.PFS"='blue', "Poorer.OS"='red',    "Poorer.PFS"='red'), guide = FALSE) +
+      theme_minimal() +
+      labs(title = paste(type.tmp,": AE correlations",sep=''), x = "Outcome", y = "AE Category") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
+    
+    
+    library(patchwork)
+    
+    # Combine the plots into a 2x2 grid
+    plot4 <- ( plot1+ plot2+ plot3 ) + plot_layout(ncol = 1, nrow = 3)
+    
+    
+  })
+  
+  
+  output$durationsummaryplot_out <- shiny::renderPlot({   print(durationsummaryplot())    })
+  
+  # end: duration summary tab  ^^^^^^^^^####
+  
+  
+  
   # start: summary report VVVVVVVVVVVVV#####
 
   output$downloadsumaryReport <- shiny::downloadHandler(

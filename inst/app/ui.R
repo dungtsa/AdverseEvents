@@ -512,8 +512,11 @@ function(request){
                           htmltools::br(),
                           htmltools::br(),
                           htmltools::br(),
-                      
-                          shinycssloaders::withSpinner(DT::dataTableOutput("durationanalysistableoutput"))
+                          htmltools::br(),
+                          shinycssloaders::withSpinner(shiny::plotOutput("durationsummaryplot_out", width = "100%", height = "1800px")), 
+                          
+                          shinycssloaders::withSpinner(DT::dataTableOutput("durationanalysistableoutput")),
+                       
                           #,
                          # shinycssloaders::withSpinner(DT::dataTableOutput("responsesummarytable"))
           )
